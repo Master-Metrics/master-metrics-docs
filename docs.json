@@ -35,6 +35,13 @@
                   "tiktok-ads/metrics",
                   "tiktok-ads/dimensions"
                 ]
+              },
+              {
+                "group": "Microsoft Ads (Bing)",
+                "pages": [
+                  "bing-ads/metrics",
+                  "bing-ads/dimensions"
+                ]
               }
             ]
           },
@@ -152,6 +159,13 @@
                   "en/tiktok-ads/metrics",
                   "en/tiktok-ads/dimensions"
                 ]
+              },
+              {
+                "group": "Microsoft Ads (Bing)",
+                "pages": [
+                  "en/bing-ads/metrics",
+                  "en/bing-ads/dimensions"
+                ]
               }
             ]
           },
@@ -268,6 +282,13 @@
                 "pages": [
                   "pt/tiktok-ads/metrics",
                   "pt/tiktok-ads/dimensions"
+                ]
+              },
+              {
+                "group": "Microsoft Ads (Bing)",
+                "pages": [
+                  "pt/bing-ads/metrics",
+                  "pt/bing-ads/dimensions"
                 ]
               }
             ]
