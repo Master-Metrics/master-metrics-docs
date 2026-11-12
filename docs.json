@@ -42,6 +42,13 @@
                   "bing-ads/metrics",
                   "bing-ads/dimensions"
                 ]
+              },
+              {
+                "group": "Pinterest Ads",
+                "pages": [
+                  "pinterest-ads/metrics",
+                  "pinterest-ads/dimensions"
+                ]
               }
             ]
           },
@@ -166,6 +173,13 @@
                   "en/bing-ads/metrics",
                   "en/bing-ads/dimensions"
                 ]
+              },
+              {
+                "group": "Pinterest Ads",
+                "pages": [
+                  "en/pinterest-ads/metrics",
+                  "en/pinterest-ads/dimensions"
+                ]
               }
             ]
           },
@@ -289,6 +303,13 @@
                 "pages": [
                   "pt/bing-ads/metrics",
                   "pt/bing-ads/dimensions"
+                ]
+              },
+              {
+                "group": "Pinterest Ads",
+                "pages": [
+                  "pt/pinterest-ads/metrics",
+                  "pt/pinterest-ads/dimensions"
                 ]
               }
             ]
