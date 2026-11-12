@@ -49,6 +49,13 @@
                   "pinterest-ads/metrics",
                   "pinterest-ads/dimensions"
                 ]
+              },
+              {
+                "group": "Mercado Ads",
+                "pages": [
+                  "mercado-ads/metrics",
+                  "mercado-ads/dimensions"
+                ]
               }
             ]
           },
@@ -180,6 +187,13 @@
                   "en/pinterest-ads/metrics",
                   "en/pinterest-ads/dimensions"
                 ]
+              },
+              {
+                "group": "Mercado Ads",
+                "pages": [
+                  "en/mercado-ads/metrics",
+                  "en/mercado-ads/dimensions"
+                ]
               }
             ]
           },
@@ -310,6 +324,13 @@
                 "pages": [
                   "pt/pinterest-ads/metrics",
                   "pt/pinterest-ads/dimensions"
+                ]
+              },
+              {
+                "group": "Mercado Ads",
+                "pages": [
+                  "pt/mercado-ads/metrics",
+                  "pt/mercado-ads/dimensions"
                 ]
               }
             ]
