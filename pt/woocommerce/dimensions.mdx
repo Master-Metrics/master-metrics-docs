@@ -1,0 +1,93 @@
+---
+title: "WooCommerce: Dimensões"
+description: "Referência completa das dimensões de WooCommerce no Master Metrics"
+---
+
+<Info>**Última atualização:** 2026-11-12</Info>
+
+Esta referência cobre as 42 dimensões disponíveis de WooCommerce no Master Metrics. Use-a para entender como você pode segmentar seus dados e como cada campo se chama.
+
+**Disponível em:** Dashboards · Relatórios · Assistente de IA · MCP
+
+## Dimensões
+
+As dimensões são os atributos que você pode usar para segmentar e agrupar seus dados de WooCommerce.
+
+### Geral
+
+| | |
+|---|---|
+| Dia | **Nome do campo:** `day`<br/>**Tipo:** dimensão |
+| Semana | **Nome do campo:** `week`<br/>**Tipo:** dimensão |
+| Mês | **Nome do campo:** `month`<br/>**Tipo:** dimensão |
+| Trimestre | **Nome do campo:** `quarter`<br/>**Tipo:** dimensão |
+| Ano | **Nome do campo:** `year`<br/>**Tipo:** dimensão |
+| Nome da loja (Comum) | **Nome do campo:** `woocommerce_shop_name`<br/>**Tipo:** dimensão |
+| ID da loja (Comum) | **Nome do campo:** `woocommerce_shop_id`<br/>**Tipo:** dimensão |
+
+### Pedidos
+
+| | |
+|---|---|
+| ID (Pedidos) | **Nome do campo:** `woocommerce_orders_id`<br/>**Tipo:** dimensão |
+| Número (Pedidos) | **Nome do campo:** `woocommerce_orders_number`<br/>**Tipo:** dimensão |
+| Status (Pedidos) | **Nome do campo:** `woocommerce_orders_status`<br/>**Tipo:** dimensão |
+| Moeda (Pedidos) | **Nome do campo:** `woocommerce_currency`<br/>**Tipo:** dimensão |
+| Método de pagamento (Pedidos) | **Nome do campo:** `woocommerce_payment_method_title`<br/>**Tipo:** dimensão |
+| País de cobrança (Pedidos) | **Nome do campo:** `woocommerce_billing_country`<br/>**Tipo:** dimensão |
+| Estado de cobrança (Pedidos) | **Nome do campo:** `woocommerce_billing_state`<br/>**Tipo:** dimensão |
+| Cidade de cobrança (Pedidos) | **Nome do campo:** `woocommerce_billing_city`<br/>**Tipo:** dimensão |
+| País de envio (Pedidos) | **Nome do campo:** `woocommerce_shipping_country`<br/>**Tipo:** dimensão |
+| Estado de envio (Pedidos) | **Nome do campo:** `woocommerce_shipping_state`<br/>**Tipo:** dimensão |
+| Cidade de envio (Pedidos) | **Nome do campo:** `woocommerce_shipping_city`<br/>**Tipo:** dimensão |
+| Nome do produto e variante (Pedidos) | **Nome do campo:** `woocommerce_orders_line_item_name`<br/>**Tipo:** dimensão |
+| ID do produto (Pedidos) | **Nome do campo:** `woocommerce_orders_line_item_product_id`<br/>**Tipo:** dimensão |
+| ID da variação (Pedidos) | **Nome do campo:** `woocommerce_orders_line_item_variation_id`<br/>**Tipo:** dimensão |
+| Imagem item de linha (Pedidos) | **Nome do campo:** `woocommerce_orders_line_item_picture`<br/>**Tipo:** dimensão |
+| Imagem item + nome (Pedidos) | **Nome do campo:** `woocommerce_orders_line_item_picture_title`<br/>**Tipo:** dimensão |
+| ID do item de linha (Pedidos) | **Nome do campo:** `woocommerce_orders_line_item_id`<br/>**Tipo:** dimensão |
+| SKU do item de linha (Pedidos) | **Nome do campo:** `woocommerce_orders_line_item_sku`<br/>**Tipo:** dimensão |
+| Nome do produto sem variante (Pedidos) | **Nome do campo:** `woocommerce_orders_line_item_parent_name`<br/>**Tipo:** dimensão |
+
+### Produtos
+
+| | |
+|---|---|
+| Nome (Produtos) | **Nome do campo:** `woocommerce_product_name`<br/>**Tipo:** dimensão |
+| Título (Produtos) | **Nome do campo:** `woocommerce_product_title`<br/>**Tipo:** dimensão |
+| Descrição curta (Produtos) | **Nome do campo:** `woocommerce_product_short_description`<br/>**Tipo:** dimensão |
+| Descrição (Produtos) | **Nome do campo:** `woocommerce_product_description`<br/>**Tipo:** dimensão |
+| Em promoção (Produtos) | **Nome do campo:** `woocommerce_product_on_sale`<br/>**Tipo:** dimensão |
+| Categorias (Produtos) | **Nome do campo:** `woocommerce_product_categories`<br/>**Tipo:** dimensão |
+| Tags (Produtos) | **Nome do campo:** `woocommerce_product_tags`<br/>**Tipo:** dimensão |
+| Imagem (Produtos) | **Nome do campo:** `woocommerce_product_picture`<br/>**Tipo:** dimensão |
+| Link (Produtos) | **Nome do campo:** `woocommerce_product_permalink`<br/>**Tipo:** dimensão |
+| Imagem, título e descrição (Produtos) | **Nome do campo:** `woocommerce_product_picture_title`<br/>**Tipo:** dimensão |
+| Status do estoque (Produtos) | **Nome do campo:** `woocommerce_product_stock_status`<br/>**Tipo:** dimensão |
+
+### Clientes
+
+| | |
+|---|---|
+| E-mail (Clientes) | **Nome do campo:** `woocommerce_customer_email`<br/>**Tipo:** dimensão |
+| Cidade de envio (Clientes) | **Nome do campo:** `woocommerce_customer_shipping_city`<br/>**Tipo:** dimensão |
+| Estado de envio (Clientes) | **Nome do campo:** `woocommerce_customer_shipping_state`<br/>**Tipo:** dimensão |
+| País de envio (Clientes) | **Nome do campo:** `woocommerce_customer_shipping_country`<br/>**Tipo:** dimensão |
+| É pagante (Clientes) | **Nome do campo:** `woocommerce_customer_is_paying_customer`<br/>**Tipo:** dimensão |
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Catálogo de campos" href="/pt/">
+    Ver todas as fontes
+  </Card>
+  <Card title="Instagram" href="/pt/instagram/metrics">
+    Métricas & Dimensões
+  </Card>
+  <Card title="Facebook Pages" href="/pt/facebook/metrics">
+    Métricas & Dimensões
+  </Card>
+  <Card title="Shopify" href="/pt/shopify/metrics">
+    Métricas & Dimensões
+  </Card>
+</CardGroup>

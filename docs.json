@@ -96,6 +96,13 @@
                   "tiendanube/metrics",
                   "tiendanube/dimensions"
                 ]
+              },
+              {
+                "group": "WooCommerce",
+                "pages": [
+                  "woocommerce/metrics",
+                  "woocommerce/dimensions"
+                ]
               }
             ]
           }
@@ -187,6 +194,13 @@
                   "en/tiendanube/metrics",
                   "en/tiendanube/dimensions"
                 ]
+              },
+              {
+                "group": "WooCommerce",
+                "pages": [
+                  "en/woocommerce/metrics",
+                  "en/woocommerce/dimensions"
+                ]
               }
             ]
           }
@@ -277,6 +291,13 @@
                 "pages": [
                   "pt/tiendanube/metrics",
                   "pt/tiendanube/dimensions"
+                ]
+              },
+              {
+                "group": "WooCommerce",
+                "pages": [
+                  "pt/woocommerce/metrics",
+                  "pt/woocommerce/dimensions"
                 ]
               }
             ]
