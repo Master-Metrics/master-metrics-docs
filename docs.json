@@ -145,6 +145,18 @@
                 ]
               }
             ]
+          },
+          {
+            "group": "CRM y email",
+            "pages": [
+              {
+                "group": "Kommo",
+                "pages": [
+                  "kommo/metrics",
+                  "kommo/dimensions"
+                ]
+              }
+            ]
           }
         ]
       },
@@ -283,6 +295,18 @@
                 ]
               }
             ]
+          },
+          {
+            "group": "CRM & email",
+            "pages": [
+              {
+                "group": "Kommo",
+                "pages": [
+                  "en/kommo/metrics",
+                  "en/kommo/dimensions"
+                ]
+              }
+            ]
           }
         ]
       },
@@ -418,6 +442,18 @@
                 "pages": [
                   "pt/woocommerce/metrics",
                   "pt/woocommerce/dimensions"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "CRM e e-mail",
+            "pages": [
+              {
+                "group": "Kommo",
+                "pages": [
+                  "pt/kommo/metrics",
+                  "pt/kommo/dimensions"
                 ]
               }
             ]
