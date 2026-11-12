@@ -1,0 +1,166 @@
+---
+title: "Google Analytics 4: Metrics"
+description: "Complete reference of the Google Analytics 4 metrics in Master Metrics"
+---
+
+<Info>**Last updated:** 2026-11-12</Info>
+
+This reference covers the 90 metrics available for Google Analytics 4 in Master Metrics. Use it to understand which data you can pull and how each field is named.
+
+**Available in:** Dashboards · Reports · AI assistant · MCP
+
+## Metrics
+
+Metrics are the numeric values you can measure and aggregate from your Google Analytics 4 data.
+
+### User
+
+| | |
+|---|---|
+| 1-day active users | The number of distinct active users on your site or app within a 1 day period. The 1 day period includes the last day in the report's date range. Note: this is the same as Active Users.<br/><br/>**Field name:** `active1DayUsers`<br/>**Type:** metric<br/>**MCP:** Available |
+| 28-day active users | The number of distinct active users on your site or app within a 28 day period. The 28 day period includes the last day in the report's date range.<br/><br/>**Field name:** `active28DayUsers`<br/>**Type:** metric<br/>**MCP:** Available |
+| 7-day active users | The number of distinct active users on your site or app within a 7 day period. The 7 day period includes the last day in the report's date range.<br/><br/>**Field name:** `active7DayUsers`<br/>**Type:** metric<br/>**MCP:** Available |
+| Active users | The number of distinct users who visited your site or app.<br/><br/>**Field name:** `activeUsers`<br/>**Type:** metric<br/>**MCP:** Available |
+| User key event rate for purchase | The percentage of users who triggered a specific key event.<br/><br/>**Field name:** `userKeyEventRate:purchase`<br/>**Type:** metric<br/>**MCP:** Available |
+| DAU / MAU | The rolling percent of 30-day active users who are also 1-day active users. This metric is returned as a fraction; for example, 0.113 means 11.3% of 30-day active users were also 1-day active users.<br/><br/>**Field name:** `dauPerMau`<br/>**Type:** metric<br/>**MCP:** Available |
+| DAU / WAU | The rolling percent of 7-day active users who are also 1-day active users. This metric is returned as a fraction; for example, 0.082 means 8.2% of 7-day active users were also 1-day active users.<br/><br/>**Field name:** `dauPerWau`<br/>**Type:** metric<br/>**MCP:** Available |
+| First-time purchaser conversion | The percentage of active users who made their first purchase. This metric is returned as a fraction; for example, 0.092 means 9.2% of active users were first time purchasers.<br/><br/>**Field name:** `firstTimePurchaserConversionRate`<br/>**Type:** metric<br/>**MCP:** Available |
+| First time purchasers | The number of users that completed their first purchase event.<br/><br/>**Field name:** `firstTimePurchasers`<br/>**Type:** metric<br/>**MCP:** Available |
+| First-time purchasers per new user | The average number of first time purchasers per new user.<br/><br/>**Field name:** `firstTimePurchasersPerNewUser`<br/>**Type:** metric<br/>**MCP:** Available |
+| New users | The number of users who interacted with your site or launched your app for the first time (event triggered: first_open or first_visit).<br/><br/>**Field name:** `newUsers`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total purchasers | The number of users that logged purchase events for the time period selected.<br/><br/>**Field name:** `totalPurchasers`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total users | The number of distinct users who have logged at least one event, regardless of whether the site or app was in use when that event was logged.<br/><br/>**Field name:** `totalUsers`<br/>**Type:** metric<br/>**MCP:** Available |
+| User engagement | The total amount of time (in seconds) your website or app was in the foreground of users' devices.<br/><br/>**Field name:** `userEngagementDuration`<br/>**Type:** metric<br/>**MCP:** Available |
+| WAU / MAU | The rolling percent of 30-day active users who are also 7-day active users. This metric is returned as a fraction; for example, 0.234 means 23.4% of 30-day active users were also 7-day active users.<br/><br/>**Field name:** `wauPerMau`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Ecommerce
+
+| | |
+|---|---|
+| Add to carts | The number of times users added items to their shopping carts.<br/><br/>**Field name:** `addToCarts`<br/>**Type:** metric<br/>**MCP:** Available |
+| Checkouts | The number of times users started the checkout process. This metric counts the occurrence of the 'begin_checkout' event.<br/><br/>**Field name:** `checkouts`<br/>**Type:** metric<br/>**MCP:** Available |
+| Ecommerce purchases | The number of times users completed a purchase. This metric counts 'purchase' events; this metric does not count 'in_app_purchase' and subscription events.<br/><br/>**Field name:** `ecommercePurchases`<br/>**Type:** metric<br/>**MCP:** Available |
+| Gross item revenue | The total revenue from items only. Gross item revenue is the product of its price and quantity. Item revenue excludes tax and shipping values; tax & shipping values are specified at the event and not item level. Gross item revenue does not include refunds.<br/><br/>**Field name:** `grossItemRevenue`<br/>**Type:** metric<br/>**MCP:** Available |
+| Gross purchase revenue | The sum of revenue from purchases made in your app or site. Gross purchase revenue sums the revenue for these events: 'purchase', 'ecommerce_purchase', 'in_app_purchase', 'app_store_subscription_convert', and 'app_store_subscription_renew'. Purchase revenue is specified by the 'value' parameter in tagging.<br/><br/>**Field name:** `grossPurchaseRevenue`<br/>**Type:** metric<br/>**MCP:** Available |
+| Item discount amount | The monetary value of item discounts in eCommerce events. This metric is populated in tagging by the 'discount' item parameter.<br/><br/>**Field name:** `itemDiscountAmount`<br/>**Type:** metric<br/>**MCP:** Available |
+| Item-list click events | The number of times users clicked an item when it appeared in a list. This metric counts the occurrence of the 'select_item' event.<br/><br/>**Field name:** `itemListClickEvents`<br/>**Type:** metric<br/>**MCP:** Available |
+| Item list click through rate | The number of users who selected a list(s) divided by the number of users who viewed the same list(s). This metric is returned as a fraction; for example, 0.2145 means 21.45% of users who viewed a list also selected the same list.<br/><br/>**Field name:** `itemListClickThroughRate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Item-list view events | The number of times the item list was viewed. This metric counts the occurrence of the 'view_item_list' event.<br/><br/>**Field name:** `itemListViewEvents`<br/>**Type:** metric<br/>**MCP:** Available |
+| Item promotion click through rate | The number of users who selected a promotion(s) divided by the number of users who viewed the same promotion(s). This metric is returned as a fraction; for example, 0.1382 means 13.82% of users who viewed a promotion also selected the promotion.<br/><br/>**Field name:** `itemPromotionClickThroughRate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Item refund amount | Item refund amount is the total refunded transaction revenue from items only. Item refund amount is the product of price and quantity for the 'refund' event.<br/><br/>**Field name:** `itemRefundAmount`<br/>**Type:** metric<br/>**MCP:** Available |
+| Item revenue | The total revenue from purchases minus refunded transaction revenue from items only. Item revenue is the product of its price and quantity. Item revenue excludes tax and shipping values; tax & shipping values are specified at the event and not item level.<br/><br/>**Field name:** `itemRevenue`<br/>**Type:** metric<br/>**MCP:** Available |
+| Items added to cart | The number of units added to cart for a single item. This metric counts the quantity of items in 'add_to_cart' events.<br/><br/>**Field name:** `itemsAddedToCart`<br/>**Type:** metric<br/>**MCP:** Available |
+| Items checked out | The number of units checked out for a single item. This metric counts the quantity of items in 'begin_checkout' events.<br/><br/>**Field name:** `itemsCheckedOut`<br/>**Type:** metric<br/>**MCP:** Available |
+| Items clicked in list | The number of units clicked in list for a single item. This metric counts the quantity of items in 'select_item' events.<br/><br/>**Field name:** `itemsClickedInList`<br/>**Type:** metric<br/>**MCP:** Available |
+| Items clicked in promotion | The number of units clicked in promotion for a single item. This metric counts the quantity of items in 'select_promotion' events.<br/><br/>**Field name:** `itemsClickedInPromotion`<br/>**Type:** metric<br/>**MCP:** Available |
+| Items purchased | The number of units for a single item included in purchase events. This metric counts the quantity of items in purchase events.<br/><br/>**Field name:** `itemsPurchased`<br/>**Type:** metric<br/>**MCP:** Available |
+| Items viewed | The number of units viewed for a single item. This metric counts the quantity of items in 'view_item' events.<br/><br/>**Field name:** `itemsViewed`<br/>**Type:** metric<br/>**MCP:** Available |
+| Items viewed in list | The number of units viewed in list for a single item. This metric counts the quantity of items in 'view_item_list' events.<br/><br/>**Field name:** `itemsViewedInList`<br/>**Type:** metric<br/>**MCP:** Available |
+| Items viewed in promotion | The number of units viewed in promotion for a single item. This metric counts the quantity of items in 'view_promotion' events.<br/><br/>**Field name:** `itemsViewedInPromotion`<br/>**Type:** metric<br/>**MCP:** Available |
+| Item view events | The number of times the item details were viewed. The metric counts the occurrence of the 'view_item' event.<br/><br/>**Field name:** `itemViewEvents`<br/>**Type:** metric<br/>**MCP:** Available |
+| Promotion clicks | The number of times an item promotion was clicked. This metric counts the occurrence of the 'select_promotion' event.<br/><br/>**Field name:** `promotionClicks`<br/>**Type:** metric<br/>**MCP:** Available |
+| Promotion views | The number of times an item promotion was viewed. This metric counts the occurrence of the 'view_promotion' event.<br/><br/>**Field name:** `promotionViews`<br/>**Type:** metric<br/>**MCP:** Available |
+| Purchase revenue | The sum of revenue from purchases minus refunded transaction revenue made in your app or site. Purchase revenue sums the revenue for these events: 'purchase', 'ecommerce_purchase', 'in_app_purchase', 'app_store_subscription_convert', and 'app_store_subscription_renew'. Purchase revenue is specified by the 'value' parameter in tagging.<br/><br/>**Field name:** `purchaseRevenue`<br/>**Type:** metric<br/>**MCP:** Available |
+| Refund amount | The total refunded transaction revenues. Refund amount sums refunded revenue for the 'refund' and 'app_store_refund' events.<br/><br/>**Field name:** `refundAmount`<br/>**Type:** metric<br/>**MCP:** Available |
+| Shipping amount | Shipping amount associated with a transaction. Populated by the 'shipping' event parameter.<br/><br/>**Field name:** `shippingAmount`<br/>**Type:** metric<br/>**MCP:** Available |
+| Tax amount | Tax amount associated with a transaction. Populated by the 'tax' event parameter.<br/><br/>**Field name:** `taxAmount`<br/>**Type:** metric<br/>**MCP:** Available |
+| Transactions | The count of transaction events with purchase revenue. Transaction events are in_app_purchase, ecommerce_purchase, purchase, app_store_subscription_renew, app_store_subscription_convert, and refund.<br/><br/>**Field name:** `transactions`<br/>**Type:** metric<br/>**MCP:** Available |
+| Transactions per purchaser | The average numer of transactions per purchaser.<br/><br/>**Field name:** `transactionsPerPurchaser`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Publisher
+
+| | |
+|---|---|
+| Ad unit exposure | The time that an ad unit was exposed to a user, in milliseconds.<br/><br/>**Field name:** `adUnitExposure`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Other
+
+| | |
+|---|---|
+| Ads clicks | Total number of times users have clicked on an ad to reach the property. Includes clicks from linked integrations like linked Search Ads 360 advertisers. Also includes uploaded clicks from data import.<br/><br/>**Field name:** `advertiserAdClicks`<br/>**Type:** metric<br/>**MCP:** Available |
+| Ads cost | The total amount you paid for your ads. Includes costs from linked integrations like linked Google Ads accounts. Also includes uploaded cost from data import; to learn more, see [Import cost data](https://support.google.com/analytics/answer/10071305).<br/><br/>**Field name:** `advertiserAdCost`<br/>**Type:** metric<br/>**MCP:** Available |
+| Ads cost per click | Ads cost per click is ad cost divided by ad clicks and is often abbreviated CPC.<br/><br/>**Field name:** `advertiserAdCostPerClick`<br/>**Type:** metric<br/>**MCP:** Available |
+| Cost per conversion | Cost per conversion is ad cost divided by conversions.<br/><br/>**Field name:** `advertiserAdCostPerConversion`<br/>**Type:** metric<br/>**MCP:** Available |
+| Ads impressions | The total number of impressions. Includes impressions from linked integrations like linked Display & Video 360 advertisers. Also includes uploaded impressions from data import.<br/><br/>**Field name:** `advertiserAdImpressions`<br/>**Type:** metric<br/>**MCP:** Available |
+| Cart-to-view rate | The number of users who added a product(s) to their cart divided by the number of users who viewed the same product(s). This metric is returned as a fraction; for example, 0.1132 means 11.32% of users who viewed a product also added the same product to their cart.<br/><br/>**Field name:** `cartToViewRate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Crash-affected users | The number of users that logged a crash in this row of the report. For example if the report is time series by date, this metrics reports total users with at least one crash on this date. Crashes are events with the name "app_exception".<br/><br/>**Field name:** `crashAffectedUsers`<br/>**Type:** metric<br/>**MCP:** Available |
+| Crash-free users rate | The number of users without crash events (in this row of the report) divided by the total number of users. This metric is returned as a fraction; for example, 0.9243 means 92.43% of users were crash-free.<br/><br/>**Field name:** `crashFreeUsersRate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Organic Google Search average position | The average ranking of your website URLs for the query reported from Search Console. For example, if your site's URL appears at position 3 for one query and position 7 for another query, the average position would be 5 (3+7/2). This metric requires an active Search Console link.<br/><br/>**Field name:** `organicGoogleSearchAveragePosition`<br/>**Type:** metric<br/>**MCP:** Available |
+| Organic Google Search clicks | The number of organic Google Search clicks reported from Search Console.  This metric requires an active Search Console link.<br/><br/>**Field name:** `organicGoogleSearchClicks`<br/>**Type:** metric<br/>**MCP:** Available |
+| Organic Google Search click through rate | The organic Google Search click through rate reported from Search Console. Click through rate is clicks per impression. This metric is returned as a fraction; for example, 0.0588 means about 5.88% of impressions resulted in a click. This metric requires an active Search Console link.<br/><br/>**Field name:** `organicGoogleSearchClickThroughRate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Organic Google Search impressions | The number of organic Google Search impressions reported from Search Console. This metric requires an active Search Console link.<br/><br/>**Field name:** `organicGoogleSearchImpressions`<br/>**Type:** metric<br/>**MCP:** Available |
+| Publisher ad clicks | The number of ad_click events.<br/><br/>**Field name:** `publisherAdClicks`<br/>**Type:** metric<br/>**MCP:** Available |
+| Publisher ad impressions | The number of ad_impression events.<br/><br/>**Field name:** `publisherAdImpressions`<br/>**Type:** metric<br/>**MCP:** Available |
+| Purchaser conversion | The percentage of active users who made 1 or more purchase transactions. This metric is returned as a fraction; for example, 0.412 means 41.2% of users were purchasers.<br/><br/>**Field name:** `purchaserConversionRate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Purchase-to-view rate | The number of users who purchased a product(s) divided by the number of users who viewed the same product(s). This metric is returned as a fraction; for example, 0.128 means 12.8% of users that viewed a product(s) also purchased the same product(s).<br/><br/>**Field name:** `purchaseToViewRate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Return on ad spend | Return On Ad Spend (ROAS) is total revenue divided by advertiser ad cost.<br/><br/>**Field name:** `returnOnAdSpend`<br/>**Type:** metric<br/>**MCP:** Available |
+| Scrolled users | The number of unique users who scrolled down at least 90% of the page.<br/><br/>**Field name:** `scrolledUsers`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total ad revenue | The total advertising revenue from both Admob and third-party sources.<br/><br/>**Field name:** `totalAdRevenue`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Revenue
+
+| | |
+|---|---|
+| Average purchase revenue | The average purchase revenue in the transaction group of events.<br/><br/>**Field name:** `averagePurchaseRevenue`<br/>**Type:** metric<br/>**MCP:** Available |
+| ARPPU | Average revenue per paying user (ARPPU) is the total purchase revenue per active user that logged a purchase event. The summary metric is for the time period selected.<br/><br/>**Field name:** `averagePurchaseRevenuePerPayingUser`<br/>**Type:** metric<br/>**MCP:** Available |
+| Average purchase revenue per user | The average purchase revenue per active user is the total purchase revenue per active user that logged any event. The summary metric is for the time period selected.<br/><br/>**Field name:** `averagePurchaseRevenuePerUser`<br/>**Type:** metric<br/>**MCP:** Available |
+| ARPU | Average revenue per active user (ARPU). The summary metric is for the time period selected. ARPU uses Total Revenue and includes AdMob estimated earnings.<br/><br/>**Field name:** `averageRevenuePerUser`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total revenue | The sum of revenue from purchases, subscriptions, and advertising (Purchase revenue plus Subscription revenue plus Ad revenue) minus refunded transaction revenue.<br/><br/>**Field name:** `totalRevenue`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Session
+
+| | |
+|---|---|
+| Average session duration | The average duration (in seconds) of users' sessions.<br/><br/>**Field name:** `averageSessionDuration`<br/>**Type:** metric<br/>**MCP:** Available |
+| Bounce rate | The percentage of sessions that were not engaged ((Sessions Minus Engaged sessions) divided by Sessions). This metric is returned as a fraction; for example, 0.2761 means 27.61% of sessions were bounces.<br/><br/>**Field name:** `bounceRate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Engaged sessions | The number of sessions that lasted longer than 10 seconds, or had a conversion event, or had 2 or more screen views.<br/><br/>**Field name:** `engagedSessions`<br/>**Type:** metric<br/>**MCP:** Available |
+| Engagement rate | The percentage of engaged sessions (Engaged sessions divided by Sessions). This metric is returned as a fraction; for example, 0.7239 means 72.39% of sessions were engaged sessions.<br/><br/>**Field name:** `engagementRate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Session conversion rate | The percentage of sessions in which any conversion event was triggered.<br/><br/>**Field name:** `sessionConversionRate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Session conversion rate for purchase | The percentage of sessions in which a specific conversion event was triggered.<br/><br/>**Field name:** `sessionConversionRate:purchase`<br/>**Type:** metric<br/>**MCP:** Available |
+| Sessions | The number of sessions that began on your site or app (event triggered: session_start).<br/><br/>**Field name:** `sessions`<br/>**Type:** metric<br/>**MCP:** Available |
+| Sessions per user | The average number of sessions per user (Sessions divided by Active Users).<br/><br/>**Field name:** `sessionsPerUser`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Cohort
+
+| | |
+|---|---|
+| Cohort active users | The number of users in the cohort who are active in the time window corresponding to the cohort nth day/week/month. For example for the row where cohortNthWeek = 0001, this metric is the number of users (in the cohort) who are active in week 1.<br/><br/>**Field name:** `cohortActiveUsers`<br/>**Type:** metric<br/>**MCP:** Available |
+| Cohort total users | The total number of users in the cohort. This metric is the same value in every row of the report for each cohort. Because cohorts are defined by a shared acquisition date, cohortTotalUsers is the same as cohortActiveUsers for the cohort's selection date range. For report rows later than the ochort's selection range, it is typical for cohortActiveUsers to be smaller than cohortTotalUsers. This difference represents users from the cohort that were not active for the later date. cohortTotalUsers is commonly used in the metric expression cohortActiveUsers/cohortTotalUsers to compute a user retention fraction for the cohort. The relationship between activeUsers and totalUsers is not equivalent to the relationship between cohortActiveUsers and cohortTotalUsers.<br/><br/>**Field name:** `cohortTotalUsers`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Event
+
+| | |
+|---|---|
+| Key events | The count of conversion events. Events are marked as conversions at collection time; changes to an event's conversion marking apply going forward. You can mark any event as a conversion in Google Analytics, and some events (i.e. first_open, purchase) are marked as conversions by default. To learn more, see &lt;https://support.google.com/analytics/answer/9267568&gt;.<br/><br/>**Field name:** `keyEvents`<br/>**Type:** metric<br/>**MCP:** Available |
+| Conversions | The count of conversion events. Events are marked as conversions at collection time; changes to an event's conversion marking apply going forward. You can mark any event as a conversion in Google Analytics, and some events (i.e. first_open, purchase) are marked as conversions by default. To learn more, see &lt;https://support.google.com/analytics/answer/9267568&gt;.<br/><br/>**Field name:** `conversions`<br/>**Type:** metric<br/>**MCP:** Available |
+| User key event rate | The count of conversion events. Events are marked as conversions at collection time; changes to an event's conversion marking apply going forward. You can mark any event as a conversion in Google Analytics, and some events (i.e. first_open, purchase) are marked as conversions by default. To learn more, see &lt;https://support.google.com/analytics/answer/9267568&gt;.<br/><br/>**Field name:** `userKeyEventRate`<br/>**Type:** metric<br/>**MCP:** Available |
+| User Conversion rate | The count of conversion events. Events are marked as conversions at collection time; changes to an event's conversion marking apply going forward. You can mark any event as a conversion in Google Analytics, and some events (i.e. first_open, purchase) are marked as conversions by default. To learn more, see &lt;https://support.google.com/analytics/answer/9267568&gt;.<br/><br/>**Field name:** `userConversionRate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Event count | The count of events.<br/><br/>**Field name:** `eventCount`<br/>**Type:** metric<br/>**MCP:** Available |
+| Event count per user | The average number of events per user (Event count divided by Active users).<br/><br/>**Field name:** `eventCountPerUser`<br/>**Type:** metric<br/>**MCP:** Available |
+| Events per session | The average number of events per session (Event count divided by Sessions).<br/><br/>**Field name:** `eventsPerSession`<br/>**Type:** metric<br/>**MCP:** Available |
+| Event value | The sum of the event parameter named 'value'.<br/><br/>**Field name:** `eventValue`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Page / Screen
+
+| | |
+|---|---|
+| Views | The number of app screens or web pages your users viewed. Repeated views of a single page or screen are counted. (screen_view + page_view events).<br/><br/>**Field name:** `screenPageViews`<br/>**Type:** metric<br/>**MCP:** Available |
+| Views per session | The number of app screens or web pages your users viewed per session. Repeated views of a single page or screen are counted. (screen_view + page_view events) / sessions.<br/><br/>**Field name:** `screenPageViewsPerSession`<br/>**Type:** metric<br/>**MCP:** Available |
+| Views per user | The number of app screens or web pages your users viewed per active user. Repeated views of a single page or screen are counted. (screen_view + page_view events) / active users.<br/><br/>**Field name:** `screenPageViewsPerUser`<br/>**Type:** metric<br/>**MCP:** Available |
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Fields catalog" href="/en/">
+    Browse all sources
+  </Card>
+  <Card title="Instagram" href="/en/instagram/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Facebook Pages" href="/en/facebook/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Shopify" href="/en/shopify/metrics">
+    Metrics & Dimensions
+  </Card>
+</CardGroup>

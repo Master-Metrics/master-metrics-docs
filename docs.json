@@ -124,6 +124,13 @@
                   "google-search-console/metrics",
                   "google-search-console/dimensions"
                 ]
+              },
+              {
+                "group": "Google Analytics 4",
+                "pages": [
+                  "ga4/metrics",
+                  "ga4/dimensions"
+                ]
               }
             ]
           },
@@ -309,6 +316,13 @@
                   "en/google-search-console/metrics",
                   "en/google-search-console/dimensions"
                 ]
+              },
+              {
+                "group": "Google Analytics 4",
+                "pages": [
+                  "en/ga4/metrics",
+                  "en/ga4/dimensions"
+                ]
               }
             ]
           },
@@ -493,6 +507,13 @@
                 "pages": [
                   "pt/google-search-console/metrics",
                   "pt/google-search-console/dimensions"
+                ]
+              },
+              {
+                "group": "Google Analytics 4",
+                "pages": [
+                  "pt/ga4/metrics",
+                  "pt/ga4/dimensions"
                 ]
               }
             ]

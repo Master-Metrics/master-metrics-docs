@@ -1,0 +1,244 @@
+---
+title: "Google Analytics 4: Dimensions"
+description: "Complete reference of the Google Analytics 4 dimensions in Master Metrics"
+---
+
+<Info>**Last updated:** 2026-11-12</Info>
+
+This reference covers the 148 dimensions available for Google Analytics 4 in Master Metrics. Use it to understand how you can segment your data and how each field is named.
+
+**Available in:** Dashboards · Reports · AI assistant · MCP
+
+## Dimensions
+
+Dimensions are the attributes you can use to segment and group your Google Analytics 4 data.
+
+### Publisher
+
+| | |
+|---|---|
+| Ad unit | The name you chose to describe this Ad unit. Ad units are containers you place in your apps to show ads to users.<br/><br/>**Field name:** `adUnitName`<br/>**Type:** dimension |
+
+### Platform / Device
+
+| | |
+|---|---|
+| App version | The app's versionName (Android) or short bundle version (iOS).<br/><br/>**Field name:** `appVersion`<br/>**Type:** dimension |
+| Browser | The browsers used to view your website.<br/><br/>**Field name:** `browser`<br/>**Type:** dimension |
+| Device category | The type of device: Desktop, Tablet, or Mobile.<br/><br/>**Field name:** `deviceCategory`<br/>**Type:** dimension |
+| Device model | The mobile device model (example: iPhone 10,6).<br/><br/>**Field name:** `deviceModel`<br/>**Type:** dimension |
+| Language | The language setting of the user's browser or device. e.g. English<br/><br/>**Field name:** `language`<br/>**Type:** dimension |
+| Language code | The language setting (ISO 639) of the user's browser or device. e.g. 'en-us'<br/><br/>**Field name:** `languageCode`<br/>**Type:** dimension |
+| Device brand | Manufacturer or branded name (examples: Samsung, HTC, Verizon, T-Mobile).<br/><br/>**Field name:** `mobileDeviceBranding`<br/>**Type:** dimension |
+| Device | The branded device name (examples: Galaxy S10 or P30 Pro).<br/><br/>**Field name:** `mobileDeviceMarketingName`<br/>**Type:** dimension |
+| Mobile model | The mobile device model name (examples: iPhone X or SM-G950F).<br/><br/>**Field name:** `mobileDeviceModel`<br/>**Type:** dimension |
+| Operating system | The operating systems used by visitors to your app or website. Includes desktop and mobile operating systems such as Windows and Android.<br/><br/>**Field name:** `operatingSystem`<br/>**Type:** dimension |
+| Platform | The platform on which your app or website ran; for example, web, iOS, or Android. To determine a stream's type in a report, use both platform and streamId.<br/><br/>**Field name:** `platform`<br/>**Type:** dimension |
+| Platform / device category | The platform and type of device on which your website or mobile app ran. (example: Android / mobile)<br/><br/>**Field name:** `platformDeviceCategory`<br/>**Type:** dimension |
+
+### User
+
+| | |
+|---|---|
+| Audience name | The given name of an Audience. Users are reported in the audiences to which they belonged during the report's date range. Current user behavior does not affect historical audience membership in reports.<br/><br/>**Field name:** `audienceName`<br/>**Type:** dimension |
+| Audience resource name | The resource name of this audience. Resource names contain both collection & resource identifiers to uniquely identify a resource; to learn more, see https://google.aip.dev/122.<br/><br/>**Field name:** `audienceResourceName`<br/>**Type:** dimension |
+| New / returning | New users have 0 previous sessions, and returning users have 1 or more previous sessions. This dimension returns two values: 'new' or 'returning'.<br/><br/>**Field name:** `newVsReturning`<br/>**Type:** dimension |
+
+### Demographics
+
+| | |
+|---|---|
+| Interests | Interests demonstrated by users who are higher in the shopping funnel. Users can be counted in multiple interest categories. For example, 'Shoppers', 'Lifestyles & Hobbies/Pet Lovers', or 'Travel/Travel Buffs/Beachbound Travelers'.<br/><br/>**Field name:** `brandingInterest`<br/>**Type:** dimension |
+| Age | User age brackets.<br/><br/>**Field name:** `userAgeBracket`<br/>**Type:** dimension |
+| Gender | User gender.<br/><br/>**Field name:** `userGender`<br/>**Type:** dimension |
+
+### Attribution
+
+| | |
+|---|---|
+| Campaign ID | The identifier of the marketing campaign. Present only for conversion events. Includes Google Ads Campaigns, Manual Campaigns, & other Campaigns.<br/><br/>**Field name:** `campaignId`<br/>**Type:** dimension |
+| Campaign | The name of the marketing campaign. Present only for conversion events. Includes Google Ads Campaigns, Manual Campaigns, & other Campaigns.<br/><br/>**Field name:** `campaignName`<br/>**Type:** dimension |
+| Default channel group | The conversion's default channel group is based primarily on source and medium. An enumeration which includes 'Direct', 'Organic Search', 'Paid Social', 'Organic Social', 'Email', 'Affiliates', 'Referral', 'Paid Search', 'Video', and 'Display'.<br/><br/>**Field name:** `defaultChannelGroup`<br/>**Type:** dimension |
+| Google Ads account name | The Account name from Google Ads for the campaign that led to the conversion event. Corresponds to customer.descriptive_name in the Google Ads API.<br/><br/>**Field name:** `googleAdsAccountName`<br/>**Type:** dimension |
+| Google Ads ad group ID | The ad group id attributed to the conversion event.<br/><br/>**Field name:** `googleAdsAdGroupId`<br/>**Type:** dimension |
+| Google Ads ad group name | The ad group name attributed to the conversion event.<br/><br/>**Field name:** `googleAdsAdGroupName`<br/>**Type:** dimension |
+| Google Ads ad network type | The advertising network type of the conversion. An enumeration which includes 'Google search', 'Search partners', 'Google Display Network', 'Youtube Search', 'Youtube Videos', 'Cross-network', 'Social', and '(universal campaign)'.<br/><br/>**Field name:** `googleAdsAdNetworkType`<br/>**Type:** dimension |
+| Google Ads campaign ID | The campaign ID for the Google Ads campaign attributed to the conversion event.<br/><br/>**Field name:** `googleAdsCampaignId`<br/>**Type:** dimension |
+| Google Ads campaign | The campaign name for the Google Ads campaign attributed to the conversion event.<br/><br/>**Field name:** `googleAdsCampaignName`<br/>**Type:** dimension |
+| Google Ads campaign type | The campaign type for the Google Ads campaign attributed to the conversion event. Campaign types determine where customers see your ads and the settings and options available to you in Google Ads. Campaign type is an enumeration that includes: Search, Display, Shopping, Video, Demand Gen, App, Smart, Hotel, Local, and Performance Max. To learn more, see &lt;https://support.google.com/google-ads/answer/2567043&gt;.<br/><br/>**Field name:** `googleAdsCampaignType`<br/>**Type:** dimension |
+| Google Ads customer ID | The Customer ID from Google Ads for the campaign that led to conversion event. Customer IDs in Google Ads uniquely identify Google Ads accounts.<br/><br/>**Field name:** `googleAdsCustomerId`<br/>**Type:** dimension |
+| Google Ads keyword text | The matched keyword that led to the conversion event. Keywords are words or phrases describing your product or service that you choose to get your ad in front of the right customers. To learn more about Keywords, see &lt;https://support.google.com/google-ads/answer/6323&gt;.<br/><br/>**Field name:** `googleAdsKeyword`<br/>**Type:** dimension |
+| Manual ad content | The ad content attributed to the conversion event. Populated by the utm_content parameter.<br/><br/>**Field name:** `manualAdContent`<br/>**Type:** dimension |
+| Manual term | The term attributed to the conversion event. Populated by the utm_term parameter.<br/><br/>**Field name:** `manualTerm`<br/>**Type:** dimension |
+| Medium | The medium attributed to the conversion event.<br/><br/>**Field name:** `medium`<br/>**Type:** dimension |
+| Source | The source attributed to the conversion event.<br/><br/>**Field name:** `source`<br/>**Type:** dimension |
+| Source / medium | The combined values of the dimensions 'source' and 'medium'.<br/><br/>**Field name:** `sourceMedium`<br/>**Type:** dimension |
+| Source platform | The source platform of the conversion event's campaign. Please do not depend on this field returning 'Manual' for traffic that uses UTMs; this field will update from returning 'Manual' to returning '(not set)' for an upcoming feature launch.<br/><br/>**Field name:** `sourcePlatform`<br/>**Type:** dimension |
+
+### Other
+
+| | |
+|---|---|
+| Character | The player character in a game for an event. Populated by the event parameter 'character'.<br/><br/>**Field name:** `character`<br/>**Type:** dimension |
+| File extension | The extension of the downloaded file (for example, 'pdf' or 'txt'). Automatically populated if Enhanced Measurement is enabled. Populated by the event parameter 'file_extension'.<br/><br/>**Field name:** `fileExtension`<br/>**Type:** dimension |
+| File name | The page path of the downloaded file (for example, '/menus/dinner-menu.pdf'). Automatically populated if Enhanced Measurement is enabled. Populated by the event parameter 'file_name'.<br/><br/>**Field name:** `fileName`<br/>**Type:** dimension |
+| Group ID | The player group ID in a game for an event. Populated by the event parameter 'group_id'.<br/><br/>**Field name:** `groupId`<br/>**Type:** dimension |
+| Level | The player's level in a game. Populated by the event parameter 'level'.<br/><br/>**Field name:** `level`<br/>**Type:** dimension |
+| Link classes | The HTML class attribute for an outbound link. For example if a user clicks a link '&lt;a class="center" href="www.youtube.com"&gt;', this dimension will return 'center'. Automatically populated if Enhanced Measurement is enabled. Populated by the event parameter 'link_classes'.<br/><br/>**Field name:** `linkClasses`<br/>**Type:** dimension |
+| Link domain | The destination domain of the outbound link. For example if a user clicks a link '&lt;a href="www.youtube.com"&gt;', this dimension will return 'youtube.com'. Automatically populated if Enhanced Measurement is enabled. Populated by the event parameter 'link_domain'.<br/><br/>**Field name:** `linkDomain`<br/>**Type:** dimension |
+| Link ID | The HTML id attribute for an outbound link or file download. For example if a user clicks a link '&lt;a id="socialLinks" href="www.youtube.com"&gt;', this dimension will return 'socialLinks'. Automatically populated if Enhanced Measurement is enabled. Populated by the event parameter 'link_id'.<br/><br/>**Field name:** `linkId`<br/>**Type:** dimension |
+| Link text | The link text of the file download. Automatically populated if Enhanced Measurement is enabled. Populated by the event parameter 'link_text'.<br/><br/>**Field name:** `linkText`<br/>**Type:** dimension |
+| Link URL | The full url for an outbound link or file download. For example if a user clicks a link '&lt;a href="https://www.youtube.com/results?search_query=analytics"&gt;', this dimension will return 'https://www.youtube.com/results?search_query=analytics'. Automatically populated if Enhanced Measurement is enabled. Populated by the event parameter 'link_url'.<br/><br/>**Field name:** `linkUrl`<br/>**Type:** dimension |
+| Method | The method by which an event was triggered. Populated by the event parameter 'method'.<br/><br/>**Field name:** `method`<br/>**Type:** dimension |
+| Outbound | Returns 'true' if the link lead to a site is not a part of the property’s domain. Automatically populated if Enhanced Measurement is enabled. Populated by the event parameter 'outbound'.<br/><br/>**Field name:** `outbound`<br/>**Type:** dimension |
+| Percent scrolled | The percentage down the page that the user has scrolled (for example, '90'). Automatically populated if Enhanced Measurement is enabled. Populated by the event parameter 'percent_scrolled'.<br/><br/>**Field name:** `percentScrolled`<br/>**Type:** dimension |
+| Search term | The term searched by the user. For example if the user visits '/some-page.html?q=some-term', this dimension returns 'some-term'. Automatically populated if Enhanced Measurement is enabled. Populated by the event parameter 'search_term'.<br/><br/>**Field name:** `searchTerm`<br/>**Type:** dimension |
+| Video provider | The source of the video (for example, 'youtube'). Automatically populated for embedded videos if Enhanced Measurement is enabled. Populated by the event parameter 'video_provider'.<br/><br/>**Field name:** `videoProvider`<br/>**Type:** dimension |
+
+### Geography
+
+| | |
+|---|---|
+| City | The city from which the user activity originated.<br/><br/>**Field name:** `city`<br/>**Type:** dimension |
+| Continent | The continent from which the user activity originated. For example, 'Americas' or 'Asia'.<br/><br/>**Field name:** `continent`<br/>**Type:** dimension |
+| Continent ID | The geographic ID of the continent from which the user activity originated, derived from their IP address.<br/><br/>**Field name:** `continentId`<br/>**Type:** dimension |
+| Country | The country from which the user activity originated.<br/><br/>**Field name:** `country`<br/>**Type:** dimension |
+| Country ID | The geographic ID of the country from which the user activity originated, derived from their IP address. Formatted according to ISO 3166-1 alpha-2 standard.<br/><br/>**Field name:** `countryId`<br/>**Type:** dimension |
+| Region | The geographic region from which the user activity originated, derived from their IP address.<br/><br/>**Field name:** `region`<br/>**Type:** dimension |
+
+### Page / Screen
+
+| | |
+|---|---|
+| Content group | A category that applies to items of published content. Populated by the event parameter 'content_group'.<br/><br/>**Field name:** `contentGroup`<br/>**Type:** dimension |
+| Content ID | The identifier of the selected content. Populated by the event parameter 'content_id'.<br/><br/>**Field name:** `contentId`<br/>**Type:** dimension |
+| Content type | The category of the selected content. Populated by the event parameter 'content_type'.<br/><br/>**Field name:** `contentType`<br/>**Type:** dimension |
+| Full page URL | The hostname, page path, and query string for web pages visited; for example, the fullPageUrl portion of https://www.example.com/store/contact-us?query_string=true is www.example.com/store/contact-us?query_string=true.<br/><br/>**Field name:** `fullPageUrl`<br/>**Type:** dimension |
+| Hostname | Includes the subdomain and domain names of a URL; for example, the Host Name of www.example.com/contact.html is www.example.com.<br/><br/>**Field name:** `hostName`<br/>**Type:** dimension |
+| Landing page + query string | The page path associated with the first pageview in a session.<br/><br/>**Field name:** `landingPage`<br/>**Type:** dimension |
+| Landing page + query string | The page path + query string associated with the first pageview in a session.<br/><br/>**Field name:** `landingPagePlusQueryString`<br/>**Type:** dimension |
+| Page location | The protocol, hostname, page path, and query string for web pages visited; for example, the pageLocation portion of https://www.example.com/store/contact-us?query_string=true is https://www.example.com/store/contact-us?query_string=true. Populated by the event parameter 'page_location'.<br/><br/>**Field name:** `pageLocation`<br/>**Type:** dimension |
+| Page path | The portion of the URL between the hostname and query string for web pages visited; for example, the pagePath portion of https://www.example.com/store/contact-us?query_string=true is /store/contact-us.<br/><br/>**Field name:** `pagePath`<br/>**Type:** dimension |
+| Page path + query string | The portion of the URL following the hostname for web pages visited; for example, the pagePathPlusQueryString portion of https://www.example.com/store/contact-us?query_string=true is /store/contact-us?query_string=true.<br/><br/>**Field name:** `pagePathPlusQueryString`<br/>**Type:** dimension |
+| Page referrer | The full referring URL including the hostname and path. This referring URL is the user's previous URL and can be this website's domain or other domains. Populated by the event parameter 'page_referrer'.<br/><br/>**Field name:** `pageReferrer`<br/>**Type:** dimension |
+| Page title | The web page titles used on your site.<br/><br/>**Field name:** `pageTitle`<br/>**Type:** dimension |
+| Page title and screen name | The page title (web) or screen name (app) on which the event was logged.<br/><br/>**Field name:** `unifiedScreenName`<br/>**Type:** dimension |
+
+### Ecommerce
+
+| | |
+|---|---|
+| Currency | The local currency code (based on ISO 4217 standard) of the eCommerce event. For example, 'USD' or 'GBP'. Currency is specified in tagging by the 'currency' parameter. Businesses that transact in more than one currency can specify a local currency code when sending eCommerce events to Analytics, and this dimension shows those currencies. To Learn more, See [Currency reference](https://support.google.com/analytics/answer/9796179).<br/><br/>**Field name:** `currencyCode`<br/>**Type:** dimension |
+| Item affiliation | The name or code of the affiliate (partner/vendor; if any) associated with an individual item. Populated by the 'affiliation' item parameter.<br/><br/>**Field name:** `itemAffiliation`<br/>**Type:** dimension |
+| Item brand | Brand name of the item.<br/><br/>**Field name:** `itemBrand`<br/>**Type:** dimension |
+| Item category | The hierarchical category in which the item is classified. For example, in Apparel/Mens/Summer/Shirts/T-shirts, Apparel is the item category.<br/><br/>**Field name:** `itemCategory`<br/>**Type:** dimension |
+| Item category 2 | The hierarchical category in which the item is classified. For example, in Apparel/Mens/Summer/Shirts/T-shirts, Mens is the item category 2.<br/><br/>**Field name:** `itemCategory2`<br/>**Type:** dimension |
+| Item category 3 | The hierarchical category in which the item is classified. For example, in Apparel/Mens/Summer/Shirts/T-shirts, Summer is the item category 3.<br/><br/>**Field name:** `itemCategory3`<br/>**Type:** dimension |
+| Item category 4 | The hierarchical category in which the item is classified. For example, in Apparel/Mens/Summer/Shirts/T-shirts, Shirts is the item category 4.<br/><br/>**Field name:** `itemCategory4`<br/>**Type:** dimension |
+| Item category 5 | The hierarchical category in which the item is classified. For example, in Apparel/Mens/Summer/Shirts/T-shirts, T-shirts is the item category 5.<br/><br/>**Field name:** `itemCategory5`<br/>**Type:** dimension |
+| Item ID | The ID of the item.<br/><br/>**Field name:** `itemId`<br/>**Type:** dimension |
+| Item list ID | The ID of the item list.<br/><br/>**Field name:** `itemListId`<br/>**Type:** dimension |
+| Item list name | The name of the item list.<br/><br/>**Field name:** `itemListName`<br/>**Type:** dimension |
+| Item list position | The position of an item (e.g., a product you sell) in a list. This dimension is populated in tagging by the 'index' parameter in the items array.<br/><br/>**Field name:** `itemListPosition`<br/>**Type:** dimension |
+| Item location ID | The physical location associated with the item (e.g. the physical store location). It's recommended to use the [Google Place ID](https://developers.google.com/maps/documentation/places/web-service/place-id) that corresponds to the associated item. A custom location ID can also be used. This field is populated in tagging by the 'location_id' parameter in the items array.<br/><br/>**Field name:** `itemLocationID`<br/>**Type:** dimension |
+| Item name | The name of the item.<br/><br/>**Field name:** `itemName`<br/>**Type:** dimension |
+| Item promotion creative name | The name of the item-promotion creative.<br/><br/>**Field name:** `itemPromotionCreativeName`<br/>**Type:** dimension |
+| Item promotion creative slot | The name of the promotional creative slot associated with the item. This dimension can be specified in tagging by the 'creative_slot' parameter at the event or item level. If the parameter is specified at both the event & item level, the item-level parameter is used.<br/><br/>**Field name:** `itemPromotionCreativeSlot`<br/>**Type:** dimension |
+| Item promotion ID | The ID of the item promotion.<br/><br/>**Field name:** `itemPromotionId`<br/>**Type:** dimension |
+| Item promotion name | The name of the promotion for the item.<br/><br/>**Field name:** `itemPromotionName`<br/>**Type:** dimension |
+| Item variant | The specific variation of a product. e.g., XS, S, M, L for size; or Red, Blue, Green, Black for color. Populated by the 'item_variant' parameter.<br/><br/>**Field name:** `itemVariant`<br/>**Type:** dimension |
+| Order coupon | Code for the order-level coupon.<br/><br/>**Field name:** `orderCoupon`<br/>**Type:** dimension |
+
+### Time
+
+| | |
+|---|---|
+| Date | The date of the event, formatted as YYYYMMDD.<br/><br/>**Field name:** `date`<br/>**Type:** dimension |
+| Day | The day of the month, a two-digit number from 01 to 31.<br/><br/>**Field name:** `day`<br/>**Type:** dimension |
+| Day of week | The integer day of the week. It returns values in the range [0,6] with Sunday as the first day of the week.<br/><br/>**Field name:** `dayOfWeek`<br/>**Type:** dimension |
+| Day of week name | The day of the week in English. This dimension has values of Sunday, Monday, etc.<br/><br/>**Field name:** `dayOfWeekName`<br/>**Type:** dimension |
+| Hour | The two-digit hour of the day that the event was logged. This dimension ranges from 0-23 and is reported in your property's timezone.<br/><br/>**Field name:** `hour`<br/>**Type:** dimension |
+| ISO week of the year | ISO week number, where each week starts on Monday. For details, see http://en.wikipedia.org/wiki/ISO_week_date. Example values include 01, 02, & 53.<br/><br/>**Field name:** `isoWeek`<br/>**Type:** dimension |
+| ISO year | The ISO year of the event. For details, see http://en.wikipedia.org/wiki/ISO_week_date. Example values include 2022 & 2023.<br/><br/>**Field name:** `isoYear`<br/>**Type:** dimension |
+| Minute | The two-digit minute of the hour that the event was logged. This dimension ranges from 0-59 and is reported in your property's timezone.<br/><br/>**Field name:** `minute`<br/>**Type:** dimension |
+| Month | The month of the event, a two digit integer from 01 to 12.<br/><br/>**Field name:** `month`<br/>**Type:** dimension |
+| Nth day | The number of days since the start of the date range.<br/><br/>**Field name:** `nthDay`<br/>**Type:** dimension |
+| Nth hour | The number of hours since the start of the date range. The starting hour is 0000.<br/><br/>**Field name:** `nthHour`<br/>**Type:** dimension |
+| Nth minute | The number of minutes since the start of the date range. The starting minute is 0000.<br/><br/>**Field name:** `nthMinute`<br/>**Type:** dimension |
+| Nth month | The number of months since the start of a date range. The starting month is 0000.<br/><br/>**Field name:** `nthMonth`<br/>**Type:** dimension |
+| Nth week | A number representing the number of weeks since the start of a date range.<br/><br/>**Field name:** `nthWeek`<br/>**Type:** dimension |
+| Nth year | The number of years since the start of the date range. The starting year is 0000.<br/><br/>**Field name:** `nthYear`<br/>**Type:** dimension |
+| Week | The week of the event, a two-digit number from 01 to 53. Each week starts on Sunday. January 1st is always in week 01. The first and last week of the year have fewer than 7 days in most years. Weeks other than the first and the last week of the year always have 7 days. For years where January 1st is a Sunday, the first week of that year and the last week of the prior year have 7 days.<br/><br/>**Field name:** `week`<br/>**Type:** dimension |
+| Year | The four-digit year of the event e.g. 2020.<br/><br/>**Field name:** `year`<br/>**Type:** dimension |
+
+### Event
+
+| | |
+|---|---|
+| Event name | The name of the event.<br/><br/>**Field name:** `eventName`<br/>**Type:** dimension |
+| Is conversion event | The string 'true' if the event is a conversion. Events are marked as conversions at collection time; changes to an event's conversion marking apply going forward. You can mark any event as a conversion in Google Analytics, and some events (i.e. first_open, purchase) are marked as conversions by default. To learn more, see &lt;https://support.google.com/analytics/answer/9267568&gt;.<br/><br/>**Field name:** `isConversionEvent`<br/>**Type:** dimension |
+
+### User lifetime
+
+| | |
+|---|---|
+| First session date | The date the user's first session occurred, formatted as YYYYMMDD.<br/><br/>**Field name:** `firstSessionDate`<br/>**Type:** dimension |
+
+### Traffic source
+
+| | |
+|---|---|
+| First user campaign ID | Identifier of the marketing campaign that first acquired the user. Includes Google Ads Campaigns, Manual Campaigns, & other Campaigns.<br/><br/>**Field name:** `firstUserCampaignId`<br/>**Type:** dimension |
+| First user campaign | Name of the marketing campaign that first acquired the user. Includes Google Ads Campaigns, Manual Campaigns, & other Campaigns.<br/><br/>**Field name:** `firstUserCampaignName`<br/>**Type:** dimension |
+| First user default channel group | The default channel group that first acquired the user. Default channel group is based primarily on source and medium. An enumeration which includes 'Direct', 'Organic Search', 'Paid Social', 'Organic Social', 'Email', 'Affiliates', 'Referral', 'Paid Search', 'Video', and 'Display'.<br/><br/>**Field name:** `firstUserDefaultChannelGroup`<br/>**Type:** dimension |
+| First user Google Ads account name | The Account name from Google Ads that first acquired the user.<br/><br/>**Field name:** `firstUserGoogleAdsAccountName`<br/>**Type:** dimension |
+| First user Google Ads ad group ID | The Ad Group Id in Google Ads that first acquired the user.<br/><br/>**Field name:** `firstUserGoogleAdsAdGroupId`<br/>**Type:** dimension |
+| First user Google Ads ad group name | The Ad Group Name in Google Ads that first acquired the user.<br/><br/>**Field name:** `firstUserGoogleAdsAdGroupName`<br/>**Type:** dimension |
+| First user Google Ads ad network type | The advertising network that first acquired the user. An enumeration which includes 'Google search', 'Search partners', 'Google Display Network', 'Youtube Search', 'Youtube Videos', 'Cross-network', 'Social', and '(universal campaign)'.<br/><br/>**Field name:** `firstUserGoogleAdsAdNetworkType`<br/>**Type:** dimension |
+| First user Google Ads campaign ID | Identifier of the Google Ads marketing campaign that first acquired the user.<br/><br/>**Field name:** `firstUserGoogleAdsCampaignId`<br/>**Type:** dimension |
+| First user Google Ads campaign | Name of the Google Ads marketing campaign that first acquired the user.<br/><br/>**Field name:** `firstUserGoogleAdsCampaignName`<br/>**Type:** dimension |
+| First user Google Ads campaign type | The campaign type of the Google Ads campaign that first acquired the user. Campaign types determine where customers see your ads and the settings and options available to you in Google Ads. Campaign type is an enumeration that includes: Search, Display, Shopping, Video, Demand Gen, App, Smart, Hotel, Local, and Performance Max. To learn more, see &lt;https://support.google.com/google-ads/answer/2567043&gt;.<br/><br/>**Field name:** `firstUserGoogleAdsCampaignType`<br/>**Type:** dimension |
+| First user Google Ads creative ID | The ID of the Google Ads creative that first acquired the user. Creative IDs identify individual ads.<br/><br/>**Field name:** `firstUserGoogleAdsCreativeId`<br/>**Type:** dimension |
+| First user Google Ads customer ID | The Customer ID from Google Ads that first acquired the user. Customer IDs in Google Ads uniquely identify Google Ads accounts.<br/><br/>**Field name:** `firstUserGoogleAdsCustomerId`<br/>**Type:** dimension |
+| First user Google Ads keyword text | The matched keyword that first acquired the user. Keywords are words or phrases describing your product or service that you choose to get your ad in front of the right customers. To learn more about Keywords, see &lt;https://support.google.com/google-ads/answer/6323&gt;.<br/><br/>**Field name:** `firstUserGoogleAdsKeyword`<br/>**Type:** dimension |
+| First user Google Ads query | The search query that first acquired the user.<br/><br/>**Field name:** `firstUserGoogleAdsQuery`<br/>**Type:** dimension |
+| First user manual ad content | The ad content that first acquired the user. Populated by the utm_content parameter.<br/><br/>**Field name:** `firstUserManualAdContent`<br/>**Type:** dimension |
+| First user manual term | The term that first acquired the user. Populated by the utm_term parameter.<br/><br/>**Field name:** `firstUserManualTerm`<br/>**Type:** dimension |
+| First user medium | The medium that first acquired the user to your website or app.<br/><br/>**Field name:** `firstUserMedium`<br/>**Type:** dimension |
+| First user source | The source that first acquired the user to your website or app.<br/><br/>**Field name:** `firstUserSource`<br/>**Type:** dimension |
+| First user source / medium | The combined values of the dimensions 'firstUserSource' and 'firstUserMedium'.<br/><br/>**Field name:** `firstUserSourceMedium`<br/>**Type:** dimension |
+| First user source platform | The source platform that first acquired the user. Please do not depend on this field returning 'Manual' for traffic that uses UTMs; this field will update from returning 'Manual' to returning '(not set)' for an upcoming feature launch.<br/><br/>**Field name:** `firstUserSourcePlatform`<br/>**Type:** dimension |
+| Session campaign ID | The marketing campaign id for a session. Includes Google Ads Campaigns, Manual Campaigns, & other Campaigns.<br/><br/>**Field name:** `sessionCampaignId`<br/>**Type:** dimension |
+| Session campaign | The marketing campaign name for a session. Includes Google Ads Campaigns, Manual Campaigns, & other Campaigns.<br/><br/>**Field name:** `sessionCampaignName`<br/>**Type:** dimension |
+| Session default channel group | The session's default channel group is based primarily on source and medium. An enumeration which includes 'Direct', 'Organic Search', 'Paid Social', 'Organic Social', 'Email', 'Affiliates', 'Referral', 'Paid Search', 'Video', and 'Display'.<br/><br/>**Field name:** `sessionDefaultChannelGroup`<br/>**Type:** dimension |
+| Session Google Ads account name | The Account name from Google Ads that led to the session. Corresponds to customer.descriptive_name in the Google Ads API.<br/><br/>**Field name:** `sessionGoogleAdsAccountName`<br/>**Type:** dimension |
+| Session Google Ads ad group ID | The Ad Group Id in Google Ads for a session.<br/><br/>**Field name:** `sessionGoogleAdsAdGroupId`<br/>**Type:** dimension |
+| Session Google Ads ad group name | The Ad Group Name in Google Ads for a session.<br/><br/>**Field name:** `sessionGoogleAdsAdGroupName`<br/>**Type:** dimension |
+| Session Google Ads ad network type | The advertising network that led to the session. An enumeration which includes 'Google search', 'Search partners', 'Google Display Network', 'Youtube Search', 'Youtube Videos', 'Cross-network', 'Social', and '(universal campaign)'.<br/><br/>**Field name:** `sessionGoogleAdsAdNetworkType`<br/>**Type:** dimension |
+| Session Google Ads campaign ID | The Campaign ID for the Google Ads Campaign that led to this session.<br/><br/>**Field name:** `sessionGoogleAdsCampaignId`<br/>**Type:** dimension |
+| Session Google Ads campaign | The Campaign name for the Google Ads Campaign that led to this session.<br/><br/>**Field name:** `sessionGoogleAdsCampaignName`<br/>**Type:** dimension |
+| Session Google Ads campaign type | The campaign type for the Google Ads campaign that led to this session. Campaign types determine where customers see your ads and the settings and options available to you in Google Ads. Campaign type is an enumeration that includes: Search, Display, Shopping, Video, Demand Gen, App, Smart, Hotel, Local, and Performance Max. To learn more, see &lt;https://support.google.com/google-ads/answer/2567043&gt;.<br/><br/>**Field name:** `sessionGoogleAdsCampaignType`<br/>**Type:** dimension |
+| Session Google Ads creative ID | The ID of the Google Ads creative that lead to a session on your website or app. Creative IDs identify individual ads.<br/><br/>**Field name:** `sessionGoogleAdsCreativeId`<br/>**Type:** dimension |
+| Session Google Ads keyword text | The matched keyword that led to the session. Keywords are words or phrases describing your product or service that you choose to get your ad in front of the right customers. To learn more about Keywords, see &lt;https://support.google.com/google-ads/answer/6323&gt;.<br/><br/>**Field name:** `sessionGoogleAdsKeyword`<br/>**Type:** dimension |
+| Session manual ad content | The ad content that led to a session. Populated by the utm_content parameter.<br/><br/>**Field name:** `sessionManualAdContent`<br/>**Type:** dimension |
+| Session medium | The medium that initiated a session on your website or app.<br/><br/>**Field name:** `sessionMedium`<br/>**Type:** dimension |
+| Session source | The source that initiated a session on your website or app.<br/><br/>**Field name:** `sessionSource`<br/>**Type:** dimension |
+| Session source / medium | The combined values of the dimensions 'sessionSource' and 'sessionMedium'.<br/><br/>**Field name:** `sessionSourceMedium`<br/>**Type:** dimension |
+| Session source platform | The source platform of the session's campaign. Please do not depend on this field returning 'Manual' for traffic that uses UTMs; this field will update from returning 'Manual' to returning '(not set)' for an upcoming feature launch.<br/><br/>**Field name:** `sessionSourcePlatform`<br/>**Type:** dimension |
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Fields catalog" href="/en/">
+    Browse all sources
+  </Card>
+  <Card title="Instagram" href="/en/instagram/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Facebook Pages" href="/en/facebook/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Shopify" href="/en/shopify/metrics">
+    Metrics & Dimensions
+  </Card>
+</CardGroup>
