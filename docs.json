@@ -44,6 +44,13 @@
                   "youtube/metrics",
                   "youtube/dimensions"
                 ]
+              },
+              {
+                "group": "TikTok Organic",
+                "pages": [
+                  "tiktok-organic/metrics",
+                  "tiktok-organic/dimensions"
+                ]
               }
             ]
           },
@@ -102,6 +109,13 @@
                   "en/youtube/metrics",
                   "en/youtube/dimensions"
                 ]
+              },
+              {
+                "group": "TikTok Organic",
+                "pages": [
+                  "en/tiktok-organic/metrics",
+                  "en/tiktok-organic/dimensions"
+                ]
               }
             ]
           },
@@ -159,6 +173,13 @@
                 "pages": [
                   "pt/youtube/metrics",
                   "pt/youtube/dimensions"
+                ]
+              },
+              {
+                "group": "TikTok Organic",
+                "pages": [
+                  "pt/tiktok-organic/metrics",
+                  "pt/tiktok-organic/dimensions"
                 ]
               }
             ]
