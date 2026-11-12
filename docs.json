@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Master Metrics Docs",
   "colors": {
-    "primary": "#646EEB",
+    "primary": "#4552E8",
     "light": "#8D96FF",
-    "dark": "#4552E8"
+    "dark": "#3F4BD5"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -193,5 +193,8 @@
       "cursor",
       "vscode"
     ]
+  },
+  "fonts": {
+    "family": "Outfit"
   }
 }
