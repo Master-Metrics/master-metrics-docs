@@ -20,6 +20,18 @@
             ]
           },
           {
+            "group": "Publicidad",
+            "pages": [
+              {
+                "group": "Meta Ads",
+                "pages": [
+                  "meta-ads/metrics",
+                  "meta-ads/dimensions"
+                ]
+              }
+            ]
+          },
+          {
             "group": "Redes sociales",
             "pages": [
               {
@@ -118,6 +130,18 @@
             ]
           },
           {
+            "group": "Advertising",
+            "pages": [
+              {
+                "group": "Meta Ads",
+                "pages": [
+                  "en/meta-ads/metrics",
+                  "en/meta-ads/dimensions"
+                ]
+              }
+            ]
+          },
+          {
             "group": "Social",
             "pages": [
               {
@@ -213,6 +237,18 @@
             "group": "Visão geral",
             "pages": [
               "pt/index"
+            ]
+          },
+          {
+            "group": "Publicidade",
+            "pages": [
+              {
+                "group": "Meta Ads",
+                "pages": [
+                  "pt/meta-ads/metrics",
+                  "pt/meta-ads/dimensions"
+                ]
+              }
             ]
           },
           {
