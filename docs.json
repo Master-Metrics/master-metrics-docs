@@ -69,6 +69,18 @@
             ]
           },
           {
+            "group": "Analítica web",
+            "pages": [
+              {
+                "group": "Google Search Console",
+                "pages": [
+                  "google-search-console/metrics",
+                  "google-search-console/dimensions"
+                ]
+              }
+            ]
+          },
+          {
             "group": "E-commerce",
             "pages": [
               {
@@ -148,6 +160,18 @@
             ]
           },
           {
+            "group": "Web analytics",
+            "pages": [
+              {
+                "group": "Google Search Console",
+                "pages": [
+                  "en/google-search-console/metrics",
+                  "en/google-search-console/dimensions"
+                ]
+              }
+            ]
+          },
+          {
             "group": "E-commerce",
             "pages": [
               {
@@ -222,6 +246,18 @@
                 "pages": [
                   "pt/google-business/metrics",
                   "pt/google-business/dimensions"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Análise web",
+            "pages": [
+              {
+                "group": "Google Search Console",
+                "pages": [
+                  "pt/google-search-console/metrics",
+                  "pt/google-search-console/dimensions"
                 ]
               }
             ]
