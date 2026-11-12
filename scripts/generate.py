@@ -3,6 +3,9 @@ import json, sys, urllib.request, urllib.parse, pathlib
 out = pathlib.Path(sys.argv[1])
 api = 'http://localhost:3001/api/v2/docs'
 DEFAULT = 'es'
+CATEGORY_ORDER = ['ads', 'social', 'analytics', 'ecommerce', 'crm']
+DESCRIPTIONS_DIR = pathlib.Path(__file__).parent / 'descriptions'
+ONLY = set(sys.argv[2].split(',')) if len(sys.argv) > 2 else None
 T = {
  'es': dict(overview='Resumen', catalog='Catálogo de campos',
    catalog_desc='Explora todas las métricas y dimensiones disponibles para cada fuente de datos',
@@ -20,7 +23,7 @@ T = {
    updated='Última actualización', available='Disponible en', dest='Dashboards · Reportes · Asistente de IA',
    field='Nombre del campo', type='Tipo', m_type='métrica', d_type='dimensión', mcp_yes='Disponible', mcp_no='No disponible',
    deprecated='Métricas deprecadas', dep_hint='Estas métricas fueron retiradas por la plataforma. Se mantienen como referencia histórica y no están disponibles en el MCP.',
-   related='Relacionado', browse='Ver todas las fuentes', social='Redes sociales', ecommerce='E-commerce', web='Sitio web', login='Ingresar'),
+   related='Relacionado', browse='Ver todas las fuentes', ads='Publicidad', social='Redes sociales', analytics='Analítica web', ecommerce='E-commerce', crm='CRM y email', web='Sitio web', login='Ingresar'),
  'en': dict(overview='Overview', catalog='Fields catalog',
    catalog_desc='Browse all the metrics and dimensions available for each data source',
    intro='Every data source connected to Master Metrics exposes a set of fields you can use in your dashboards, reports and AI conversations. Fields come in two types:',
@@ -37,7 +40,7 @@ T = {
    updated='Last updated', available='Available in', dest='Dashboards · Reports · AI assistant',
    field='Field name', type='Type', m_type='metric', d_type='dimension', mcp_yes='Available', mcp_no='Not available',
    deprecated='Deprecated metrics', dep_hint='These metrics were retired by the platform. They are kept for historical reference and are not available in the MCP.',
-   related='Related', browse='Browse all sources', social='Social', ecommerce='E-commerce', web='Website', login='Log in'),
+   related='Related', browse='Browse all sources', ads='Advertising', social='Social', analytics='Web analytics', ecommerce='E-commerce', crm='CRM & email', web='Website', login='Log in'),
  'pt': dict(overview='Visão geral', catalog='Catálogo de campos',
    catalog_desc='Explore todas as métricas e dimensões disponíveis para cada fonte de dados',
    intro='Cada fonte de dados conectada ao Master Metrics expõe um conjunto de campos que você pode usar em seus dashboards, relatórios e conversas com IA. Os campos são de dois tipos:',
@@ -54,11 +57,20 @@ T = {
    updated='Última atualização', available='Disponível em', dest='Dashboards · Relatórios · Assistente de IA',
    field='Nome do campo', type='Tipo', m_type='métrica', d_type='dimensão', mcp_yes='Disponível', mcp_no='Não disponível',
    deprecated='Métricas descontinuadas', dep_hint='Estas métricas foram retiradas pela plataforma. São mantidas como referência histórica e não estão disponíveis no MCP.',
-   related='Relacionado', browse='Ver todas as fontes', social='Redes sociais', ecommerce='E-commerce', web='Site', login='Entrar'),
+   related='Relacionado', browse='Ver todas as fontes', ads='Publicidade', social='Redes sociais', analytics='Análise web', ecommerce='E-commerce', crm='CRM e e-mail', web='Site', login='Entrar'),
 }
 
 def get(path, locale):
     return json.load(urllib.request.urlopen(f'{api}{path}?locale={locale}'))
+
+def get_source(slug, locale):
+    src = get(f'/{slug}', locale)
+    path = DESCRIPTIONS_DIR / f'{slug}.json'
+    extra = json.loads(path.read_text()) if path.exists() else {}
+    for field in src['metrics'] + src['dimensions']:
+        if not field.get('description'):
+            field['description'] = extra.get(field['name'], {}).get(locale)
+    return src
 
 def esc(text):
     return (text or '').replace('\\', '\\\\').replace('{', '\\{').replace('}', '\\}').replace('<', '&lt;').replace('>', '&gt;').replace('|', '\\|').replace('\n', ' ')
@@ -122,8 +134,9 @@ for locale, t in T.items():
     prefix = '' if locale == DEFAULT else f'/{locale}'
     base = out if locale == DEFAULT else out / locale
     page = lambda path: path if locale == DEFAULT else f'{locale}/{path}'
-    sources = get('', locale)['sources']
-    categories = list(dict.fromkeys(s['category'] for s in sources))
+    sources = [s for s in get('', locale)['sources'] if ONLY is None or s['slug'] in ONLY]
+    found = list(dict.fromkeys(s['category'] for s in sources))
+    categories = [c for c in CATEGORY_ORDER if c in found] + [c for c in found if c not in CATEGORY_ORDER]
     index = ['---', f'title: "{t["catalog"]}"', f'description: "{t["catalog_desc"]}"', '---', '', t['intro'], '',
              f'- **{t["metrics"]}**: {t["m_def"]}', f'- **{t["dimensions"]}**: {t["d_def"]}', '', t['usage'], '']
     groups = [{'group': t['overview'], 'pages': [page('index')]}]
@@ -133,7 +146,7 @@ for locale, t in T.items():
         for summary in [s for s in sources if s['category'] == category]:
             slug = summary['slug']
             (base / slug).mkdir(parents=True, exist_ok=True)
-            src = get(f'/{slug}', locale)
+            src = get_source(slug, locale)
             fields_page(src, sources, 'metrics', base, prefix, t)
             fields_page(src, sources, 'dimensions', base, prefix, t)
             pages = [page(f'{slug}/metrics'), page(f'{slug}/dimensions')]
