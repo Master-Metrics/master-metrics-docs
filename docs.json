@@ -155,6 +155,13 @@
                   "kommo/metrics",
                   "kommo/dimensions"
                 ]
+              },
+              {
+                "group": "Pipedrive",
+                "pages": [
+                  "pipedrive/metrics",
+                  "pipedrive/dimensions"
+                ]
               }
             ]
           }
@@ -305,6 +312,13 @@
                   "en/kommo/metrics",
                   "en/kommo/dimensions"
                 ]
+              },
+              {
+                "group": "Pipedrive",
+                "pages": [
+                  "en/pipedrive/metrics",
+                  "en/pipedrive/dimensions"
+                ]
               }
             ]
           }
@@ -454,6 +468,13 @@
                 "pages": [
                   "pt/kommo/metrics",
                   "pt/kommo/dimensions"
+                ]
+              },
+              {
+                "group": "Pipedrive",
+                "pages": [
+                  "pt/pipedrive/metrics",
+                  "pt/pipedrive/dimensions"
                 ]
               }
             ]
