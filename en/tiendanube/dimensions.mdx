@@ -1,0 +1,216 @@
+---
+title: "Tiendanube: Dimensions"
+description: "Complete reference of the Tiendanube dimensions in Master Metrics"
+---
+
+<Info>**Last updated:** 2026-11-12</Info>
+
+This reference covers the 150 dimensions available for Tiendanube in Master Metrics. Use it to understand how you can segment your data and how each field is named.
+
+**Available in:** Dashboards · Reports · AI assistant · MCP
+
+## Dimensions
+
+Dimensions are the attributes you can use to segment and group your Tiendanube data.
+
+### Time
+
+| | |
+|---|---|
+| Day | **Field name:** `day`<br/>**Type:** dimension |
+| Week | **Field name:** `week`<br/>**Type:** dimension |
+| Month | **Field name:** `month`<br/>**Type:** dimension |
+| Year | **Field name:** `year`<br/>**Type:** dimension |
+| Quarter | **Field name:** `quarter`<br/>**Type:** dimension |
+
+### General
+
+| | |
+|---|---|
+| Store Name | Name of the store.<br/><br/>**Field name:** `tn_common_store_name`<br/>**Type:** dimension |
+| Store ID | **Field name:** `tn_common_store_id`<br/>**Type:** dimension |
+| Type of Entity | Type of record: order, product order, product, customer or abandoned cart.<br/><br/>**Field name:** `tn_common_type_entity`<br/>**Type:** dimension |
+
+### Orders
+
+| | |
+|---|---|
+| Shipping Option (orders) | Shipping method chosen for the order.<br/><br/>**Field name:** `tn_orders_shipping_option`<br/>**Type:** dimension |
+| Payment Method (orders) | Payment method used for the order.<br/><br/>**Field name:** `tn_orders_payment_details`<br/>**Type:** dimension |
+| Customer Identification (orders) | **Field name:** `tn_orders_customer_identification`<br/>**Type:** dimension |
+| Installments (orders) | Number of installments of the payment.<br/><br/>**Field name:** `tn_orders_installments`<br/>**Type:** dimension |
+| UTM Campaign (orders) | UTM campaign of the visit that generated the order.<br/><br/>**Field name:** `tn_orders_utm_campaign`<br/>**Type:** dimension |
+| UTM Content (orders) | UTM content of the visit that generated the order.<br/><br/>**Field name:** `tn_orders_utm_content`<br/>**Type:** dimension |
+| UTM Medium (orders) | UTM medium of the visit that generated the order.<br/><br/>**Field name:** `tn_orders_utm_medium`<br/>**Type:** dimension |
+| UTM Source (orders) | UTM source of the visit that generated the order.<br/><br/>**Field name:** `tn_orders_utm_source`<br/>**Type:** dimension |
+| UTM Term (orders) | UTM term of the visit that generated the order.<br/><br/>**Field name:** `tn_orders_utm_term`<br/>**Type:** dimension |
+| Category (orders) | Categories of the products in the order.<br/><br/>**Field name:** `tn_orders_category`<br/>**Type:** dimension |
+| Recurrent Customer (orders) | Whether the order comes from a returning customer.<br/><br/>**Field name:** `tn_orders_recurrent`<br/>**Type:** dimension |
+| First Interaction (orders) | Date of the first interaction of the customer who placed the order.<br/><br/>**Field name:** `tn_orders_first_interaction`<br/>**Type:** dimension |
+| Customer Id (orders) | Id of the customer who placed the order.<br/><br/>**Field name:** `tn_orders_customer_id`<br/>**Type:** dimension |
+| ID (orders) | Internal id of the order.<br/><br/>**Field name:** `tn_orders_id`<br/>**Type:** dimension |
+| Token (orders) | **Field name:** `tn_orders_token`<br/>**Type:** dimension |
+| Store ID (orders) | **Field name:** `tn_orders_store_id`<br/>**Type:** dimension |
+| Contact Email (orders) | Email of the order contact.<br/><br/>**Field name:** `tn_orders_contact_email`<br/>**Type:** dimension |
+| Contact Name (orders) | Name of the order contact.<br/><br/>**Field name:** `tn_orders_contact_name`<br/>**Type:** dimension |
+| Contact Phone (orders) | **Field name:** `tn_orders_contact_phone`<br/>**Type:** dimension |
+| Contact Identification (orders) | **Field name:** `tn_orders_contact_identification`<br/>**Type:** dimension |
+| Shipping Min Days (orders) | **Field name:** `tn_orders_shipping_min_days`<br/>**Type:** dimension |
+| Shipping Max Days (orders) | **Field name:** `tn_orders_shipping_max_days`<br/>**Type:** dimension |
+| Billing Name (orders) | **Field name:** `tn_orders_billing_name`<br/>**Type:** dimension |
+| Billing Phone (orders) | **Field name:** `tn_orders_billing_phone`<br/>**Type:** dimension |
+| Billing Address (orders) | **Field name:** `tn_orders_billing_address`<br/>**Type:** dimension |
+| Billing Number (orders) | **Field name:** `tn_orders_billing_number`<br/>**Type:** dimension |
+| Billing Floor (orders) | **Field name:** `tn_orders_billing_floor`<br/>**Type:** dimension |
+| Billing Locality (orders) | **Field name:** `tn_orders_billing_locality`<br/>**Type:** dimension |
+| Billing Zipcode (orders) | **Field name:** `tn_orders_billing_zipcode`<br/>**Type:** dimension |
+| Billing City (orders) | Billing city of the order.<br/><br/>**Field name:** `tn_orders_billing_city`<br/>**Type:** dimension |
+| Billing Province (orders) | Billing province of the order.<br/><br/>**Field name:** `tn_orders_billing_province`<br/>**Type:** dimension |
+| Billing Country (orders) | Billing country of the order.<br/><br/>**Field name:** `tn_orders_billing_country`<br/>**Type:** dimension |
+| Discount Coupon (orders) | Discount coupon used in the order.<br/><br/>**Field name:** `tn_orders_discount_coupon`<br/>**Type:** dimension |
+| Gateway Discount (orders) | **Field name:** `tn_orders_discount_gateway`<br/>**Type:** dimension |
+| Checkout Enabled (orders) | **Field name:** `tn_orders_checkout_enabled`<br/>**Type:** dimension |
+| Weight (orders) | **Field name:** `tn_orders_weight`<br/>**Type:** dimension |
+| Currency (orders) | **Field name:** `tn_orders_currency`<br/>**Type:** dimension |
+| Language (orders) | **Field name:** `tn_orders_language`<br/>**Type:** dimension |
+| Payment Gateway (orders) | Id of the payment provider that processed the payment.<br/><br/>**Field name:** `tn_orders_gateway`<br/>**Type:** dimension |
+| Gateway ID (orders) | **Field name:** `tn_orders_gateway_id`<br/>**Type:** dimension |
+| Gateway Name (orders) | Name of the payment provider.<br/><br/>**Field name:** `tn_orders_gateway_name`<br/>**Type:** dimension |
+| Shipping (orders) | **Field name:** `tn_orders_shipping`<br/>**Type:** dimension |
+| Shipping Option Code (orders) | **Field name:** `tn_orders_shipping_option_code`<br/>**Type:** dimension |
+| Pickup Type (orders) | **Field name:** `tn_orders_shipping_pickup_type`<br/>**Type:** dimension |
+| Sales Channel (orders) | Sales channel the order came from: store, Mercado Libre, API, draft order (form) or point of sale.<br/><br/>**Field name:** `tn_orders_storefront`<br/>**Type:** dimension |
+| Created At (orders) | Date the order was created.<br/><br/>**Field name:** `tn_orders_created_at`<br/>**Type:** dimension |
+| Updated At (orders) | **Field name:** `tn_orders_updated_at`<br/>**Type:** dimension |
+| Customer (orders) | Customer who placed the order.<br/><br/>**Field name:** `tn_orders_customer`<br/>**Type:** dimension |
+| Number (orders) | Order number shown to the merchant and the customer.<br/><br/>**Field name:** `tn_orders_number`<br/>**Type:** dimension |
+| Status (orders) | Order status: open, closed (archived) or cancelled.<br/><br/>**Field name:** `tn_orders_status`<br/>**Type:** dimension |
+| Payment Status (orders) | Payment status: authorized, pending, paid, partially paid, abandoned, refunded, partially refunded or voided.<br/><br/>**Field name:** `tn_orders_payment_status`<br/>**Type:** dimension |
+| Shipping Status (orders) | Fulfillment status: unpacked, shipped, unshipped, delivered, partially packed or partially fulfilled.<br/><br/>**Field name:** `tn_orders_shipping_status`<br/>**Type:** dimension |
+| Landing URL (orders) | Page where the customer landed in the store.<br/><br/>**Field name:** `tn_orders_landing_url`<br/>**Type:** dimension |
+| Payment Date (orders) | Date the order was paid.<br/><br/>**Field name:** `tn_orders_paid_at`<br/>**Type:** dimension |
+| Shipping Date (orders) | Date the order was shipped.<br/><br/>**Field name:** `tn_orders_shipped_at`<br/>**Type:** dimension |
+
+### Ordered products
+
+| | |
+|---|---|
+| Image (product orders) | Image of the product ordered.<br/><br/>**Field name:** `tn_productOrders_image`<br/>**Type:** dimension |
+| Category (product orders) | Category of the product ordered.<br/><br/>**Field name:** `tn_productOrders_category`<br/>**Type:** dimension |
+| Name (product orders) | Product name including the variant (e.g. "T-shirt (Red, M)"): one row per variant.<br/><br/>**Field name:** `tn_productOrders_name`<br/>**Type:** dimension |
+| Compare At Price (product orders) | Original price of the product before its discount.<br/><br/>**Field name:** `tn_productOrders_compare_at_price`<br/>**Type:** dimension |
+| Product ID (product orders) | Id of the product ordered.<br/><br/>**Field name:** `tn_productOrders_product_id`<br/>**Type:** dimension |
+| Free Shipping (product orders) | Whether the product ordered has free shipping.<br/><br/>**Field name:** `tn_productOrders_free_shipping`<br/>**Type:** dimension |
+| Weight (product orders) | **Field name:** `tn_productOrders_weight`<br/>**Type:** dimension |
+| Width (product orders) | **Field name:** `tn_productOrders_width`<br/>**Type:** dimension |
+| Variant ID (product orders) | Id of the product variant ordered.<br/><br/>**Field name:** `tn_productOrders_variant_id`<br/>**Type:** dimension |
+| SKU (product orders) | SKU (stock keeping unit) of the variant ordered.<br/><br/>**Field name:** `tn_productOrders_sku`<br/>**Type:** dimension |
+| Barcode (product orders) | Barcode of the product ordered.<br/><br/>**Field name:** `tn_productOrders_barcode`<br/>**Type:** dimension |
+| Name without variants (product orders) | Base product name without the variant: groups every variant of a product in one row. Use it for products (e.g. top products).<br/><br/>**Field name:** `tn_productOrders_name_without_variants`<br/>**Type:** dimension |
+| Product ID (product orders) | Id of the product ordered.<br/><br/>**Field name:** `tn_productOrders_product_id`<br/>**Type:** dimension |
+
+### Products
+
+| | |
+|---|---|
+| Image (products) | **Field name:** `tn_products_image`<br/>**Type:** dimension |
+| ID (products) | **Field name:** `tn_products_id`<br/>**Type:** dimension |
+| Name (products) | Name of the product in the catalog.<br/><br/>**Field name:** `tn_products_name`<br/>**Type:** dimension |
+| Brand (products) | Brand of the product.<br/><br/>**Field name:** `tn_products_brand`<br/>**Type:** dimension |
+| published (products) | Whether the product is published in the store.<br/><br/>**Field name:** `tn_products_published`<br/>**Type:** dimension |
+| Free Shipping (products) | **Field name:** `tn_products_free_shipping`<br/>**Type:** dimension |
+| tags (products) | Tags of the product.<br/><br/>**Field name:** `tn_products_tags`<br/>**Type:** dimension |
+| Variant (products) | Variant of the product in the catalog.<br/><br/>**Field name:** `tn_products_variant`<br/>**Type:** dimension |
+| SKU (products) | SKU of the product variant in the catalog.<br/><br/>**Field name:** `tn_products_sku`<br/>**Type:** dimension |
+
+### Customers
+
+| | |
+|---|---|
+| ID (customers) | **Field name:** `tn_customers_id`<br/>**Type:** dimension |
+| Name (customers) | Name of the customer.<br/><br/>**Field name:** `tn_customers_name`<br/>**Type:** dimension |
+| Email (customers) | Email of the customer.<br/><br/>**Field name:** `tn_customers_email`<br/>**Type:** dimension |
+| Identification (customers) | **Field name:** `tn_customers_identification`<br/>**Type:** dimension |
+| Phone (customers) | **Field name:** `tn_customers_phone`<br/>**Type:** dimension |
+| Billing Name (customers) | **Field name:** `tn_customers_billing_name`<br/>**Type:** dimension |
+| Billing Phone (customers) | **Field name:** `tn_customers_billing_phone`<br/>**Type:** dimension |
+| Billing Address (customers) | **Field name:** `tn_customers_billing_address`<br/>**Type:** dimension |
+| Billing Number (customers) | **Field name:** `tn_customers_billing_number`<br/>**Type:** dimension |
+| Billing Floor (customers) | **Field name:** `tn_customers_billing_floor`<br/>**Type:** dimension |
+| Billing Locality (customers) | **Field name:** `tn_customers_billing_locality`<br/>**Type:** dimension |
+| Billing Zipcode (customers) | **Field name:** `tn_customers_billing_zipcode`<br/>**Type:** dimension |
+| Billing City (customers) | Billing city of the customer.<br/><br/>**Field name:** `tn_customers_billing_city`<br/>**Type:** dimension |
+| Billing Province (customers) | Billing province of the customer.<br/><br/>**Field name:** `tn_customers_billing_province`<br/>**Type:** dimension |
+| Billing Country (customers) | **Field name:** `tn_customers_billing_country`<br/>**Type:** dimension |
+| First Interaction (customers) | **Field name:** `tn_customers_first_interaction`<br/>**Type:** dimension |
+| Created At (customers) | Date the customer was created.<br/><br/>**Field name:** `tn_customers_created_at`<br/>**Type:** dimension |
+| Customer Type (customers) | Type of customer (person or business).<br/><br/>**Field name:** `tn_customers_customer_type`<br/>**Type:** dimension |
+| Business Name (customers) | **Field name:** `tn_customers_business_name`<br/>**Type:** dimension |
+| Trade Name (customers) | **Field name:** `tn_customers_trade_name`<br/>**Type:** dimension |
+
+### Abandoned checkouts
+
+| | |
+|---|---|
+| ID (abandoned checkouts) | **Field name:** `tn_checkouts_id`<br/>**Type:** dimension |
+| Token (abandoned checkouts) | **Field name:** `tn_checkouts_token`<br/>**Type:** dimension |
+| Store ID (abandoned checkouts) | **Field name:** `tn_checkouts_store_id`<br/>**Type:** dimension |
+| Abandoned Checkout URL (abandoned checkouts) | **Field name:** `tn_checkouts_abandoned_checkout_url`<br/>**Type:** dimension |
+| Contact Email (abandoned checkouts) | Email of the abandoned cart contact.<br/><br/>**Field name:** `tn_checkouts_contact_email`<br/>**Type:** dimension |
+| Contact Name (abandoned checkouts) | Name of the abandoned cart contact.<br/><br/>**Field name:** `tn_checkouts_contact_name`<br/>**Type:** dimension |
+| Contact Phone (abandoned checkouts) | **Field name:** `tn_checkouts_contact_phone`<br/>**Type:** dimension |
+| Contact Identification (abandoned checkouts) | **Field name:** `tn_checkouts_contact_identification`<br/>**Type:** dimension |
+| Shipping Name (abandoned checkouts) | **Field name:** `tn_checkouts_shipping_name`<br/>**Type:** dimension |
+| Shipping Phone (abandoned checkouts) | **Field name:** `tn_checkouts_shipping_phone`<br/>**Type:** dimension |
+| Shipping Address (abandoned checkouts) | **Field name:** `tn_checkouts_shipping_address`<br/>**Type:** dimension |
+| Shipping Number (abandoned checkouts) | **Field name:** `tn_checkouts_shipping_number`<br/>**Type:** dimension |
+| Shipping Floor (abandoned checkouts) | **Field name:** `tn_checkouts_shipping_floor`<br/>**Type:** dimension |
+| Shipping Locality (abandoned checkouts) | **Field name:** `tn_checkouts_shipping_locality`<br/>**Type:** dimension |
+| Shipping Zipcode (abandoned checkouts) | **Field name:** `tn_checkouts_shipping_zipcode`<br/>**Type:** dimension |
+| Shipping City (abandoned checkouts) | **Field name:** `tn_checkouts_shipping_city`<br/>**Type:** dimension |
+| Shipping Province (abandoned checkouts) | **Field name:** `tn_checkouts_shipping_province`<br/>**Type:** dimension |
+| Shipping Country (abandoned checkouts) | **Field name:** `tn_checkouts_shipping_country`<br/>**Type:** dimension |
+| Shipping Min Days (abandoned checkouts) | **Field name:** `tn_checkouts_shipping_min_days`<br/>**Type:** dimension |
+| Shipping Max Days (abandoned checkouts) | **Field name:** `tn_checkouts_shipping_max_days`<br/>**Type:** dimension |
+| Billing Name (abandoned checkouts) | **Field name:** `tn_checkouts_billing_name`<br/>**Type:** dimension |
+| Billing Phone (abandoned checkouts) | **Field name:** `tn_checkouts_billing_phone`<br/>**Type:** dimension |
+| Billing Address (abandoned checkouts) | **Field name:** `tn_checkouts_billing_address`<br/>**Type:** dimension |
+| Billing Number (abandoned checkouts) | **Field name:** `tn_checkouts_billing_number`<br/>**Type:** dimension |
+| Billing Floor (abandoned checkouts) | **Field name:** `tn_checkouts_billing_floor`<br/>**Type:** dimension |
+| Billing Locality (abandoned checkouts) | **Field name:** `tn_checkouts_billing_locality`<br/>**Type:** dimension |
+| Billing Zipcode (abandoned checkouts) | **Field name:** `tn_checkouts_billing_zipcode`<br/>**Type:** dimension |
+| Billing City (abandoned checkouts) | **Field name:** `tn_checkouts_billing_city`<br/>**Type:** dimension |
+| Billing Province (abandoned checkouts) | **Field name:** `tn_checkouts_billing_province`<br/>**Type:** dimension |
+| Billing Country (abandoned checkouts) | **Field name:** `tn_checkouts_billing_country`<br/>**Type:** dimension |
+| Shipping Cost Owner (Checkouts) | **Field name:** `tn_checkouts_shipping_cost_owner`<br/>**Type:** dimension |
+| Shipping Cost Customer (Checkouts) | **Field name:** `tn_checkouts_shipping_cost_customer`<br/>**Type:** dimension |
+| Coupon (abandoned checkouts) | Coupon used in the abandoned carts.<br/><br/>**Field name:** `tn_checkouts_coupon`<br/>**Type:** dimension |
+| Promotional Discount (abandoned checkouts) | **Field name:** `tn_checkouts_promotional_discount`<br/>**Type:** dimension |
+| Discount Coupon (abandoned checkouts) | **Field name:** `tn_checkouts_discount_coupon`<br/>**Type:** dimension |
+| Gateway Discount (abandoned checkouts) | **Field name:** `tn_checkouts_discount_gateway`<br/>**Type:** dimension |
+| Checkout Enabled (abandoned checkouts) | **Field name:** `tn_checkouts_checkout_enabled`<br/>**Type:** dimension |
+| Weight (abandoned checkouts) | **Field name:** `tn_checkouts_weight`<br/>**Type:** dimension |
+| Currency (abandoned checkouts) | **Field name:** `tn_checkouts_currency`<br/>**Type:** dimension |
+| Language (abandoned checkouts) | **Field name:** `tn_checkouts_language`<br/>**Type:** dimension |
+| Payment Gateway (abandoned checkouts) | **Field name:** `tn_checkouts_gateway`<br/>**Type:** dimension |
+| Gateway ID (abandoned checkouts) | **Field name:** `tn_checkouts_gateway_id`<br/>**Type:** dimension |
+| Created At (abandoned checkouts) | Date the abandoned cart was created.<br/><br/>**Field name:** `tn_checkouts_created_at`<br/>**Type:** dimension |
+| Updated At (abandoned checkouts) | **Field name:** `tn_checkouts_updated_at`<br/>**Type:** dimension |
+| Completed At (abandoned checkouts) | **Field name:** `tn_checkouts_completed_at`<br/>**Type:** dimension |
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Fields catalog" href="/en/">
+    Browse all sources
+  </Card>
+  <Card title="Instagram" href="/en/instagram/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Facebook Pages" href="/en/facebook/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Shopify" href="/en/shopify/metrics">
+    Metrics & Dimensions
+  </Card>
+</CardGroup>

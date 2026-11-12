@@ -1,0 +1,76 @@
+---
+title: "Instagram: Dimensões"
+description: "Referência completa das dimensões de Instagram no Master Metrics"
+---
+
+<Info>**Última atualização:** 2026-11-12</Info>
+
+Esta referência cobre as 25 dimensões disponíveis de Instagram no Master Metrics. Use-a para entender como você pode segmentar seus dados e como cada campo se chama.
+
+**Disponível em:** Dashboards · Relatórios · Assistente de IA · MCP
+
+## Dimensões
+
+As dimensões são os atributos que você pode usar para segmentar e agrupar seus dados de Instagram.
+
+### Conta
+
+| | |
+|---|---|
+| ID da Conta | Identificador único da página do Facebook vinculada à conta do Instagram.<br/><br/>**Nome do campo:** `ACCOUND_ID`<br/>**Tipo:** dimensão |
+| Nome do Perfil | Nome de exibição do perfil do Instagram.<br/><br/>**Nome do campo:** `PROFILE_NAME`<br/>**Tipo:** dimensão |
+| ID do Perfil | Identificador único da conta do Instagram de empresa ou criador.<br/><br/>**Nome do campo:** `PROFILE_ID`<br/>**Tipo:** dimensão |
+| Nome de Usuário | Nome de usuário da conta do Instagram, sem o @.<br/><br/>**Nome do campo:** `USERNAME`<br/>**Tipo:** dimensão |
+| Tipo de botão de contato | Botão de contato do perfil que foi tocado: ligar, e-mail, mensagem de texto, como chegar ou reservar.<br/><br/>**Nome do campo:** `CONTACT_BUTTON_TYPE`<br/>**Tipo:** dimensão |
+| Hora | Hora do dia, usada com métricas por hora como seguidores online.<br/><br/>**Nome do campo:** `HOUR`<br/>**Tipo:** dimensão |
+
+### Conteúdo
+
+| | |
+|---|---|
+| ID da Mídia | Identificador único da publicação, reel ou story.<br/><br/>**Nome do campo:** `MEDIA_ID`<br/>**Tipo:** dimensão |
+| Legenda da Mídia | Texto publicado junto com a publicação, reel ou story.<br/><br/>**Nome do campo:** `MEDIA_CAPTION`<br/>**Tipo:** dimensão |
+| Imagem da Mídia | Imagem em miniatura da publicação, reel ou story.<br/><br/>**Nome do campo:** `MEDIA_IMAGE`<br/>**Tipo:** dimensão |
+| Imagem e Legenda da Mídia | Imagem em miniatura junto com a legenda da publicação, reel ou story.<br/><br/>**Nome do campo:** `MEDIA_IMAGE_CAPTION`<br/>**Tipo:** dimensão |
+| Tipo de Mídia | Formato do conteúdo: imagem, vídeo ou carrossel.<br/><br/>**Nome do campo:** `MEDIA_TYPE`<br/>**Tipo:** dimensão |
+| Tipo de Produto da Mídia | Superfície do Instagram onde o conteúdo foi publicado: feed, reels, story ou anúncio.<br/><br/>**Nome do campo:** `MEDIA_PRODUCT_TYPE`<br/>**Tipo:** dimensão |
+| Tipo de Seguimento | Divide a métrica entre contas que seguem o perfil e contas que não seguem.<br/><br/>**Nome do campo:** `FOLLOW_TYPE`<br/>**Tipo:** dimensão |
+| Permalink da Mídia | URL pública da publicação, reel ou story no Instagram.<br/><br/>**Nome do campo:** `PERMALINK`<br/>**Tipo:** dimensão |
+| Data de Criação da Mídia | Data em que a publicação, reel ou story foi publicado.<br/><br/>**Nome do campo:** `creation_date`<br/>**Tipo:** dimensão |
+| Hora de Criação da Mídia | Data e hora em que a publicação, reel ou story foi publicado.<br/><br/>**Nome do campo:** `creation_time`<br/>**Tipo:** dimensão |
+
+### Público
+
+| | |
+|---|---|
+| Idade | Faixa etária do público (13-17, 18-24, 25-34, 35-44, 45-54, 55-64, 65+). Disponível para métricas demográficas.<br/><br/>**Nome do campo:** `AGE`<br/>**Tipo:** dimensão |
+| Gênero | Gênero do público: feminino, masculino ou indefinido. Disponível para métricas demográficas.<br/><br/>**Nome do campo:** `GENDER`<br/>**Tipo:** dimensão |
+| País | País do público. Disponível para métricas demográficas.<br/><br/>**Nome do campo:** `COUNTRY`<br/>**Tipo:** dimensão |
+| Cidade | Cidade do público. Disponível para métricas demográficas.<br/><br/>**Nome do campo:** `CITY`<br/>**Tipo:** dimensão |
+
+### Tempo
+
+| | |
+|---|---|
+| Ano | Agrupa os dados por ano civil.<br/><br/>**Nome do campo:** `year`<br/>**Tipo:** dimensão |
+| Trimestre | Agrupa os dados por trimestre civil.<br/><br/>**Nome do campo:** `quarter`<br/>**Tipo:** dimensão |
+| Mês | Agrupa os dados por mês civil.<br/><br/>**Nome do campo:** `month`<br/>**Tipo:** dimensão |
+| Semana | Agrupa os dados por semana.<br/><br/>**Nome do campo:** `week`<br/>**Tipo:** dimensão |
+| Dia | Agrupa os dados por dia.<br/><br/>**Nome do campo:** `day`<br/>**Tipo:** dimensão |
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Catálogo de campos" href="/pt/">
+    Ver todas as fontes
+  </Card>
+  <Card title="Facebook Pages" href="/pt/facebook/metrics">
+    Métricas & Dimensões
+  </Card>
+  <Card title="Shopify" href="/pt/shopify/metrics">
+    Métricas & Dimensões
+  </Card>
+  <Card title="Tiendanube" href="/pt/tiendanube/metrics">
+    Métricas & Dimensões
+  </Card>
+</CardGroup>

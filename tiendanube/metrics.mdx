@@ -1,0 +1,92 @@
+---
+title: "Tiendanube: Métricas"
+description: "Referencia completa de las métricas de Tiendanube en Master Metrics"
+---
+
+<Info>**Última actualización:** 2026-11-12</Info>
+
+Esta referencia cubre las 36 métricas disponibles de Tiendanube en Master Metrics. Úsala para entender qué datos puedes obtener y cómo se llama cada campo.
+
+**Disponible en:** Dashboards · Reportes · Asistente de IA · MCP
+
+## Métricas
+
+Las métricas son los valores numéricos que puedes medir y agregar a partir de tus datos de Tiendanube.
+
+### Clientes
+
+| | |
+|---|---|
+| Cantidad de clientes (clientes) | Cantidad de clientes de la tienda.<br/><br/>**Nombre del campo:** `tn_customers_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Total gastado (clientes) | Monto total que gastó cada cliente en la tienda en todo su historial.<br/><br/>**Nombre del campo:** `tn_customers_total_spent`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Moneda del total gastado (clientes) | Moneda del total gastado por el cliente.<br/><br/>**Nombre del campo:** `tn_customers_total_spent_currency`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+
+### Productos
+
+| | |
+|---|---|
+| Cantidad de stock actual (productos) | Unidades de stock actuales de los productos de la tienda.<br/><br/>**Nombre del campo:** `tn_products_stock`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Precio (productos) | Precio actual promedio de los productos de la tienda.<br/><br/>**Nombre del campo:** `tn_products_price`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+
+### Pedidos
+
+| | |
+|---|---|
+| Cantidad de clientes con pedidos (pedidos) | Cantidad de clientes distintos que hicieron pedidos.<br/><br/>**Nombre del campo:** `tn_orders_customer_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Cantidad de pedidos (pedidos) | Cantidad de pedidos creados en el período, en cualquier estado de pago o de pedido.<br/><br/>**Nombre del campo:** `tn_orders_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Ventas (pedidos) | Cantidad de ventas: pedidos con estado de pago pagado o parcialmente reembolsado.<br/><br/>**Nombre del campo:** `tn_orders_sold_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Facturación total (pedidos) | Facturación: total pagado por los clientes en pedidos pagados, parcialmente pagados o parcialmente reembolsados, sin los cancelados. Incluye envío y descuentos.<br/><br/>**Nombre del campo:** `tn_orders_total_billing`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Cantidad de pedidos pendientes (pedidos) | Cantidad de pedidos con el pago pendiente.<br/><br/>**Nombre del campo:** `tn_orders_pending_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Cantidad de pedidos abandonados (pedidos) | Cantidad de pedidos con el pago abandonado.<br/><br/>**Nombre del campo:** `tn_orders_abandoned_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Cantidad de pedidos reembolsados (pedidos) | Cantidad de pedidos con el pago reembolsado.<br/><br/>**Nombre del campo:** `tn_orders_refunded_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Cantidad de pedidos autorizados (pedidos) | Cantidad de pedidos con el pago autorizado pero todavía no cobrado.<br/><br/>**Nombre del campo:** `tn_orders_authorized_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Costo de envío del vendedor (pedidos) | Costo de envío que paga el vendedor.<br/><br/>**Nombre del campo:** `tn_orders_shipping_cost_owner`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Costo de envío del cliente (pedidos) | Costo de envío que paga el cliente (0 significa envío gratis).<br/><br/>**Nombre del campo:** `tn_orders_shipping_cost_customer`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Subtotal (pedidos) | Precio de los pedidos antes del envío, en cualquier estado de pago.<br/><br/>**Nombre del campo:** `tn_orders_subtotal`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Descuento (pedidos) | Descuento total aplicado a los pedidos (cupones, pasarela de pago y promociones).<br/><br/>**Nombre del campo:** `tn_orders_discount`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Total USD (pedidos) | Precio total de los pedidos convertido a dólares.<br/><br/>**Nombre del campo:** `tn_orders_total_usd`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Pedidos vendidos por día (pedidos) | Promedio de ventas (pedidos pagados) por día en el período.<br/><br/>**Nombre del campo:** `tn_orders_sold_per_day`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Ticket promedio de venta (pedidos) | Ticket promedio: facturación dividida por la cantidad de ventas.<br/><br/>**Nombre del campo:** `tn_orders_average_sales_ticket`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+
+### Carritos abandonados
+
+| | |
+|---|---|
+| Cantidad (carritos abandonados) | Cantidad de carritos abandonados.<br/><br/>**Nombre del campo:** `tn_checkouts_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Cupón (carritos abandonados) | Cupón usado en los carritos abandonados.<br/><br/>**Nombre del campo:** `tn_checkouts_coupon`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Subtotal (carritos abandonados) | Precio de los carritos abandonados antes del envío.<br/><br/>**Nombre del campo:** `tn_checkouts_subtotal`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Descuento (carritos abandonados) | Descuento aplicado a los carritos abandonados.<br/><br/>**Nombre del campo:** `tn_checkouts_discount`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Total (carritos abandonados) | Precio total de los carritos abandonados.<br/><br/>**Nombre del campo:** `tn_checkouts_total`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Total USD (carritos abandonados) | Precio total de los carritos abandonados convertido a dólares.<br/><br/>**Nombre del campo:** `tn_checkouts_total_usd`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+
+### Productos pedidos
+
+| | |
+|---|---|
+| Cantidad de productos pedidos (pedidos de producto) | Unidades de productos pedidas, contando todas las líneas de pedido en cualquier estado de pago.<br/><br/>**Nombre del campo:** `tn_productOrders_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Profundidad (pedidos de producto) | Profundidad del producto pedido.<br/><br/>**Nombre del campo:** `tn_productOrders_depth`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Altura (pedidos de producto) | Altura del producto pedido.<br/><br/>**Nombre del campo:** `tn_productOrders_height`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Precio (pedidos de producto) | Precio unitario del producto al momento de la compra.<br/><br/>**Nombre del campo:** `tn_productOrders_price`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Productos vendidos (pedidos de producto) | Unidades vendidas: unidades de productos en pedidos pagados y no cancelados. Usar para productos vendidos.<br/><br/>**Nombre del campo:** `tn_productOrders_quantity`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Costo (pedidos de producto) | Costo unitario del producto, cargado por el vendedor.<br/><br/>**Nombre del campo:** `tn_productOrders_cost`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Subtotal (pedidos de producto) | Facturación por producto: precio unitario × unidades de cada línea de pedido, en cualquier estado de pago (puede ser mayor a 0 con 0 unidades vendidas).<br/><br/>**Nombre del campo:** `tn_productOrders_subtotal`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Precio promedio (pedidos de producto) | Precio unitario promedio de los productos al momento de la compra.<br/><br/>**Nombre del campo:** `tn_productOrders_average_price`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Costo subtotal (pedidos de producto) | Costo de los productos: costo unitario × unidades pedidas.<br/><br/>**Nombre del campo:** `tn_productOrders_subtotal_cost`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Precio promedio (pedidos de producto) | Precio unitario promedio de los productos al momento de la compra.<br/><br/>**Nombre del campo:** `tn_productOrders_average_price`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Catálogo de campos" href="/">
+    Ver todas las fuentes
+  </Card>
+  <Card title="Instagram" href="/instagram/metrics">
+    Métricas & Dimensiones
+  </Card>
+  <Card title="Facebook Pages" href="/facebook/metrics">
+    Métricas & Dimensiones
+  </Card>
+  <Card title="Shopify" href="/shopify/metrics">
+    Métricas & Dimensiones
+  </Card>
+</CardGroup>

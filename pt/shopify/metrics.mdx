@@ -1,0 +1,148 @@
+---
+title: "Shopify: Métricas"
+description: "Referência completa das métricas de Shopify no Master Metrics"
+---
+
+<Info>**Última atualização:** 2026-11-12</Info>
+
+Esta referência cobre as 87 métricas disponíveis de Shopify no Master Metrics. Use-a para entender quais dados você pode obter e como cada campo se chama.
+
+**Disponível em:** Dashboards · Relatórios · Assistente de IA · MCP
+
+## Métricas
+
+As métricas são os valores numéricos que você pode medir e agregar a partir dos seus dados de Shopify.
+
+### Clientes
+
+| | |
+|---|---|
+| Contagem (Clientes) | Quantidade de clientes da loja.<br/><br/>**Nome do campo:** `shopify_customers_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+
+### Carrinhos abandonados
+
+| | |
+|---|---|
+| Contagem (Finalizações Abandonadas) | Quantidade de checkouts abandonados.<br/><br/>**Nome do campo:** `shopify_abandonedCheckouts_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Valor Total (Finalizações Abandonadas) | Valor total dos checkouts abandonados.<br/><br/>**Nome do campo:** `shopify_abandonedCheckouts_total_amount`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+
+### Pedidos
+
+| | |
+|---|---|
+| Contagem (Pedidos) | Quantidade de pedidos.<br/><br/>**Nome do campo:** `shopify_orders_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Valor Total (Pedidos) | Preço total original dos pedidos, com frete, impostos e descontos, antes de edições e reembolsos.<br/><br/>**Nome do campo:** `shopify_orders_total_amount`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Taxas Totais (Pedidos) | Taxas adicionais cobradas nos pedidos.<br/><br/>**Nome do campo:** `shopify_orders_fees`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Descontos Totais (Pedidos) | Descontos totais aplicados aos produtos dos pedidos.<br/><br/>**Nome do campo:** `shopify_orders_discounts`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Custo de Envio (Pedidos) | Frete cobrado nos pedidos.<br/><br/>**Nome do campo:** `shopify_orders_original_price`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Taxas Alfandegárias Totais (Pedidos) | Tarifas alfandegárias cobradas nos pedidos.<br/><br/>**Nome do campo:** `shopify_orders_duties`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Preço Total (Pedidos) | Preço total atual dos pedidos, depois de edições e reembolsos.<br/><br/>**Nome do campo:** `shopify_orders_price`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Preço Médio (Pedidos) | Valor médio do pedido: vendas divididas pela quantidade de pedidos.<br/><br/>**Nome do campo:** `shopify_orders_average_price`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Subtotal Total (Pedidos) | Preço dos pedidos depois dos descontos, antes de frete e impostos.<br/><br/>**Nome do campo:** `shopify_orders_subtotal_price`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Impostos (Pedidos) | Impostos cobrados nos pedidos.<br/><br/>**Nome do campo:** `shopify_orders_tax`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Devoluções (Pedidos) | Valor dos produtos devolvidos.<br/><br/>**Nome do campo:** `shopify_orders_returns_total`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Impostos de Devoluções (Pedidos) | Impostos dos produtos devolvidos.<br/><br/>**Nome do campo:** `shopify_orders_returns_taxes`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Vendas líquidas (Pedidos) | Vendas líquidas: vendas brutas menos descontos e devoluções. Sem frete nem impostos.<br/><br/>**Nome do campo:** `shopify_orders_net_sales_total`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Vendas totais (Pedidos) | Vendas totais: vendas líquidas mais frete, impostos, tarifas alfandegárias e taxas.<br/><br/>**Nome do campo:** `shopify_orders_total_sales`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Itens Líquidos Vendidos (Pedidos) | Itens líquidos vendidos: unidades vendidas menos unidades devolvidas. Usar para produtos vendidos.<br/><br/>**Nome do campo:** `shopify_orders_net_items_sold`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Custo de Mercadorias Vendidas (Pedidos) | Custo dos produtos vendidos, para produtos com custo cadastrado.<br/><br/>**Nome do campo:** `shopify_orders_cost_of_goods_sold`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Margem Bruta (Pedidos) | Margem bruta: lucro bruto como porcentagem das vendas líquidas com custo cadastrado.<br/><br/>**Nome do campo:** `shopify_orders_gross_margin`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Lucro Bruto (Pedidos) | Lucro bruto: vendas líquidas de produtos com custo cadastrado menos o seu custo.<br/><br/>**Nome do campo:** `shopify_orders_gross_profit`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Valor Gasto por Cliente (Pedidos) | Valor médio gasto por cliente.<br/><br/>**Nome do campo:** `shopify_orders_amount_spent_per_customer`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Pacotes Pedidos (Pedidos) | Quantidade de kits de produtos pedidos.<br/><br/>**Nome do campo:** `shopify_orders_bundles_ordered`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Clientes (Pedidos) | Quantidade de clientes que fizeram pedidos.<br/><br/>**Nome do campo:** `shopify_orders_customers`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Descontos Devolvidos (Pedidos) | Descontos revertidos por devoluções.<br/><br/>**Nome do campo:** `shopify_orders_discounts_returned`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Descontos de Cartão Presente (Pedidos) | Descontos aplicados a cartões-presente.<br/><br/>**Nome do campo:** `shopify_orders_gift_card_discounts`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Vendas Brutas de Cartão Presente (Pedidos) | Vendas brutas de cartões-presente.<br/><br/>**Nome do campo:** `shopify_orders_gift_card_gross_sales`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Vendas Líquidas de Cartão Presente (Pedidos) | Vendas líquidas de cartões-presente.<br/><br/>**Nome do campo:** `shopify_orders_gift_card_net_sales`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Impostos de Cartão Presente (Pedidos) | Impostos cobrados sobre cartões-presente.<br/><br/>**Nome do campo:** `shopify_orders_gift_card_taxes`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Devoluções Brutas (Pedidos) | Valor bruto dos produtos devolvidos.<br/><br/>**Nome do campo:** `shopify_orders_gross_returns`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Descontos de Item de Linha (Pedidos) | Descontos aplicados a produtos específicos.<br/><br/>**Nome do campo:** `shopify_orders_line_item_discounts`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Devoluções Líquidas (Pedidos) | Valor dos produtos devolvidos, líquido dos seus descontos.<br/><br/>**Nome do campo:** `shopify_orders_net_returns`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Vendas Líquidas com Custo Registrado (Pedidos) | Vendas líquidas de produtos com custo cadastrado.<br/><br/>**Nome do campo:** `shopify_orders_net_sales_with_cost_recorded`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Vendas Líquidas sem Custo Registrado (Pedidos) | Vendas líquidas de produtos sem custo cadastrado.<br/><br/>**Nome do campo:** `shopify_orders_net_sales_without_cost_recorded`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Novos Clientes (Pedidos) | Quantidade de clientes que compraram pela primeira vez.<br/><br/>**Nome do campo:** `shopify_orders_new_customers`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Número de Pedidos por Cliente (Pedidos) | Média de pedidos por cliente.<br/><br/>**Nome do campo:** `shopify_orders_number_of_orders_per_customer`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Descontos no Nível do Pedido (Pedidos) | Descontos aplicados ao pedido inteiro.<br/><br/>**Nome do campo:** `shopify_orders_order_level_discounts`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Acordos de Venda do Pedido (Pedidos) | Quantidade de registros de venda dos pedidos (vendas, edições e devoluções).<br/><br/>**Nome do campo:** `shopify_orders_order_sale_agreements`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Pedidos Primeira Vez (Pedidos) | Pedidos de clientes que compram pela primeira vez.<br/><br/>**Nome do campo:** `shopify_orders_orders_first_time`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Pedidos Recorrentes (Pedidos) | Pedidos de clientes recorrentes.<br/><br/>**Nome do campo:** `shopify_orders_orders_returning`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Quantidade Pedida por Pedido (Pedidos) | Média de unidades de produtos por pedido.<br/><br/>**Nome do campo:** `shopify_orders_quantity_ordered_per_order`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Quantidade Devolvida (Pedidos) | Unidades de produtos devolvidas.<br/><br/>**Nome do campo:** `shopify_orders_quantity_returned`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Taxa de Vendas Assistidas por Funcionários (Pedidos) | Porcentagem de vendas feitas com ajuda de um funcionário.<br/><br/>**Nome do campo:** `shopify_orders_rate_of_staff_assisted_sales`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Taxa de Quantidade Devolvida (Pedidos) | Porcentagem das unidades pedidas que foram devolvidas.<br/><br/>**Nome do campo:** `shopify_orders_returned_quantity_rate`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Taxas de Devolução (Pedidos) | Taxas cobradas por devoluções.<br/><br/>**Nome do campo:** `shopify_orders_return_fees`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Taxa de Clientes Recorrentes (Pedidos) | Porcentagem de clientes que já haviam comprado antes.<br/><br/>**Nome do campo:** `shopify_orders_returning_customer_rate`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Clientes Recorrentes (Pedidos) | Quantidade de clientes que já haviam comprado antes.<br/><br/>**Nome do campo:** `shopify_orders_returning_customers`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Descontos de Taxa de Envio (Pedidos) | Descontos aplicados ao frete.<br/><br/>**Nome do campo:** `shopify_orders_shipping_charge_discounts`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Impostos de Taxa de Envio (Pedidos) | Impostos cobrados sobre o frete.<br/><br/>**Nome do campo:** `shopify_orders_shipping_charge_taxes`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Envio Devolvido (Pedidos) | Frete reembolsado.<br/><br/>**Nome do campo:** `shopify_orders_shipping_returned`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Impostos Excluindo Cartões Presente (Pedidos) | Impostos cobrados, sem os de cartões-presente.<br/><br/>**Nome do campo:** `shopify_orders_taxes_excluding_gift_cards`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Gorjetas (Pedidos) | Gorjetas recebidas nos pedidos.<br/><br/>**Nome do campo:** `shopify_orders_tips`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Devoluções Totais (Pedidos) | Devoluções totais, com frete, impostos e taxas devolvidos.<br/><br/>**Nome do campo:** `shopify_orders_total_returns`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Vendas Totais Primeira Vez (Pedidos) | Vendas totais de clientes que compram pela primeira vez.<br/><br/>**Nome do campo:** `shopify_orders_total_sales_first_time`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Vendas Totais Recorrentes (Pedidos) | Vendas totais de clientes recorrentes.<br/><br/>**Nome do campo:** `shopify_orders_total_sales_returning`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Taxas de Envio Totais (Pedidos) | Frete cobrado, depois de descontos e reembolsos de frete.<br/><br/>**Nome do campo:** `shopify_orders_total_shipping_charges`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Taxa de Risco de Fraude Aceitável (Pedidos) | Porcentagem de pedidos com risco de fraude aceitável.<br/><br/>**Nome do campo:** `shopify_orders_acceptable_fraud_risk_rate`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Taxa de Risco de Fraude Alto (Pedidos) | Porcentagem de pedidos com risco de fraude alto.<br/><br/>**Nome do campo:** `shopify_orders_high_fraud_risk_rate`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Contagem (Transações) | Quantidade de transações de pagamento (vendas, autorizações, reembolsos...).<br/><br/>**Nome do campo:** `shopify_transactions_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Valor Total (Transações) | Valor total das transações de pagamento.<br/><br/>**Nome do campo:** `shopify_transactions_total_amount`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Quantidade Total de Produto (Pedidos) | Unidades pedidas: unidades de produtos nos pedidos, antes das devoluções.<br/><br/>**Nome do campo:** `shopify_orders_line_items_quantity`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Quantidade Atual Total de Produto (Pedidos) | Unidades atuais de produtos nos pedidos, depois de remoções e devoluções.<br/><br/>**Nome do campo:** `shopify_orders_line_items_current_quantity`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Preço Original Total de Produto (Pedidos) | Soma dos preços unitários originais dos produtos pedidos.<br/><br/>**Nome do campo:** `shopify_orders_line_items_original_price`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Preço Médio de Produto (Pedidos) | Preço unitário original médio dos produtos pedidos.<br/><br/>**Nome do campo:** `shopify_orders_line_items_average_price`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Vendas brutas (Pedidos) | Vendas brutas: preço do produto × unidades pedidas, antes de descontos, devoluções, frete e impostos.<br/><br/>**Nome do campo:** `shopify_orders_line_items_gross_total`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+
+### Sessões
+
+| | |
+|---|---|
+| Total de sessões (Sessões) | Quantidade de sessões da loja virtual.<br/><br/>**Nome do campo:** `shopify_sessions_total`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Total de visitantes (Sessões) | Quantidade de visitantes únicos da loja virtual.<br/><br/>**Nome do campo:** `shopify_visitors_total`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Rejeições (Sessões) | Sessões que viram uma única página.<br/><br/>**Nome do campo:** `shopify_sessions_bounces`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Sessões com adição ao carrinho (Sessões) | Sessões que adicionaram um produto ao carrinho.<br/><br/>**Nome do campo:** `shopify_sessions_with_cart_additions`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Sessões que chegaram ao checkout (Sessões) | Sessões que chegaram ao checkout.<br/><br/>**Nome do campo:** `shopify_sessions_that_reached_checkout`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Sessões que chegaram e concluíram checkout (Sessões) | Sessões que chegaram ao checkout e o concluíram.<br/><br/>**Nome do campo:** `shopify_sessions_that_reached_and_completed_checkout`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Sessões que concluíram checkout (Sessões) | Sessões que concluíram o checkout (fizeram um pedido).<br/><br/>**Nome do campo:** `shopify_sessions_that_completed_checkout`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Taxa de chegada ao checkout (Sessões) | Porcentagem de sessões que chegaram ao checkout.<br/><br/>**Nome do campo:** `shopify_sessions_reached_checkout_rate`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Visualizações de página por sessão (Sessões) | Média de páginas vistas por sessão.<br/><br/>**Nome do campo:** `shopify_sessions_pageviews_per_session`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Visualizações de página (Sessões) | Quantidade de páginas vistas.<br/><br/>**Nome do campo:** `shopify_sessions_pageviews`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Taxa de conversão (Sessões) | Taxa de conversão: porcentagem de sessões que fizeram um pedido.<br/><br/>**Nome do campo:** `shopify_sessions_conversion_rate`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Taxa de checkout concluído (Sessões) | Porcentagem de sessões que concluíram o checkout.<br/><br/>**Nome do campo:** `shopify_sessions_completed_checkout_rate`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Taxa de conversão de checkout (Sessões) | Porcentagem de sessões que chegaram ao checkout e o concluíram.<br/><br/>**Nome do campo:** `shopify_sessions_checkout_conversion_rate`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Duração média da sessão (Sessões) | Duração média das sessões.<br/><br/>**Nome do campo:** `shopify_sessions_average_session_duration`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Taxa de adição ao carrinho (Sessões) | Porcentagem de sessões que adicionaram um produto ao carrinho.<br/><br/>**Nome do campo:** `shopify_sessions_added_to_cart_rate`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Taxa de rejeição (Sessões) | Porcentagem de sessões que viram uma única página.<br/><br/>**Nome do campo:** `shopify_bounce_rate`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+
+### Produtos
+
+| | |
+|---|---|
+| Contagem Criados (Produtos) | Quantidade de produtos criados.<br/><br/>**Nome do campo:** `shopify_products_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Preço Máximo (Produtos) | Maior preço de variação dos produtos.<br/><br/>**Nome do campo:** `shopify_products_max_price`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Preço Mínimo (Produtos) | Menor preço de variação dos produtos.<br/><br/>**Nome do campo:** `shopify_products_min_price`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+
+### Variantes de produto
+
+| | |
+|---|---|
+| Contagem (Variantes de Produto) | Quantidade de variações de produto.<br/><br/>**Nome do campo:** `shopify_productVariants_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Preço (Variantes de Produto) | Preço atual das variações de produto.<br/><br/>**Nome do campo:** `shopify_productVariants_price`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+| Quantidade em Estoque (Variantes de Produto) | Unidades em estoque das variações de produto.<br/><br/>**Nome do campo:** `shopify_productVariants_inventory_quantity`<br/>**Tipo:** métrica<br/>**MCP:** Disponível |
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Catálogo de campos" href="/pt/">
+    Ver todas as fontes
+  </Card>
+  <Card title="Instagram" href="/pt/instagram/metrics">
+    Métricas & Dimensões
+  </Card>
+  <Card title="Facebook Pages" href="/pt/facebook/metrics">
+    Métricas & Dimensões
+  </Card>
+  <Card title="Tiendanube" href="/pt/tiendanube/metrics">
+    Métricas & Dimensões
+  </Card>
+</CardGroup>

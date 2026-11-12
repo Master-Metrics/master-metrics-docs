@@ -1,0 +1,165 @@
+---
+title: "Shopify: Dimensiones"
+description: "Referencia completa de las dimensiones de Shopify en Master Metrics"
+---
+
+<Info>**Última actualización:** 2026-11-12</Info>
+
+Esta referencia cubre las 99 dimensiones disponibles de Shopify en Master Metrics. Úsala para entender cómo puedes segmentar tus datos y cómo se llama cada campo.
+
+**Disponible en:** Dashboards · Reportes · Asistente de IA · MCP
+
+## Dimensiones
+
+Las dimensiones son los atributos que puedes usar para segmentar y agrupar tus datos de Shopify.
+
+### General
+
+| | |
+|---|---|
+| Día | **Nombre del campo:** `day`<br/>**Tipo:** dimensión |
+| Semana | **Nombre del campo:** `week`<br/>**Tipo:** dimensión |
+| Mes | **Nombre del campo:** `month`<br/>**Tipo:** dimensión |
+| Año | **Nombre del campo:** `year`<br/>**Tipo:** dimensión |
+| Trimestre | **Nombre del campo:** `quarter`<br/>**Tipo:** dimensión |
+| Nombre de la tienda | Nombre de la tienda.<br/><br/>**Nombre del campo:** `shopify_shop_name`<br/>**Tipo:** dimensión |
+| ID de la tienda | **Nombre del campo:** `shopify_shop_id`<br/>**Tipo:** dimensión |
+| Nombre de la entidad | **Nombre del campo:** `shopify_entity_name`<br/>**Tipo:** dimensión |
+
+### Carritos abandonados
+
+| | |
+|---|---|
+| ID (Checkouts abandonados) | **Nombre del campo:** `shopify_checkouts_id`<br/>**Tipo:** dimensión |
+| Correo electrónico del cliente (Checkouts abandonados) | **Nombre del campo:** `shopify_checkouts_email`<br/>**Tipo:** dimensión |
+| Fecha de creación (Checkouts abandonados) | **Nombre del campo:** `shopify_checkouts_created_at`<br/>**Tipo:** dimensión |
+| Fecha de actualización (Checkouts abandonados) | **Nombre del campo:** `shopify_checkouts_updated_at`<br/>**Tipo:** dimensión |
+
+### Clientes
+
+| | |
+|---|---|
+| ID (Clientes) | **Nombre del campo:** `shopify_customers_id`<br/>**Tipo:** dimensión |
+| Nombre (Clientes) | Nombre del cliente.<br/><br/>**Nombre del campo:** `shopify_customers_first_name`<br/>**Tipo:** dimensión |
+| Apellido (Clientes) | Apellido del cliente.<br/><br/>**Nombre del campo:** `shopify_customers_last_name`<br/>**Tipo:** dimensión |
+| Correo electrónico (Clientes) | Email del cliente.<br/><br/>**Nombre del campo:** `shopify_customers_email`<br/>**Tipo:** dimensión |
+| Teléfono (Clientes) | **Nombre del campo:** `shopify_customers_phone`<br/>**Tipo:** dimensión |
+| Fecha de creación (Clientes) | **Nombre del campo:** `shopify_customers_created_at`<br/>**Tipo:** dimensión |
+| Fecha de actualización (Clientes) | **Nombre del campo:** `shopify_customers_updated_at`<br/>**Tipo:** dimensión |
+
+### Pedidos
+
+| | |
+|---|---|
+| ID (Pedidos) | Id del pedido.<br/><br/>**Nombre del campo:** `shopify_orders_id`<br/>**Tipo:** dimensión |
+| Correo electrónico del cliente (Pedidos) | Email del cliente que hizo el pedido.<br/><br/>**Nombre del campo:** `shopify_orders_email`<br/>**Tipo:** dimensión |
+| ID de cliente (Pedidos) | **Nombre del campo:** `shopify_orders_customer_id`<br/>**Tipo:** dimensión |
+| Moneda (Pedidos) | Moneda del pedido.<br/><br/>**Nombre del campo:** `shopify_orders_currency`<br/>**Tipo:** dimensión |
+| Estado financiero (Pedidos) | Estado de pago del pedido: pendiente, autorizado, pagado, parcialmente pagado, reembolsado, parcialmente reembolsado o anulado.<br/><br/>**Nombre del campo:** `shopify_orders_display_financial_status`<br/>**Tipo:** dimensión |
+| Estado de cumplimiento (Pedidos) | Estado de preparación del pedido: no preparado, parcialmente preparado o preparado.<br/><br/>**Nombre del campo:** `shopify_orders_display_fulfillment_status`<br/>**Tipo:** dimensión |
+| ID (Transacciones) | **Nombre del campo:** `shopify_transactions_id`<br/>**Tipo:** dimensión |
+| ID del pedido (Transacciones) | **Nombre del campo:** `shopify_transactions_order_id`<br/>**Tipo:** dimensión |
+| Tipo (Transacciones) | Tipo de transacción: venta, autorización, captura, reembolso o anulación.<br/><br/>**Nombre del campo:** `shopify_transactions_kind`<br/>**Tipo:** dimensión |
+| Estado (Transacciones) | Estado de la transacción: exitosa, pendiente, fallida o con error.<br/><br/>**Nombre del campo:** `shopify_transactions_status`<br/>**Tipo:** dimensión |
+| Pasarela (Transacciones) | Pasarela de pago de la transacción.<br/><br/>**Nombre del campo:** `shopify_transactions_gateway`<br/>**Tipo:** dimensión |
+| Monto (Transacciones) | **Nombre del campo:** `shopify_transactions_amount`<br/>**Tipo:** dimensión |
+| Moneda (Transacciones) | **Nombre del campo:** `shopify_transactions_currency`<br/>**Tipo:** dimensión |
+| Etiquetas (Pedidos) | Etiquetas del pedido.<br/><br/>**Nombre del campo:** `shopify_orders_tags`<br/>**Tipo:** dimensión |
+| Nombre de origen del pedido (Pedidos) | Origen del pedido (web, pos, una app...).<br/><br/>**Nombre del campo:** `shopify_orders_order_source_name`<br/>**Tipo:** dimensión |
+| Nombre del canal del pedido (Pedidos) | Canal de venta del pedido (Tienda online, Punto de venta...).<br/><br/>**Nombre del campo:** `shopify_orders_order_channel_name`<br/>**Tipo:** dimensión |
+| ID de ubicación POS (Pedidos) | **Nombre del campo:** `shopify_orders_pos_location_id`<br/>**Tipo:** dimensión |
+| Nombre de ubicación POS (Pedidos) | Ubicación de punto de venta del pedido.<br/><br/>**Nombre del campo:** `shopify_orders_pos_location_name`<br/>**Tipo:** dimensión |
+| ID del item de Producto (Pedidos) | **Nombre del campo:** `shopify_orders_line_item_id`<br/>**Tipo:** dimensión |
+| ID del Producto (Pedidos) | Id del producto pedido.<br/><br/>**Nombre del campo:** `shopify_orders_line_item_product_id`<br/>**Tipo:** dimensión |
+| Titulo del Producto (Pedidos) | Título del producto pedido, agrupando todas sus variantes en una fila. Usar para productos (p. ej. top de productos).<br/><br/>**Nombre del campo:** `shopify_orders_line_item_product_title`<br/>**Tipo:** dimensión |
+| ID de la variante del Producto (Pedidos) | Id de la variante pedida.<br/><br/>**Nombre del campo:** `shopify_orders_line_item_variant_id`<br/>**Tipo:** dimensión |
+| Titulo de la Variante del Producto (Pedidos) | Título de la variante pedida (p. ej. "Rojo / M"): una fila por variante.<br/><br/>**Nombre del campo:** `shopify_orders_line_item_variant_title`<br/>**Tipo:** dimensión |
+| Proveedor (Items de Pedidos) | Proveedor del producto pedido.<br/><br/>**Nombre del campo:** `shopify_orders_line_item_vendor`<br/>**Tipo:** dimensión |
+| Orden o Devolución (Pedidos) | Si el registro de venta es un pedido o una devolución.<br/><br/>**Nombre del campo:** `shopify_orders_order_or_return`<br/>**Tipo:** dimensión |
+| ID de Reembolso (Pedidos) | **Nombre del campo:** `shopify_orders_refund_id`<br/>**Tipo:** dimensión |
+| ID de Venta (Pedidos) | **Nombre del campo:** `shopify_orders_sale_id`<br/>**Tipo:** dimensión |
+| Nombre de Orden (Pedidos) | Nombre del pedido que ve el vendedor (p. ej. #1001).<br/><br/>**Nombre del campo:** `shopify_orders_order_name`<br/>**Tipo:** dimensión |
+| Campaña UTM de Orden (Pedidos) | Campaña UTM de la visita que generó el pedido.<br/><br/>**Nombre del campo:** `shopify_orders_order_utm_campaign`<br/>**Tipo:** dimensión |
+| Contenido UTM de Orden (Pedidos) | Contenido UTM de la visita que generó el pedido.<br/><br/>**Nombre del campo:** `shopify_orders_order_utm_content`<br/>**Tipo:** dimensión |
+| Medio UTM de Orden (Pedidos) | Medio UTM de la visita que generó el pedido.<br/><br/>**Nombre del campo:** `shopify_orders_order_utm_medium`<br/>**Tipo:** dimensión |
+| Fuente UTM de Orden (Pedidos) | Fuente UTM de la visita que generó el pedido.<br/><br/>**Nombre del campo:** `shopify_orders_order_utm_source`<br/>**Tipo:** dimensión |
+| Término UTM de Orden (Pedidos) | Término UTM de la visita que generó el pedido.<br/><br/>**Nombre del campo:** `shopify_orders_order_utm_term`<br/>**Tipo:** dimensión |
+| Ciudad de Facturación (Pedidos) | Ciudad de facturación del pedido.<br/><br/>**Nombre del campo:** `shopify_orders_billing_city`<br/>**Tipo:** dimensión |
+| País de Facturación (Pedidos) | País de facturación del pedido.<br/><br/>**Nombre del campo:** `shopify_orders_billing_country`<br/>**Tipo:** dimensión |
+| Región de Facturación (Pedidos) | Región de facturación del pedido.<br/><br/>**Nombre del campo:** `shopify_orders_billing_region`<br/>**Tipo:** dimensión |
+| Ciudad de Envío (Pedidos) | Ciudad de envío del pedido.<br/><br/>**Nombre del campo:** `shopify_orders_shipping_city`<br/>**Tipo:** dimensión |
+| País de Envío (Pedidos) | País de envío del pedido.<br/><br/>**Nombre del campo:** `shopify_orders_shipping_country`<br/>**Tipo:** dimensión |
+| Región de Envío (Pedidos) | Región de envío del pedido.<br/><br/>**Nombre del campo:** `shopify_orders_shipping_region`<br/>**Tipo:** dimensión |
+| Idioma del Cliente (Pedidos) | **Nombre del campo:** `shopify_orders_customer_language`<br/>**Tipo:** dimensión |
+| Nombre del Cliente (Pedidos) | Nombre del cliente que hizo el pedido.<br/><br/>**Nombre del campo:** `shopify_orders_customer_name`<br/>**Tipo:** dimensión |
+| Etiqueta del Cliente (Pedidos) | Etiquetas del cliente que hizo el pedido.<br/><br/>**Nombre del campo:** `shopify_orders_customer_tag`<br/>**Tipo:** dimensión |
+| Tipo de Tráfico (Pedidos) | Tipo de tráfico que generó el pedido.<br/><br/>**Nombre del campo:** `shopify_orders_traffic_type`<br/>**Tipo:** dimensión |
+| Plataforma de Referencia (Pedidos) | Plataforma que refirió la visita que generó el pedido.<br/><br/>**Nombre del campo:** `shopify_orders_referring_platform`<br/>**Tipo:** dimensión |
+| Medio de Referencia (Pedidos) | Medio que refirió la visita que generó el pedido.<br/><br/>**Nombre del campo:** `shopify_orders_referring_medium`<br/>**Tipo:** dimensión |
+| Canal de Referencia (Pedidos) | Canal que refirió la visita que generó el pedido.<br/><br/>**Nombre del campo:** `shopify_orders_referring_channel`<br/>**Tipo:** dimensión |
+
+### Productos
+
+| | |
+|---|---|
+| Título (Productos) | Título del producto en el catálogo.<br/><br/>**Nombre del campo:** `shopify_product_title`<br/>**Tipo:** dimensión |
+| ID (Productos) | **Nombre del campo:** `shopify_product_id`<br/>**Tipo:** dimensión |
+| Proveedor (Productos) | Proveedor del producto en el catálogo.<br/><br/>**Nombre del campo:** `shopify_vendor`<br/>**Tipo:** dimensión |
+| Tipo (Productos) | Tipo del producto en el catálogo.<br/><br/>**Nombre del campo:** `shopify_product_type`<br/>**Tipo:** dimensión |
+| Etiquetas (Productos) | Etiquetas del producto.<br/><br/>**Nombre del campo:** `shopify_tags`<br/>**Tipo:** dimensión |
+| Estado (Productos) | Estado del producto: activo, borrador o archivado.<br/><br/>**Nombre del campo:** `shopify_status`<br/>**Tipo:** dimensión |
+
+### Variantes de producto
+
+| | |
+|---|---|
+| ID de exhibición (Variantes de productos) | **Nombre del campo:** `shopify_product_variant_id`<br/>**Tipo:** dimensión |
+| Nombre de exhibición (Variantes de productos) | Nombre del producto y la variante en el catálogo.<br/><br/>**Nombre del campo:** `shopify_product_variant_display_name`<br/>**Tipo:** dimensión |
+| SKU (Variantes de productos) | SKU de la variante del producto.<br/><br/>**Nombre del campo:** `shopify_product_variant_sku`<br/>**Tipo:** dimensión |
+
+### Sesiones
+
+| | |
+|---|---|
+| Sesión humana o bot (Sesiones) | **Nombre del campo:** `shopify_sessions_human_or_bot_session`<br/>**Tipo:** dimensión |
+| Sesión con rebote (Sesiones) | **Nombre del campo:** `shopify_sessions_session_bounced`<br/>**Tipo:** dimensión |
+| Canal de venta de primera orden (Sesiones) | **Nombre del campo:** `shopify_sessions_first_order_sales_channel`<br/>**Tipo:** dimensión |
+| Correo electrónico del cliente (Sesiones) | **Nombre del campo:** `shopify_sessions_customer_email`<br/>**Tipo:** dimensión |
+| Estado de cuenta del cliente (Sesiones) | **Nombre del campo:** `shopify_sessions_customer_account_status`<br/>**Tipo:** dimensión |
+| Fecha de checkout abandonado (Sesiones) | **Nombre del campo:** `shopify_sessions_abandoned_checkout_date`<br/>**Tipo:** dimensión |
+| ID de cliente (Sesiones) | **Nombre del campo:** `shopify_sessions_customer_id`<br/>**Tipo:** dimensión |
+| Fecha de primera orden del cliente (Sesiones) | **Nombre del campo:** `shopify_sessions_customer_first_order_date`<br/>**Tipo:** dimensión |
+| Fecha de última orden del cliente (Sesiones) | **Nombre del campo:** `shopify_sessions_customer_last_order_date`<br/>**Tipo:** dimensión |
+| Plataforma de referencia (Sesiones) | Plataforma que refirió la sesión.<br/><br/>**Nombre del campo:** `shopify_sessions_referring_platform`<br/>**Tipo:** dimensión |
+| Medio de referencia (Sesiones) | Medio que refirió la sesión.<br/><br/>**Nombre del campo:** `shopify_sessions_referring_medium`<br/>**Tipo:** dimensión |
+| Canal de referencia (Sesiones) | Canal que refirió la sesión.<br/><br/>**Nombre del campo:** `shopify_sessions_referring_channel`<br/>**Tipo:** dimensión |
+| Sitio referidor (Sesiones) | **Nombre del campo:** `shopify_sessions_referrer_site`<br/>**Tipo:** dimensión |
+| Fuente referidora (Sesiones) | Fuente que refirió la sesión.<br/><br/>**Nombre del campo:** `shopify_sessions_referrer_source`<br/>**Tipo:** dimensión |
+| URL referidora (Sesiones) | **Nombre del campo:** `shopify_sessions_referrer_url`<br/>**Tipo:** dimensión |
+| Términos referidores (Sesiones) | **Nombre del campo:** `shopify_sessions_referrer_terms`<br/>**Tipo:** dimensión |
+| Ciudad de la sesión (Sesiones) | Ciudad de la sesión.<br/><br/>**Nombre del campo:** `shopify_sessions_session_city`<br/>**Tipo:** dimensión |
+| País de la sesión (Sesiones) | País de la sesión.<br/><br/>**Nombre del campo:** `shopify_sessions_session_country`<br/>**Tipo:** dimensión |
+| Código de país de la sesión (Sesiones) | **Nombre del campo:** `shopify_sessions_session_country_code`<br/>**Tipo:** dimensión |
+| Sistema operativo del dispositivo (Sesiones) | Sistema operativo del dispositivo de la sesión.<br/><br/>**Nombre del campo:** `shopify_sessions_session_device_os`<br/>**Tipo:** dimensión |
+| Tipo de dispositivo de la sesión (Sesiones) | Tipo de dispositivo de la sesión (escritorio, móvil, tablet).<br/><br/>**Nombre del campo:** `shopify_sessions_session_device_type`<br/>**Tipo:** dimensión |
+| Duración de la sesión (Sesiones) | **Nombre del campo:** `shopify_sessions_session_duration`<br/>**Tipo:** dimensión |
+| Región de la sesión (Sesiones) | Región de la sesión.<br/><br/>**Nombre del campo:** `shopify_sessions_session_region`<br/>**Tipo:** dimensión |
+| ID de sesión (Sesiones) | **Nombre del campo:** `shopify_sessions_session_id`<br/>**Tipo:** dimensión |
+| Tipo de tráfico (Sesiones) | Tipo de tráfico de la sesión.<br/><br/>**Nombre del campo:** `shopify_sessions_traffic_type`<br/>**Tipo:** dimensión |
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Catálogo de campos" href="/">
+    Ver todas las fuentes
+  </Card>
+  <Card title="Instagram" href="/instagram/metrics">
+    Métricas & Dimensiones
+  </Card>
+  <Card title="Facebook Pages" href="/facebook/metrics">
+    Métricas & Dimensiones
+  </Card>
+  <Card title="Tiendanube" href="/tiendanube/metrics">
+    Métricas & Dimensiones
+  </Card>
+</CardGroup>

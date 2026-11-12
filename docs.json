@@ -9,22 +9,156 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "languages": [
       {
-        "group": "Resumen",
-        "pages": [
-          "index"
+        "language": "es",
+        "groups": [
+          {
+            "group": "Resumen",
+            "pages": [
+              "index"
+            ]
+          },
+          {
+            "group": "Redes sociales",
+            "pages": [
+              {
+                "group": "Instagram",
+                "pages": [
+                  "instagram/metrics",
+                  "instagram/dimensions",
+                  "instagram/troubleshooting"
+                ]
+              },
+              {
+                "group": "Facebook Pages",
+                "pages": [
+                  "facebook/metrics",
+                  "facebook/dimensions",
+                  "facebook/troubleshooting"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "E-commerce",
+            "pages": [
+              {
+                "group": "Shopify",
+                "pages": [
+                  "shopify/metrics",
+                  "shopify/dimensions"
+                ]
+              },
+              {
+                "group": "Tiendanube",
+                "pages": [
+                  "tiendanube/metrics",
+                  "tiendanube/dimensions"
+                ]
+              }
+            ]
+          }
         ]
       },
       {
-        "group": "Redes sociales",
-        "pages": [
+        "language": "en",
+        "groups": [
           {
-            "group": "Instagram",
+            "group": "Overview",
             "pages": [
-              "instagram/metrics",
-              "instagram/dimensions",
-              "instagram/troubleshooting"
+              "en/index"
+            ]
+          },
+          {
+            "group": "Social",
+            "pages": [
+              {
+                "group": "Instagram",
+                "pages": [
+                  "en/instagram/metrics",
+                  "en/instagram/dimensions",
+                  "en/instagram/troubleshooting"
+                ]
+              },
+              {
+                "group": "Facebook Pages",
+                "pages": [
+                  "en/facebook/metrics",
+                  "en/facebook/dimensions",
+                  "en/facebook/troubleshooting"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "E-commerce",
+            "pages": [
+              {
+                "group": "Shopify",
+                "pages": [
+                  "en/shopify/metrics",
+                  "en/shopify/dimensions"
+                ]
+              },
+              {
+                "group": "Tiendanube",
+                "pages": [
+                  "en/tiendanube/metrics",
+                  "en/tiendanube/dimensions"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "pt",
+        "groups": [
+          {
+            "group": "Visão geral",
+            "pages": [
+              "pt/index"
+            ]
+          },
+          {
+            "group": "Redes sociais",
+            "pages": [
+              {
+                "group": "Instagram",
+                "pages": [
+                  "pt/instagram/metrics",
+                  "pt/instagram/dimensions",
+                  "pt/instagram/troubleshooting"
+                ]
+              },
+              {
+                "group": "Facebook Pages",
+                "pages": [
+                  "pt/facebook/metrics",
+                  "pt/facebook/dimensions",
+                  "pt/facebook/troubleshooting"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "E-commerce",
+            "pages": [
+              {
+                "group": "Shopify",
+                "pages": [
+                  "pt/shopify/metrics",
+                  "pt/shopify/dimensions"
+                ]
+              },
+              {
+                "group": "Tiendanube",
+                "pages": [
+                  "pt/tiendanube/metrics",
+                  "pt/tiendanube/dimensions"
+                ]
+              }
             ]
           }
         ]

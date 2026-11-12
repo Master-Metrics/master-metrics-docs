@@ -1,0 +1,216 @@
+---
+title: "Tiendanube: Dimensões"
+description: "Referência completa das dimensões de Tiendanube no Master Metrics"
+---
+
+<Info>**Última atualização:** 2026-11-12</Info>
+
+Esta referência cobre as 150 dimensões disponíveis de Tiendanube no Master Metrics. Use-a para entender como você pode segmentar seus dados e como cada campo se chama.
+
+**Disponível em:** Dashboards · Relatórios · Assistente de IA · MCP
+
+## Dimensões
+
+As dimensões são os atributos que você pode usar para segmentar e agrupar seus dados de Tiendanube.
+
+### Tempo
+
+| | |
+|---|---|
+| Dia | **Nome do campo:** `day`<br/>**Tipo:** dimensão |
+| Semana | **Nome do campo:** `week`<br/>**Tipo:** dimensão |
+| Mês | **Nome do campo:** `month`<br/>**Tipo:** dimensão |
+| Ano | **Nome do campo:** `year`<br/>**Tipo:** dimensão |
+| Trimestre | **Nome do campo:** `quarter`<br/>**Tipo:** dimensão |
+
+### Geral
+
+| | |
+|---|---|
+| Nome da Loja | Nome da loja.<br/><br/>**Nome do campo:** `tn_common_store_name`<br/>**Tipo:** dimensão |
+| ID da Loja | **Nome do campo:** `tn_common_store_id`<br/>**Tipo:** dimensão |
+| Tipo de Entidade | Tipo de registro: pedido, produto do pedido, produto, cliente ou carrinho abandonado.<br/><br/>**Nome do campo:** `tn_common_type_entity`<br/>**Tipo:** dimensão |
+
+### Pedidos
+
+| | |
+|---|---|
+| Opção de Envio (pedidos) | Método de envio escolhido para o pedido.<br/><br/>**Nome do campo:** `tn_orders_shipping_option`<br/>**Tipo:** dimensão |
+| Método de Pagamento (pedidos) | Método de pagamento usado no pedido.<br/><br/>**Nome do campo:** `tn_orders_payment_details`<br/>**Tipo:** dimensão |
+| Identificação do Cliente (pedidos) | **Nome do campo:** `tn_orders_customer_identification`<br/>**Tipo:** dimensão |
+| Parcelas (pedidos) | Quantidade de parcelas do pagamento.<br/><br/>**Nome do campo:** `tn_orders_installments`<br/>**Tipo:** dimensão |
+| Campanha UTM (pedidos) | Campanha UTM da visita que gerou o pedido.<br/><br/>**Nome do campo:** `tn_orders_utm_campaign`<br/>**Tipo:** dimensão |
+| Conteúdo UTM (pedidos) | Conteúdo UTM da visita que gerou o pedido.<br/><br/>**Nome do campo:** `tn_orders_utm_content`<br/>**Tipo:** dimensão |
+| Meio UTM (pedidos) | Mídia UTM da visita que gerou o pedido.<br/><br/>**Nome do campo:** `tn_orders_utm_medium`<br/>**Tipo:** dimensão |
+| Fonte UTM (pedidos) | Origem UTM da visita que gerou o pedido.<br/><br/>**Nome do campo:** `tn_orders_utm_source`<br/>**Tipo:** dimensão |
+| Termo UTM (pedidos) | Termo UTM da visita que gerou o pedido.<br/><br/>**Nome do campo:** `tn_orders_utm_term`<br/>**Tipo:** dimensão |
+| Categoria (pedidos) | Categorias dos produtos do pedido.<br/><br/>**Nome do campo:** `tn_orders_category`<br/>**Tipo:** dimensão |
+| Cliente Recorrente (pedidos) | Se o pedido é de um cliente que já havia comprado.<br/><br/>**Nome do campo:** `tn_orders_recurrent`<br/>**Tipo:** dimensão |
+| Primeira Interação (pedidos) | Data da primeira interação do cliente que fez o pedido.<br/><br/>**Nome do campo:** `tn_orders_first_interaction`<br/>**Tipo:** dimensão |
+| ID do Cliente (pedidos) | Id do cliente que fez o pedido.<br/><br/>**Nome do campo:** `tn_orders_customer_id`<br/>**Tipo:** dimensão |
+| ID (pedidos) | Id interno do pedido.<br/><br/>**Nome do campo:** `tn_orders_id`<br/>**Tipo:** dimensão |
+| Token (pedidos) | **Nome do campo:** `tn_orders_token`<br/>**Tipo:** dimensão |
+| ID da Loja (pedidos) | **Nome do campo:** `tn_orders_store_id`<br/>**Tipo:** dimensão |
+| Email do Contato (pedidos) | Email do contato do pedido.<br/><br/>**Nome do campo:** `tn_orders_contact_email`<br/>**Tipo:** dimensão |
+| Nome do Contato (pedidos) | Nome do contato do pedido.<br/><br/>**Nome do campo:** `tn_orders_contact_name`<br/>**Tipo:** dimensão |
+| Telefone do Contato (pedidos) | **Nome do campo:** `tn_orders_contact_phone`<br/>**Tipo:** dimensão |
+| Identificação do Contato (pedidos) | **Nome do campo:** `tn_orders_contact_identification`<br/>**Tipo:** dimensão |
+| Dias Mínimos para Envio (pedidos) | **Nome do campo:** `tn_orders_shipping_min_days`<br/>**Tipo:** dimensão |
+| Dias Máximos para Envio (pedidos) | **Nome do campo:** `tn_orders_shipping_max_days`<br/>**Tipo:** dimensão |
+| Nome para Faturamento (pedidos) | **Nome do campo:** `tn_orders_billing_name`<br/>**Tipo:** dimensão |
+| Telefone para Faturamento (pedidos) | **Nome do campo:** `tn_orders_billing_phone`<br/>**Tipo:** dimensão |
+| Endereço para Faturamento (pedidos) | **Nome do campo:** `tn_orders_billing_address`<br/>**Tipo:** dimensão |
+| Número para Faturamento (pedidos) | **Nome do campo:** `tn_orders_billing_number`<br/>**Tipo:** dimensão |
+| Andar para Faturamento (pedidos) | **Nome do campo:** `tn_orders_billing_floor`<br/>**Tipo:** dimensão |
+| Localidade para Faturamento (pedidos) | **Nome do campo:** `tn_orders_billing_locality`<br/>**Tipo:** dimensão |
+| CEP para Faturamento (pedidos) | **Nome do campo:** `tn_orders_billing_zipcode`<br/>**Tipo:** dimensão |
+| Cidade para Faturamento (pedidos) | Cidade de faturamento do pedido.<br/><br/>**Nome do campo:** `tn_orders_billing_city`<br/>**Tipo:** dimensão |
+| Província para Faturamento (pedidos) | Estado de faturamento do pedido.<br/><br/>**Nome do campo:** `tn_orders_billing_province`<br/>**Tipo:** dimensão |
+| País para Faturamento (pedidos) | País de faturamento do pedido.<br/><br/>**Nome do campo:** `tn_orders_billing_country`<br/>**Tipo:** dimensão |
+| Cupom de Desconto (pedidos) | Cupom de desconto usado no pedido.<br/><br/>**Nome do campo:** `tn_orders_discount_coupon`<br/>**Tipo:** dimensão |
+| Desconto do Gateway (pedidos) | **Nome do campo:** `tn_orders_discount_gateway`<br/>**Tipo:** dimensão |
+| Finalização Ativada (pedidos) | **Nome do campo:** `tn_orders_checkout_enabled`<br/>**Tipo:** dimensão |
+| Peso (pedidos) | **Nome do campo:** `tn_orders_weight`<br/>**Tipo:** dimensão |
+| Moeda (pedidos) | **Nome do campo:** `tn_orders_currency`<br/>**Tipo:** dimensão |
+| Idioma (pedidos) | **Nome do campo:** `tn_orders_language`<br/>**Tipo:** dimensão |
+| Pasarela de Pagamento (pedidos) | Id do provedor de pagamento que processou o pagamento.<br/><br/>**Nome do campo:** `tn_orders_gateway`<br/>**Tipo:** dimensão |
+| ID da Pasarela (pedidos) | **Nome do campo:** `tn_orders_gateway_id`<br/>**Tipo:** dimensão |
+| Nome da Pasarela (pedidos) | Nome do provedor de pagamento.<br/><br/>**Nome do campo:** `tn_orders_gateway_name`<br/>**Tipo:** dimensão |
+| Envio (pedidos) | **Nome do campo:** `tn_orders_shipping`<br/>**Tipo:** dimensão |
+| Código da Opção de Envio (pedidos) | **Nome do campo:** `tn_orders_shipping_option_code`<br/>**Tipo:** dimensão |
+| Tipo de Retirada (pedidos) | **Nome do campo:** `tn_orders_shipping_pickup_type`<br/>**Tipo:** dimensão |
+| Canal de venda (pedidos) | Canal de venda do pedido: loja, Mercado Livre, API, rascunho (formulário) ou ponto de venda.<br/><br/>**Nome do campo:** `tn_orders_storefront`<br/>**Tipo:** dimensão |
+| Criado Em (pedidos) | Data de criação do pedido.<br/><br/>**Nome do campo:** `tn_orders_created_at`<br/>**Tipo:** dimensão |
+| Atualizado Em (pedidos) | **Nome do campo:** `tn_orders_updated_at`<br/>**Tipo:** dimensão |
+| Cliente (pedidos) | Cliente que fez o pedido.<br/><br/>**Nome do campo:** `tn_orders_customer`<br/>**Tipo:** dimensão |
+| Número (pedidos) | Número do pedido que o lojista e o cliente veem.<br/><br/>**Nome do campo:** `tn_orders_number`<br/>**Tipo:** dimensão |
+| Status (pedidos) | Status do pedido: aberto, fechado (arquivado) ou cancelado.<br/><br/>**Nome do campo:** `tn_orders_status`<br/>**Tipo:** dimensão |
+| Status do Pagamento (pedidos) | Status do pagamento: autorizado, pendente, pago, parcialmente pago, abandonado, reembolsado, parcialmente reembolsado ou anulado.<br/><br/>**Nome do campo:** `tn_orders_payment_status`<br/>**Tipo:** dimensão |
+| Status do Envio (pedidos) | Status do envio: não embalado, enviado, não enviado, entregue, parcialmente embalado ou parcialmente enviado.<br/><br/>**Nome do campo:** `tn_orders_shipping_status`<br/>**Tipo:** dimensão |
+| URL de Destino (pedidos) | Página pela qual o cliente entrou na loja.<br/><br/>**Nome do campo:** `tn_orders_landing_url`<br/>**Tipo:** dimensão |
+| Data de Pagamento (pedidos) | Data de pagamento do pedido.<br/><br/>**Nome do campo:** `tn_orders_paid_at`<br/>**Tipo:** dimensão |
+| Data de Envio (pedidos) | Data de envio do pedido.<br/><br/>**Nome do campo:** `tn_orders_shipped_at`<br/>**Tipo:** dimensão |
+
+### Produtos pedidos
+
+| | |
+|---|---|
+| Imagem (pedidos de produtos) | Imagem do produto pedido.<br/><br/>**Nome do campo:** `tn_productOrders_image`<br/>**Tipo:** dimensão |
+| Categoria (pedidos de produtos) | Categoria do produto pedido.<br/><br/>**Nome do campo:** `tn_productOrders_category`<br/>**Tipo:** dimensão |
+| Nome (pedidos de produtos) | Nome do produto com a variação (ex.: "Camiseta (Vermelha, M)"): uma linha por variação.<br/><br/>**Nome do campo:** `tn_productOrders_name`<br/>**Tipo:** dimensão |
+| Preço Comparativo (pedidos de produtos) | Preço original do produto antes do seu desconto.<br/><br/>**Nome do campo:** `tn_productOrders_compare_at_price`<br/>**Tipo:** dimensão |
+| ID do Produto (pedidos de produtos) | Id do produto pedido.<br/><br/>**Nome do campo:** `tn_productOrders_product_id`<br/>**Tipo:** dimensão |
+| Frete Grátis (pedidos de produtos) | Se o produto pedido tem frete grátis.<br/><br/>**Nome do campo:** `tn_productOrders_free_shipping`<br/>**Tipo:** dimensão |
+| Peso (pedidos de produtos) | **Nome do campo:** `tn_productOrders_weight`<br/>**Tipo:** dimensão |
+| Largura (pedidos de produtos) | **Nome do campo:** `tn_productOrders_width`<br/>**Tipo:** dimensão |
+| ID da Variante (pedidos de produtos) | Id da variação do produto pedido.<br/><br/>**Nome do campo:** `tn_productOrders_variant_id`<br/>**Tipo:** dimensão |
+| SKU (pedidos de produtos) | SKU (código de estoque) da variação pedida.<br/><br/>**Nome do campo:** `tn_productOrders_sku`<br/>**Tipo:** dimensão |
+| Código de Barras (pedidos de produtos) | Código de barras do produto pedido.<br/><br/>**Nome do campo:** `tn_productOrders_barcode`<br/>**Tipo:** dimensão |
+| Nome sem variantes (pedidos de produtos) | Nome base do produto sem a variação: agrupa todas as variações de um produto em uma linha. Usar para produtos (ex.: top produtos).<br/><br/>**Nome do campo:** `tn_productOrders_name_without_variants`<br/>**Tipo:** dimensão |
+| ID do Produto (pedidos de produtos) | Id do produto pedido.<br/><br/>**Nome do campo:** `tn_productOrders_product_id`<br/>**Tipo:** dimensão |
+
+### Produtos
+
+| | |
+|---|---|
+| Imagem (produtos) | **Nome do campo:** `tn_products_image`<br/>**Tipo:** dimensão |
+| ID (produtos) | **Nome do campo:** `tn_products_id`<br/>**Tipo:** dimensão |
+| Nome (produtos) | Nome do produto no catálogo.<br/><br/>**Nome do campo:** `tn_products_name`<br/>**Tipo:** dimensão |
+| Marca (produtos) | Marca do produto.<br/><br/>**Nome do campo:** `tn_products_brand`<br/>**Tipo:** dimensão |
+| published (products) | Se o produto está publicado na loja.<br/><br/>**Nome do campo:** `tn_products_published`<br/>**Tipo:** dimensão |
+| Frete Grátis (products) | **Nome do campo:** `tn_products_free_shipping`<br/>**Tipo:** dimensão |
+| tags (products) | Tags do produto.<br/><br/>**Nome do campo:** `tn_products_tags`<br/>**Tipo:** dimensão |
+| Variante (produtos) | Variação do produto no catálogo.<br/><br/>**Nome do campo:** `tn_products_variant`<br/>**Tipo:** dimensão |
+| SKU (produtos) | SKU da variação do produto no catálogo.<br/><br/>**Nome do campo:** `tn_products_sku`<br/>**Tipo:** dimensão |
+
+### Clientes
+
+| | |
+|---|---|
+| ID (clientes) | **Nome do campo:** `tn_customers_id`<br/>**Tipo:** dimensão |
+| Nome (clientes) | Nome do cliente.<br/><br/>**Nome do campo:** `tn_customers_name`<br/>**Tipo:** dimensão |
+| Email (clientes) | Email do cliente.<br/><br/>**Nome do campo:** `tn_customers_email`<br/>**Tipo:** dimensão |
+| Identificação (clientes) | **Nome do campo:** `tn_customers_identification`<br/>**Tipo:** dimensão |
+| Telefone (clientes) | **Nome do campo:** `tn_customers_phone`<br/>**Tipo:** dimensão |
+| Nome para Faturamento (clientes) | **Nome do campo:** `tn_customers_billing_name`<br/>**Tipo:** dimensão |
+| Telefone para Faturamento (clientes) | **Nome do campo:** `tn_customers_billing_phone`<br/>**Tipo:** dimensão |
+| Endereço para Faturamento (clientes) | **Nome do campo:** `tn_customers_billing_address`<br/>**Tipo:** dimensão |
+| Número para Faturamento (clientes) | **Nome do campo:** `tn_customers_billing_number`<br/>**Tipo:** dimensão |
+| Andar para Faturamento (clientes) | **Nome do campo:** `tn_customers_billing_floor`<br/>**Tipo:** dimensão |
+| Localidade para Faturamento (clientes) | **Nome do campo:** `tn_customers_billing_locality`<br/>**Tipo:** dimensão |
+| CEP para Faturamento (clientes) | **Nome do campo:** `tn_customers_billing_zipcode`<br/>**Tipo:** dimensão |
+| Cidade para Faturamento (clientes) | Cidade de faturamento do cliente.<br/><br/>**Nome do campo:** `tn_customers_billing_city`<br/>**Tipo:** dimensão |
+| Província para Faturamento (clientes) | Estado de faturamento do cliente.<br/><br/>**Nome do campo:** `tn_customers_billing_province`<br/>**Tipo:** dimensão |
+| País para Faturamento (clientes) | **Nome do campo:** `tn_customers_billing_country`<br/>**Tipo:** dimensão |
+| Primeira Interação (clientes) | **Nome do campo:** `tn_customers_first_interaction`<br/>**Tipo:** dimensão |
+| Criado Em (clientes) | Data de cadastro do cliente.<br/><br/>**Nome do campo:** `tn_customers_created_at`<br/>**Tipo:** dimensão |
+| Tipo de Cliente (clientes) | Tipo de cliente (pessoa ou empresa).<br/><br/>**Nome do campo:** `tn_customers_customer_type`<br/>**Tipo:** dimensão |
+| Razão Social (clientes) | **Nome do campo:** `tn_customers_business_name`<br/>**Tipo:** dimensão |
+| Nome Fantasia (clientes) | **Nome do campo:** `tn_customers_trade_name`<br/>**Tipo:** dimensão |
+
+### Carrinhos abandonados
+
+| | |
+|---|---|
+| ID (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_id`<br/>**Tipo:** dimensão |
+| Token (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_token`<br/>**Tipo:** dimensão |
+| ID da Loja (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_store_id`<br/>**Tipo:** dimensão |
+| URL de checkout abandonado (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_abandoned_checkout_url`<br/>**Tipo:** dimensão |
+| Email do Contato (Checkouts abandonados) | Email do contato do carrinho abandonado.<br/><br/>**Nome do campo:** `tn_checkouts_contact_email`<br/>**Tipo:** dimensão |
+| Nome do Contato (Checkouts abandonados) | Nome do contato do carrinho abandonado.<br/><br/>**Nome do campo:** `tn_checkouts_contact_name`<br/>**Tipo:** dimensão |
+| Telefone do Contato (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_contact_phone`<br/>**Tipo:** dimensão |
+| Identificação do Contato (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_contact_identification`<br/>**Tipo:** dimensão |
+| Nome para Envio (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_shipping_name`<br/>**Tipo:** dimensão |
+| Telefone para Envio (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_shipping_phone`<br/>**Tipo:** dimensão |
+| Endereço para Envio (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_shipping_address`<br/>**Tipo:** dimensão |
+| Número para Envio (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_shipping_number`<br/>**Tipo:** dimensão |
+| Andar para Envio (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_shipping_floor`<br/>**Tipo:** dimensão |
+| Localidade para Envio (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_shipping_locality`<br/>**Tipo:** dimensão |
+| CEP para Envio (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_shipping_zipcode`<br/>**Tipo:** dimensão |
+| Cidade para Envio (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_shipping_city`<br/>**Tipo:** dimensão |
+| Província para Envio (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_shipping_province`<br/>**Tipo:** dimensão |
+| País para Envio (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_shipping_country`<br/>**Tipo:** dimensão |
+| Dias Mínimos para Envio (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_shipping_min_days`<br/>**Tipo:** dimensão |
+| Dias Máximos para Envio (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_shipping_max_days`<br/>**Tipo:** dimensão |
+| Nome para Faturamento (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_billing_name`<br/>**Tipo:** dimensão |
+| Telefone para Faturamento (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_billing_phone`<br/>**Tipo:** dimensão |
+| Endereço para Faturamento (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_billing_address`<br/>**Tipo:** dimensão |
+| Número para Faturamento (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_billing_number`<br/>**Tipo:** dimensão |
+| Andar para Faturamento (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_billing_floor`<br/>**Tipo:** dimensão |
+| Localidade para Faturamento (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_billing_locality`<br/>**Tipo:** dimensão |
+| CEP para Faturamento (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_billing_zipcode`<br/>**Tipo:** dimensão |
+| Cidade para Faturamento (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_billing_city`<br/>**Tipo:** dimensão |
+| Província para Faturamento (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_billing_province`<br/>**Tipo:** dimensão |
+| País para Faturamento (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_billing_country`<br/>**Tipo:** dimensão |
+| Responsável pelo Custo de Envio (Checkouts) | **Nome do campo:** `tn_checkouts_shipping_cost_owner`<br/>**Tipo:** dimensão |
+| Custo de Envio Pago pelo Cliente (Checkouts) | **Nome do campo:** `tn_checkouts_shipping_cost_customer`<br/>**Tipo:** dimensão |
+| Cupom (Checkouts abandonados) | Cupom usado nos carrinhos abandonados.<br/><br/>**Nome do campo:** `tn_checkouts_coupon`<br/>**Tipo:** dimensão |
+| Desconto Promocional (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_promotional_discount`<br/>**Tipo:** dimensão |
+| Cupom de Desconto (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_discount_coupon`<br/>**Tipo:** dimensão |
+| Desconto do Gateway (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_discount_gateway`<br/>**Tipo:** dimensão |
+| Finalização Ativada (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_checkout_enabled`<br/>**Tipo:** dimensão |
+| Peso (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_weight`<br/>**Tipo:** dimensão |
+| Moeda (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_currency`<br/>**Tipo:** dimensão |
+| Idioma (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_language`<br/>**Tipo:** dimensão |
+| Pasarela de Pagamento (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_gateway`<br/>**Tipo:** dimensão |
+| ID da Pasarela (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_gateway_id`<br/>**Tipo:** dimensão |
+| Criado Em (Checkouts abandonados) | Data de criação do carrinho abandonado.<br/><br/>**Nome do campo:** `tn_checkouts_created_at`<br/>**Tipo:** dimensão |
+| Atualizado Em (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_updated_at`<br/>**Tipo:** dimensão |
+| Concluído Em (Checkouts abandonados) | **Nome do campo:** `tn_checkouts_completed_at`<br/>**Tipo:** dimensão |
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Catálogo de campos" href="/pt/">
+    Ver todas as fontes
+  </Card>
+  <Card title="Instagram" href="/pt/instagram/metrics">
+    Métricas & Dimensões
+  </Card>
+  <Card title="Facebook Pages" href="/pt/facebook/metrics">
+    Métricas & Dimensões
+  </Card>
+  <Card title="Shopify" href="/pt/shopify/metrics">
+    Métricas & Dimensões
+  </Card>
+</CardGroup>

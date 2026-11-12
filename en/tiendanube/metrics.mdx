@@ -1,0 +1,92 @@
+---
+title: "Tiendanube: Metrics"
+description: "Complete reference of the Tiendanube metrics in Master Metrics"
+---
+
+<Info>**Last updated:** 2026-11-12</Info>
+
+This reference covers the 36 metrics available for Tiendanube in Master Metrics. Use it to understand which data you can pull and how each field is named.
+
+**Available in:** Dashboards · Reports · AI assistant · MCP
+
+## Metrics
+
+Metrics are the numeric values you can measure and aggregate from your Tiendanube data.
+
+### Customers
+
+| | |
+|---|---|
+| Customers Quantity (customers) | Number of store customers.<br/><br/>**Field name:** `tn_customers_count`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Spent (customers) | Total amount each customer has spent in the store over their whole history.<br/><br/>**Field name:** `tn_customers_total_spent`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Spent Currency (customers) | Currency of the total spent by the customer.<br/><br/>**Field name:** `tn_customers_total_spent_currency`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Products
+
+| | |
+|---|---|
+| Current Stock Quantity (products) | Current stock units of the store products.<br/><br/>**Field name:** `tn_products_stock`<br/>**Type:** metric<br/>**MCP:** Available |
+| Price (products) | Average current price of the store products.<br/><br/>**Field name:** `tn_products_price`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Orders
+
+| | |
+|---|---|
+| Orders Customer Quantity (orders) | Number of distinct customers who placed orders.<br/><br/>**Field name:** `tn_orders_customer_count`<br/>**Type:** metric<br/>**MCP:** Available |
+| Orders Quantity (orders) | Number of orders created in the period, in any payment or order status.<br/><br/>**Field name:** `tn_orders_count`<br/>**Type:** metric<br/>**MCP:** Available |
+| Sales (orders) | Number of sales: orders whose payment status is paid or partially refunded.<br/><br/>**Field name:** `tn_orders_sold_count`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Billing (orders) | Revenue: total paid by customers on paid, partially paid or partially refunded orders, excluding cancelled orders. Includes shipping and discounts.<br/><br/>**Field name:** `tn_orders_total_billing`<br/>**Type:** metric<br/>**MCP:** Available |
+| Orders Pending Quantity (orders) | Number of orders whose payment is pending.<br/><br/>**Field name:** `tn_orders_pending_count`<br/>**Type:** metric<br/>**MCP:** Available |
+| Orders Abandoned Quantity (orders) | Number of orders whose payment was abandoned.<br/><br/>**Field name:** `tn_orders_abandoned_count`<br/>**Type:** metric<br/>**MCP:** Available |
+| Orders Refunded Quantity (orders) | Number of orders whose payment was refunded.<br/><br/>**Field name:** `tn_orders_refunded_count`<br/>**Type:** metric<br/>**MCP:** Available |
+| Orders Authorized Quantity (orders) | Number of orders whose payment is authorized but not yet captured.<br/><br/>**Field name:** `tn_orders_authorized_count`<br/>**Type:** metric<br/>**MCP:** Available |
+| Shipping Cost Owner (orders) | Shipping cost paid by the merchant.<br/><br/>**Field name:** `tn_orders_shipping_cost_owner`<br/>**Type:** metric<br/>**MCP:** Available |
+| Shipping Cost Customer (orders) | Shipping cost paid by the customer (0 means free shipping).<br/><br/>**Field name:** `tn_orders_shipping_cost_customer`<br/>**Type:** metric<br/>**MCP:** Available |
+| Subtotal (orders) | Price of the orders before shipping, in any payment status.<br/><br/>**Field name:** `tn_orders_subtotal`<br/>**Type:** metric<br/>**MCP:** Available |
+| Discount (orders) | Total discount applied to the orders (coupons, payment gateway and promotions).<br/><br/>**Field name:** `tn_orders_discount`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Usd (orders) | Total price of the orders converted to US dollars.<br/><br/>**Field name:** `tn_orders_total_usd`<br/>**Type:** metric<br/>**MCP:** Available |
+| Orders Sold Per Day (orders) | Average number of sales (paid orders) per day in the period.<br/><br/>**Field name:** `tn_orders_sold_per_day`<br/>**Type:** metric<br/>**MCP:** Available |
+| Average Sales Ticket (orders) | Average ticket: revenue divided by the number of sales.<br/><br/>**Field name:** `tn_orders_average_sales_ticket`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Abandoned checkouts
+
+| | |
+|---|---|
+| Quantity (abandoned checkouts) | Number of abandoned carts.<br/><br/>**Field name:** `tn_checkouts_count`<br/>**Type:** metric<br/>**MCP:** Available |
+| Coupon (abandoned checkouts) | Coupon used in the abandoned carts.<br/><br/>**Field name:** `tn_checkouts_coupon`<br/>**Type:** metric<br/>**MCP:** Available |
+| Subtotal (abandoned checkouts) | Price of the abandoned carts before shipping.<br/><br/>**Field name:** `tn_checkouts_subtotal`<br/>**Type:** metric<br/>**MCP:** Available |
+| Discount (abandoned checkouts) | Discount applied to the abandoned carts.<br/><br/>**Field name:** `tn_checkouts_discount`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total (abandoned checkouts) | Total price of the abandoned carts.<br/><br/>**Field name:** `tn_checkouts_total`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Usd (abandoned checkouts) | Total price of the abandoned carts converted to US dollars.<br/><br/>**Field name:** `tn_checkouts_total_usd`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Ordered products
+
+| | |
+|---|---|
+| Products Ordered Quantity (product orders) | Units of products ordered, counting every order line in any payment status.<br/><br/>**Field name:** `tn_productOrders_count`<br/>**Type:** metric<br/>**MCP:** Available |
+| Depth (product orders) | Depth of the product ordered.<br/><br/>**Field name:** `tn_productOrders_depth`<br/>**Type:** metric<br/>**MCP:** Available |
+| Height (product orders) | Height of the product ordered.<br/><br/>**Field name:** `tn_productOrders_height`<br/>**Type:** metric<br/>**MCP:** Available |
+| Price (product orders) | Unit price of the product at the time of purchase.<br/><br/>**Field name:** `tn_productOrders_price`<br/>**Type:** metric<br/>**MCP:** Available |
+| Products Sold (product orders) | Units sold: product units in paid orders that are not cancelled. Use it for products sold.<br/><br/>**Field name:** `tn_productOrders_quantity`<br/>**Type:** metric<br/>**MCP:** Available |
+| Cost (product orders) | Unit cost of the product, as loaded by the merchant.<br/><br/>**Field name:** `tn_productOrders_cost`<br/>**Type:** metric<br/>**MCP:** Available |
+| Sub total (product orders) | Product revenue: unit price × units of each order line, in any payment status (it can be greater than 0 while units sold is 0).<br/><br/>**Field name:** `tn_productOrders_subtotal`<br/>**Type:** metric<br/>**MCP:** Available |
+| Price Average (product orders) | Average unit price of the products at the time of purchase.<br/><br/>**Field name:** `tn_productOrders_average_price`<br/>**Type:** metric<br/>**MCP:** Available |
+| Sub total Cost (product orders) | Product cost: unit cost × units ordered.<br/><br/>**Field name:** `tn_productOrders_subtotal_cost`<br/>**Type:** metric<br/>**MCP:** Available |
+| Price Average (product orders) | Average unit price of the products at the time of purchase.<br/><br/>**Field name:** `tn_productOrders_average_price`<br/>**Type:** metric<br/>**MCP:** Available |
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Fields catalog" href="/en/">
+    Browse all sources
+  </Card>
+  <Card title="Instagram" href="/en/instagram/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Facebook Pages" href="/en/facebook/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Shopify" href="/en/shopify/metrics">
+    Metrics & Dimensions
+  </Card>
+</CardGroup>

@@ -1,0 +1,148 @@
+---
+title: "Shopify: Metrics"
+description: "Complete reference of the Shopify metrics in Master Metrics"
+---
+
+<Info>**Last updated:** 2026-11-12</Info>
+
+This reference covers the 87 metrics available for Shopify in Master Metrics. Use it to understand which data you can pull and how each field is named.
+
+**Available in:** Dashboards · Reports · AI assistant · MCP
+
+## Metrics
+
+Metrics are the numeric values you can measure and aggregate from your Shopify data.
+
+### Customers
+
+| | |
+|---|---|
+| Count (Customers) | Number of store customers.<br/><br/>**Field name:** `shopify_customers_count`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Abandoned checkouts
+
+| | |
+|---|---|
+| Count (Abandoned Checkouts) | Number of abandoned checkouts.<br/><br/>**Field name:** `shopify_abandonedCheckouts_count`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Amount (Abandoned Checkouts) | Total amount of the abandoned checkouts.<br/><br/>**Field name:** `shopify_abandonedCheckouts_total_amount`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Orders
+
+| | |
+|---|---|
+| Count (Orders) | Number of orders.<br/><br/>**Field name:** `shopify_orders_count`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Amount (Orders) | Original total price of the orders, including shipping, taxes and discounts, before edits and refunds.<br/><br/>**Field name:** `shopify_orders_total_amount`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Fees (Orders) | Additional fees charged on the orders.<br/><br/>**Field name:** `shopify_orders_fees`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Discounts (Orders) | Total discounts applied to the products of the orders.<br/><br/>**Field name:** `shopify_orders_discounts`<br/>**Type:** metric<br/>**MCP:** Available |
+| Shipping Cost (Orders) | Shipping charged on the orders.<br/><br/>**Field name:** `shopify_orders_original_price`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Duties (Orders) | Duties charged on the orders.<br/><br/>**Field name:** `shopify_orders_duties`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Price (Orders) | Current total price of the orders, after edits and refunds.<br/><br/>**Field name:** `shopify_orders_price`<br/>**Type:** metric<br/>**MCP:** Available |
+| Average Price (Orders) | Average order value: sales divided by the number of orders.<br/><br/>**Field name:** `shopify_orders_average_price`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Subtotal Price (Orders) | Price of the orders after discounts, before shipping and taxes.<br/><br/>**Field name:** `shopify_orders_subtotal_price`<br/>**Type:** metric<br/>**MCP:** Available |
+| Taxes (Orders) | Taxes charged on the orders.<br/><br/>**Field name:** `shopify_orders_tax`<br/>**Type:** metric<br/>**MCP:** Available |
+| Returns (Orders) | Value of the products returned.<br/><br/>**Field name:** `shopify_orders_returns_total`<br/>**Type:** metric<br/>**MCP:** Available |
+| Returns Taxes (Orders) | Taxes of the products returned.<br/><br/>**Field name:** `shopify_orders_returns_taxes`<br/>**Type:** metric<br/>**MCP:** Available |
+| Net Sales (Orders) | Net sales: gross sales minus discounts and returns. Excludes shipping and taxes.<br/><br/>**Field name:** `shopify_orders_net_sales_total`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Sales (Orders) | Total sales: net sales plus shipping, taxes, duties and fees.<br/><br/>**Field name:** `shopify_orders_total_sales`<br/>**Type:** metric<br/>**MCP:** Available |
+| Net Items Sold (Orders) | Net items sold: product units sold minus units returned. Use it for products sold.<br/><br/>**Field name:** `shopify_orders_net_items_sold`<br/>**Type:** metric<br/>**MCP:** Available |
+| Cost of Goods Sold (Orders) | Cost of the products sold, for products with a recorded cost.<br/><br/>**Field name:** `shopify_orders_cost_of_goods_sold`<br/>**Type:** metric<br/>**MCP:** Available |
+| Gross Margin (Orders) | Gross margin: gross profit as a percentage of net sales with cost recorded.<br/><br/>**Field name:** `shopify_orders_gross_margin`<br/>**Type:** metric<br/>**MCP:** Available |
+| Gross Profit (Orders) | Gross profit: net sales of products with a recorded cost minus their cost.<br/><br/>**Field name:** `shopify_orders_gross_profit`<br/>**Type:** metric<br/>**MCP:** Available |
+| Amount Spent Per Customer (Orders) | Average amount spent per customer.<br/><br/>**Field name:** `shopify_orders_amount_spent_per_customer`<br/>**Type:** metric<br/>**MCP:** Available |
+| Bundles Ordered (Orders) | Number of product bundles ordered.<br/><br/>**Field name:** `shopify_orders_bundles_ordered`<br/>**Type:** metric<br/>**MCP:** Available |
+| Customers (Orders) | Number of customers who placed orders.<br/><br/>**Field name:** `shopify_orders_customers`<br/>**Type:** metric<br/>**MCP:** Available |
+| Discounts Returned (Orders) | Discounts reversed by returns.<br/><br/>**Field name:** `shopify_orders_discounts_returned`<br/>**Type:** metric<br/>**MCP:** Available |
+| Gift Card Discounts (Orders) | Discounts applied to gift cards.<br/><br/>**Field name:** `shopify_orders_gift_card_discounts`<br/>**Type:** metric<br/>**MCP:** Available |
+| Gift Card Gross Sales (Orders) | Gross sales of gift cards.<br/><br/>**Field name:** `shopify_orders_gift_card_gross_sales`<br/>**Type:** metric<br/>**MCP:** Available |
+| Gift Card Net Sales (Orders) | Net sales of gift cards.<br/><br/>**Field name:** `shopify_orders_gift_card_net_sales`<br/>**Type:** metric<br/>**MCP:** Available |
+| Gift Card Taxes (Orders) | Taxes charged on gift cards.<br/><br/>**Field name:** `shopify_orders_gift_card_taxes`<br/>**Type:** metric<br/>**MCP:** Available |
+| Gross Returns (Orders) | Gross value of the products returned.<br/><br/>**Field name:** `shopify_orders_gross_returns`<br/>**Type:** metric<br/>**MCP:** Available |
+| Line Item Discounts (Orders) | Discounts applied to specific products.<br/><br/>**Field name:** `shopify_orders_line_item_discounts`<br/>**Type:** metric<br/>**MCP:** Available |
+| Net Returns (Orders) | Value of the products returned, net of their discounts.<br/><br/>**Field name:** `shopify_orders_net_returns`<br/>**Type:** metric<br/>**MCP:** Available |
+| Net Sales With Cost Recorded (Orders) | Net sales of products that have a recorded cost.<br/><br/>**Field name:** `shopify_orders_net_sales_with_cost_recorded`<br/>**Type:** metric<br/>**MCP:** Available |
+| Net Sales Without Cost Recorded (Orders) | Net sales of products without a recorded cost.<br/><br/>**Field name:** `shopify_orders_net_sales_without_cost_recorded`<br/>**Type:** metric<br/>**MCP:** Available |
+| New Customers (Orders) | Number of customers who ordered for the first time.<br/><br/>**Field name:** `shopify_orders_new_customers`<br/>**Type:** metric<br/>**MCP:** Available |
+| Number of Orders Per Customer (Orders) | Average number of orders per customer.<br/><br/>**Field name:** `shopify_orders_number_of_orders_per_customer`<br/>**Type:** metric<br/>**MCP:** Available |
+| Order Level Discounts (Orders) | Discounts applied to the whole order.<br/><br/>**Field name:** `shopify_orders_order_level_discounts`<br/>**Type:** metric<br/>**MCP:** Available |
+| Order Sale Agreements (Orders) | Number of sale records of the orders (sales, edits and returns).<br/><br/>**Field name:** `shopify_orders_order_sale_agreements`<br/>**Type:** metric<br/>**MCP:** Available |
+| Orders First Time (Orders) | Orders placed by first-time customers.<br/><br/>**Field name:** `shopify_orders_orders_first_time`<br/>**Type:** metric<br/>**MCP:** Available |
+| Orders Returning (Orders) | Orders placed by returning customers.<br/><br/>**Field name:** `shopify_orders_orders_returning`<br/>**Type:** metric<br/>**MCP:** Available |
+| Quantity Ordered Per Order (Orders) | Average product units per order.<br/><br/>**Field name:** `shopify_orders_quantity_ordered_per_order`<br/>**Type:** metric<br/>**MCP:** Available |
+| Quantity Returned (Orders) | Product units returned.<br/><br/>**Field name:** `shopify_orders_quantity_returned`<br/>**Type:** metric<br/>**MCP:** Available |
+| Rate of Staff Assisted Sales (Orders) | Share of sales made with the help of a staff member.<br/><br/>**Field name:** `shopify_orders_rate_of_staff_assisted_sales`<br/>**Type:** metric<br/>**MCP:** Available |
+| Returned Quantity Rate (Orders) | Share of the units ordered that were returned.<br/><br/>**Field name:** `shopify_orders_returned_quantity_rate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Return Fees (Orders) | Fees charged on returns.<br/><br/>**Field name:** `shopify_orders_return_fees`<br/>**Type:** metric<br/>**MCP:** Available |
+| Returning Customer Rate (Orders) | Share of customers who had already ordered before.<br/><br/>**Field name:** `shopify_orders_returning_customer_rate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Returning Customers (Orders) | Number of customers who had already ordered before.<br/><br/>**Field name:** `shopify_orders_returning_customers`<br/>**Type:** metric<br/>**MCP:** Available |
+| Shipping Charge Discounts (Orders) | Discounts applied to shipping.<br/><br/>**Field name:** `shopify_orders_shipping_charge_discounts`<br/>**Type:** metric<br/>**MCP:** Available |
+| Shipping Charge Taxes (Orders) | Taxes charged on shipping.<br/><br/>**Field name:** `shopify_orders_shipping_charge_taxes`<br/>**Type:** metric<br/>**MCP:** Available |
+| Shipping Returned (Orders) | Shipping refunded.<br/><br/>**Field name:** `shopify_orders_shipping_returned`<br/>**Type:** metric<br/>**MCP:** Available |
+| Taxes Excluding Gift Cards (Orders) | Taxes charged, excluding those of gift cards.<br/><br/>**Field name:** `shopify_orders_taxes_excluding_gift_cards`<br/>**Type:** metric<br/>**MCP:** Available |
+| Tips (Orders) | Tips received on the orders.<br/><br/>**Field name:** `shopify_orders_tips`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Returns (Orders) | Total returns, including shipping, taxes and fees returned.<br/><br/>**Field name:** `shopify_orders_total_returns`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Sales First Time (Orders) | Total sales from first-time customers.<br/><br/>**Field name:** `shopify_orders_total_sales_first_time`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Sales Returning (Orders) | Total sales from returning customers.<br/><br/>**Field name:** `shopify_orders_total_sales_returning`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Shipping Charges (Orders) | Shipping charged, after shipping discounts and refunds.<br/><br/>**Field name:** `shopify_orders_total_shipping_charges`<br/>**Type:** metric<br/>**MCP:** Available |
+| Acceptable Fraud Risk Rate (Orders) | Share of orders with an acceptable fraud risk.<br/><br/>**Field name:** `shopify_orders_acceptable_fraud_risk_rate`<br/>**Type:** metric<br/>**MCP:** Available |
+| High Fraud Risk Rate (Orders) | Share of orders with a high fraud risk.<br/><br/>**Field name:** `shopify_orders_high_fraud_risk_rate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Count (Transactions) | Number of payment transactions (sales, authorizations, refunds...).<br/><br/>**Field name:** `shopify_transactions_count`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Amount (Transactions) | Total amount of the payment transactions.<br/><br/>**Field name:** `shopify_transactions_total_amount`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Product Quantity (Orders) | Units ordered: product units in the orders, before returns.<br/><br/>**Field name:** `shopify_orders_line_items_quantity`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Product Current Quantity (Orders) | Current product units in the orders, after removals and returns.<br/><br/>**Field name:** `shopify_orders_line_items_current_quantity`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Product Original Price (Orders) | Sum of the original unit prices of the products ordered.<br/><br/>**Field name:** `shopify_orders_line_items_original_price`<br/>**Type:** metric<br/>**MCP:** Available |
+| Average Product Price (Orders) | Average original unit price of the products ordered.<br/><br/>**Field name:** `shopify_orders_line_items_average_price`<br/>**Type:** metric<br/>**MCP:** Available |
+| Gross Sales (Orders) | Gross sales: product price × units ordered, before discounts, returns, shipping and taxes.<br/><br/>**Field name:** `shopify_orders_line_items_gross_total`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Sessions
+
+| | |
+|---|---|
+| Total Sessions (Sessions) | Number of online store sessions.<br/><br/>**Field name:** `shopify_sessions_total`<br/>**Type:** metric<br/>**MCP:** Available |
+| Total Visitors (Sessions) | Number of unique online store visitors.<br/><br/>**Field name:** `shopify_visitors_total`<br/>**Type:** metric<br/>**MCP:** Available |
+| Bounces (Sessions) | Sessions that viewed a single page.<br/><br/>**Field name:** `shopify_sessions_bounces`<br/>**Type:** metric<br/>**MCP:** Available |
+| Sessions with Cart Additions (Sessions) | Sessions that added a product to the cart.<br/><br/>**Field name:** `shopify_sessions_with_cart_additions`<br/>**Type:** metric<br/>**MCP:** Available |
+| Sessions that Reached Checkout (Sessions) | Sessions that reached the checkout.<br/><br/>**Field name:** `shopify_sessions_that_reached_checkout`<br/>**Type:** metric<br/>**MCP:** Available |
+| Sessions that Reached and Completed Checkout (Sessions) | Sessions that reached the checkout and completed it.<br/><br/>**Field name:** `shopify_sessions_that_reached_and_completed_checkout`<br/>**Type:** metric<br/>**MCP:** Available |
+| Sessions that Completed Checkout (Sessions) | Sessions that completed the checkout (placed an order).<br/><br/>**Field name:** `shopify_sessions_that_completed_checkout`<br/>**Type:** metric<br/>**MCP:** Available |
+| Reached Checkout Rate (Sessions) | Share of sessions that reached the checkout.<br/><br/>**Field name:** `shopify_sessions_reached_checkout_rate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Pageviews per Session (Sessions) | Average pages viewed per session.<br/><br/>**Field name:** `shopify_sessions_pageviews_per_session`<br/>**Type:** metric<br/>**MCP:** Available |
+| Pageviews (Sessions) | Number of pages viewed.<br/><br/>**Field name:** `shopify_sessions_pageviews`<br/>**Type:** metric<br/>**MCP:** Available |
+| Conversion Rate (Sessions) | Conversion rate: share of sessions that placed an order.<br/><br/>**Field name:** `shopify_sessions_conversion_rate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Completed Checkout Rate (Sessions) | Share of sessions that completed the checkout.<br/><br/>**Field name:** `shopify_sessions_completed_checkout_rate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Checkout Conversion Rate (Sessions) | Share of sessions that reached the checkout and completed it.<br/><br/>**Field name:** `shopify_sessions_checkout_conversion_rate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Average Session Duration (Sessions) | Average session duration.<br/><br/>**Field name:** `shopify_sessions_average_session_duration`<br/>**Type:** metric<br/>**MCP:** Available |
+| Added to Cart Rate (Sessions) | Share of sessions that added a product to the cart.<br/><br/>**Field name:** `shopify_sessions_added_to_cart_rate`<br/>**Type:** metric<br/>**MCP:** Available |
+| Bounce Rate (Sessions) | Share of sessions that viewed a single page.<br/><br/>**Field name:** `shopify_bounce_rate`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Products
+
+| | |
+|---|---|
+| Count Created(Products) | Number of products created.<br/><br/>**Field name:** `shopify_products_count`<br/>**Type:** metric<br/>**MCP:** Available |
+| Max price (Products) | Highest variant price of the products.<br/><br/>**Field name:** `shopify_products_max_price`<br/>**Type:** metric<br/>**MCP:** Available |
+| Min price (Products) | Lowest variant price of the products.<br/><br/>**Field name:** `shopify_products_min_price`<br/>**Type:** metric<br/>**MCP:** Available |
+
+### Product variants
+
+| | |
+|---|---|
+| Count (Product Variants) | Number of product variants.<br/><br/>**Field name:** `shopify_productVariants_count`<br/>**Type:** metric<br/>**MCP:** Available |
+| Price (Product Variants) | Current price of the product variants.<br/><br/>**Field name:** `shopify_productVariants_price`<br/>**Type:** metric<br/>**MCP:** Available |
+| Inventory Quantity (Product Variants) | Units in inventory of the product variants.<br/><br/>**Field name:** `shopify_productVariants_inventory_quantity`<br/>**Type:** metric<br/>**MCP:** Available |
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Fields catalog" href="/en/">
+    Browse all sources
+  </Card>
+  <Card title="Instagram" href="/en/instagram/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Facebook Pages" href="/en/facebook/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Tiendanube" href="/en/tiendanube/metrics">
+    Metrics & Dimensions
+  </Card>
+</CardGroup>

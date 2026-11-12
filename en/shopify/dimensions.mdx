@@ -1,0 +1,165 @@
+---
+title: "Shopify: Dimensions"
+description: "Complete reference of the Shopify dimensions in Master Metrics"
+---
+
+<Info>**Last updated:** 2026-11-12</Info>
+
+This reference covers the 99 dimensions available for Shopify in Master Metrics. Use it to understand how you can segment your data and how each field is named.
+
+**Available in:** Dashboards · Reports · AI assistant · MCP
+
+## Dimensions
+
+Dimensions are the attributes you can use to segment and group your Shopify data.
+
+### General
+
+| | |
+|---|---|
+| Day | **Field name:** `day`<br/>**Type:** dimension |
+| Week | **Field name:** `week`<br/>**Type:** dimension |
+| Month | **Field name:** `month`<br/>**Type:** dimension |
+| Year | **Field name:** `year`<br/>**Type:** dimension |
+| Quarter | **Field name:** `quarter`<br/>**Type:** dimension |
+| Store Name | Name of the store.<br/><br/>**Field name:** `shopify_shop_name`<br/>**Type:** dimension |
+| Store ID | **Field name:** `shopify_shop_id`<br/>**Type:** dimension |
+| Entity Name | **Field name:** `shopify_entity_name`<br/>**Type:** dimension |
+
+### Abandoned checkouts
+
+| | |
+|---|---|
+| ID (Abandoned Checkouts) | **Field name:** `shopify_checkouts_id`<br/>**Type:** dimension |
+| Customer Email (Abandoned Checkouts) | **Field name:** `shopify_checkouts_email`<br/>**Type:** dimension |
+| Created At (Abandoned Checkouts) | **Field name:** `shopify_checkouts_created_at`<br/>**Type:** dimension |
+| Updated At (Abandoned Checkouts) | **Field name:** `shopify_checkouts_updated_at`<br/>**Type:** dimension |
+
+### Customers
+
+| | |
+|---|---|
+| ID (Customers) | **Field name:** `shopify_customers_id`<br/>**Type:** dimension |
+| First Name (Customers) | First name of the customer.<br/><br/>**Field name:** `shopify_customers_first_name`<br/>**Type:** dimension |
+| Last Name (Customers) | Last name of the customer.<br/><br/>**Field name:** `shopify_customers_last_name`<br/>**Type:** dimension |
+| Email (Customers) | Email of the customer.<br/><br/>**Field name:** `shopify_customers_email`<br/>**Type:** dimension |
+| Phone (Customers) | **Field name:** `shopify_customers_phone`<br/>**Type:** dimension |
+| Created At (Customers) | **Field name:** `shopify_customers_created_at`<br/>**Type:** dimension |
+| Updated At (Customers) | **Field name:** `shopify_customers_updated_at`<br/>**Type:** dimension |
+
+### Orders
+
+| | |
+|---|---|
+| ID (Orders) | Id of the order.<br/><br/>**Field name:** `shopify_orders_id`<br/>**Type:** dimension |
+| Customer Email (Orders) | Email of the customer who placed the order.<br/><br/>**Field name:** `shopify_orders_email`<br/>**Type:** dimension |
+| Customer ID (Orders) | **Field name:** `shopify_orders_customer_id`<br/>**Type:** dimension |
+| Currency (Orders) | Currency of the order.<br/><br/>**Field name:** `shopify_orders_currency`<br/>**Type:** dimension |
+| Financial Status (Orders) | Payment status of the order: pending, authorized, paid, partially paid, refunded, partially refunded or voided.<br/><br/>**Field name:** `shopify_orders_display_financial_status`<br/>**Type:** dimension |
+| Fulfillment Status (Orders) | Fulfillment status of the order: unfulfilled, partially fulfilled or fulfilled.<br/><br/>**Field name:** `shopify_orders_display_fulfillment_status`<br/>**Type:** dimension |
+| ID (Transactions) | **Field name:** `shopify_transactions_id`<br/>**Type:** dimension |
+| Order ID (Transactions) | **Field name:** `shopify_transactions_order_id`<br/>**Type:** dimension |
+| Kind (Transactions) | Kind of transaction: sale, authorization, capture, refund or void.<br/><br/>**Field name:** `shopify_transactions_kind`<br/>**Type:** dimension |
+| Status (Transactions) | Status of the transaction: success, pending, failure or error.<br/><br/>**Field name:** `shopify_transactions_status`<br/>**Type:** dimension |
+| Gateway (Transactions) | Payment gateway of the transaction.<br/><br/>**Field name:** `shopify_transactions_gateway`<br/>**Type:** dimension |
+| Amount (Transactions) | **Field name:** `shopify_transactions_amount`<br/>**Type:** dimension |
+| Currency (Transactions) | **Field name:** `shopify_transactions_currency`<br/>**Type:** dimension |
+| Tags (Orders) | Tags of the order.<br/><br/>**Field name:** `shopify_orders_tags`<br/>**Type:** dimension |
+| Order Source Name (Orders) | Source of the order (web, pos, an app...).<br/><br/>**Field name:** `shopify_orders_order_source_name`<br/>**Type:** dimension |
+| Order Channel Name (Orders) | Sales channel of the order (Online Store, Point of Sale...).<br/><br/>**Field name:** `shopify_orders_order_channel_name`<br/>**Type:** dimension |
+| POS Location ID (Orders) | **Field name:** `shopify_orders_pos_location_id`<br/>**Type:** dimension |
+| POS Location Name (Orders) | Point of sale location of the order.<br/><br/>**Field name:** `shopify_orders_pos_location_name`<br/>**Type:** dimension |
+| Line Item ID (Orders) | **Field name:** `shopify_orders_line_item_id`<br/>**Type:** dimension |
+| Product ID (Orders) | Id of the product ordered.<br/><br/>**Field name:** `shopify_orders_line_item_product_id`<br/>**Type:** dimension |
+| Product Title (Orders) | Title of the product ordered, grouping all its variants in one row. Use it for products (e.g. top products).<br/><br/>**Field name:** `shopify_orders_line_item_product_title`<br/>**Type:** dimension |
+| Product Variant ID (Orders) | Id of the variant ordered.<br/><br/>**Field name:** `shopify_orders_line_item_variant_id`<br/>**Type:** dimension |
+| Product Variant Title (Orders) | Title of the variant ordered (e.g. "Red / M"): one row per variant.<br/><br/>**Field name:** `shopify_orders_line_item_variant_title`<br/>**Type:** dimension |
+| Vendor (Line Items) | Vendor of the product ordered.<br/><br/>**Field name:** `shopify_orders_line_item_vendor`<br/>**Type:** dimension |
+| Order or Return (Orders) | Whether the sale record is an order or a return.<br/><br/>**Field name:** `shopify_orders_order_or_return`<br/>**Type:** dimension |
+| Refund ID (Orders) | **Field name:** `shopify_orders_refund_id`<br/>**Type:** dimension |
+| Sale ID (Orders) | **Field name:** `shopify_orders_sale_id`<br/>**Type:** dimension |
+| Order Name (Orders) | Order name shown to the merchant (e.g. #1001).<br/><br/>**Field name:** `shopify_orders_order_name`<br/>**Type:** dimension |
+| Order UTM Campaign (Orders) | UTM campaign of the visit that generated the order.<br/><br/>**Field name:** `shopify_orders_order_utm_campaign`<br/>**Type:** dimension |
+| Order UTM Content (Orders) | UTM content of the visit that generated the order.<br/><br/>**Field name:** `shopify_orders_order_utm_content`<br/>**Type:** dimension |
+| Order UTM Medium (Orders) | UTM medium of the visit that generated the order.<br/><br/>**Field name:** `shopify_orders_order_utm_medium`<br/>**Type:** dimension |
+| Order UTM Source (Orders) | UTM source of the visit that generated the order.<br/><br/>**Field name:** `shopify_orders_order_utm_source`<br/>**Type:** dimension |
+| Order UTM Term (Orders) | UTM term of the visit that generated the order.<br/><br/>**Field name:** `shopify_orders_order_utm_term`<br/>**Type:** dimension |
+| Billing City (Orders) | Billing city of the order.<br/><br/>**Field name:** `shopify_orders_billing_city`<br/>**Type:** dimension |
+| Billing Country (Orders) | Billing country of the order.<br/><br/>**Field name:** `shopify_orders_billing_country`<br/>**Type:** dimension |
+| Billing Region (Orders) | Billing region of the order.<br/><br/>**Field name:** `shopify_orders_billing_region`<br/>**Type:** dimension |
+| Shipping City (Orders) | Shipping city of the order.<br/><br/>**Field name:** `shopify_orders_shipping_city`<br/>**Type:** dimension |
+| Shipping Country (Orders) | Shipping country of the order.<br/><br/>**Field name:** `shopify_orders_shipping_country`<br/>**Type:** dimension |
+| Shipping Region (Orders) | Shipping region of the order.<br/><br/>**Field name:** `shopify_orders_shipping_region`<br/>**Type:** dimension |
+| Customer Language (Orders) | **Field name:** `shopify_orders_customer_language`<br/>**Type:** dimension |
+| Customer Name (Orders) | Name of the customer who placed the order.<br/><br/>**Field name:** `shopify_orders_customer_name`<br/>**Type:** dimension |
+| Customer Tag (Orders) | Tags of the customer who placed the order.<br/><br/>**Field name:** `shopify_orders_customer_tag`<br/>**Type:** dimension |
+| Traffic Type (Orders) | Type of traffic that generated the order.<br/><br/>**Field name:** `shopify_orders_traffic_type`<br/>**Type:** dimension |
+| Referring Platform (Orders) | Platform that referred the visit that generated the order.<br/><br/>**Field name:** `shopify_orders_referring_platform`<br/>**Type:** dimension |
+| Referring Medium (Orders) | Medium that referred the visit that generated the order.<br/><br/>**Field name:** `shopify_orders_referring_medium`<br/>**Type:** dimension |
+| Referring Channel (Orders) | Channel that referred the visit that generated the order.<br/><br/>**Field name:** `shopify_orders_referring_channel`<br/>**Type:** dimension |
+
+### Products
+
+| | |
+|---|---|
+| Title (Products) | Title of the product in the catalog.<br/><br/>**Field name:** `shopify_product_title`<br/>**Type:** dimension |
+| ID (Products) | **Field name:** `shopify_product_id`<br/>**Type:** dimension |
+| Vendor (Products) | Vendor of the product in the catalog.<br/><br/>**Field name:** `shopify_vendor`<br/>**Type:** dimension |
+| Type (Products) | Type of the product in the catalog.<br/><br/>**Field name:** `shopify_product_type`<br/>**Type:** dimension |
+| Tags (Products) | Tags of the product.<br/><br/>**Field name:** `shopify_tags`<br/>**Type:** dimension |
+| Status (Products) | Status of the product: active, draft or archived.<br/><br/>**Field name:** `shopify_status`<br/>**Type:** dimension |
+
+### Product variants
+
+| | |
+|---|---|
+| Display ID (Product Variants) | **Field name:** `shopify_product_variant_id`<br/>**Type:** dimension |
+| Display Name (Product Variants) | Product and variant name in the catalog.<br/><br/>**Field name:** `shopify_product_variant_display_name`<br/>**Type:** dimension |
+| SKU (Product Variants) | SKU of the product variant.<br/><br/>**Field name:** `shopify_product_variant_sku`<br/>**Type:** dimension |
+
+### Sessions
+
+| | |
+|---|---|
+| Human or Bot Session (Sessions) | **Field name:** `shopify_sessions_human_or_bot_session`<br/>**Type:** dimension |
+| Session Bounced (Sessions) | **Field name:** `shopify_sessions_session_bounced`<br/>**Type:** dimension |
+| First Order Sales Channel (Sessions) | **Field name:** `shopify_sessions_first_order_sales_channel`<br/>**Type:** dimension |
+| Customer Email (Sessions) | **Field name:** `shopify_sessions_customer_email`<br/>**Type:** dimension |
+| Customer Account Status (Sessions) | **Field name:** `shopify_sessions_customer_account_status`<br/>**Type:** dimension |
+| Abandoned Checkout Date (Sessions) | **Field name:** `shopify_sessions_abandoned_checkout_date`<br/>**Type:** dimension |
+| Customer ID (Sessions) | **Field name:** `shopify_sessions_customer_id`<br/>**Type:** dimension |
+| Customer First Order Date (Sessions) | **Field name:** `shopify_sessions_customer_first_order_date`<br/>**Type:** dimension |
+| Customer Last Order Date (Sessions) | **Field name:** `shopify_sessions_customer_last_order_date`<br/>**Type:** dimension |
+| Referring Platform (Sessions) | Platform that referred the session.<br/><br/>**Field name:** `shopify_sessions_referring_platform`<br/>**Type:** dimension |
+| Referring Medium (Sessions) | Medium that referred the session.<br/><br/>**Field name:** `shopify_sessions_referring_medium`<br/>**Type:** dimension |
+| Referring Channel (Sessions) | Channel that referred the session.<br/><br/>**Field name:** `shopify_sessions_referring_channel`<br/>**Type:** dimension |
+| Referrer Site (Sessions) | **Field name:** `shopify_sessions_referrer_site`<br/>**Type:** dimension |
+| Referrer Source (Sessions) | Source that referred the session.<br/><br/>**Field name:** `shopify_sessions_referrer_source`<br/>**Type:** dimension |
+| Referrer URL (Sessions) | **Field name:** `shopify_sessions_referrer_url`<br/>**Type:** dimension |
+| Referrer Terms (Sessions) | **Field name:** `shopify_sessions_referrer_terms`<br/>**Type:** dimension |
+| Session City (Sessions) | City of the session.<br/><br/>**Field name:** `shopify_sessions_session_city`<br/>**Type:** dimension |
+| Session Country (Sessions) | Country of the session.<br/><br/>**Field name:** `shopify_sessions_session_country`<br/>**Type:** dimension |
+| Session Country Code (Sessions) | **Field name:** `shopify_sessions_session_country_code`<br/>**Type:** dimension |
+| Session Device OS (Sessions) | Operating system of the session device.<br/><br/>**Field name:** `shopify_sessions_session_device_os`<br/>**Type:** dimension |
+| Session Device Type (Sessions) | Device type of the session (desktop, mobile, tablet).<br/><br/>**Field name:** `shopify_sessions_session_device_type`<br/>**Type:** dimension |
+| Session Duration (Sessions) | **Field name:** `shopify_sessions_session_duration`<br/>**Type:** dimension |
+| Session Region (Sessions) | Region of the session.<br/><br/>**Field name:** `shopify_sessions_session_region`<br/>**Type:** dimension |
+| Session ID (Sessions) | **Field name:** `shopify_sessions_session_id`<br/>**Type:** dimension |
+| Traffic Type (Sessions) | Type of traffic of the session.<br/><br/>**Field name:** `shopify_sessions_traffic_type`<br/>**Type:** dimension |
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Fields catalog" href="/en/">
+    Browse all sources
+  </Card>
+  <Card title="Instagram" href="/en/instagram/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Facebook Pages" href="/en/facebook/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Tiendanube" href="/en/tiendanube/metrics">
+    Metrics & Dimensions
+  </Card>
+</CardGroup>

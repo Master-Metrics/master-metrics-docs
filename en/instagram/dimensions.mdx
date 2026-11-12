@@ -1,0 +1,76 @@
+---
+title: "Instagram: Dimensions"
+description: "Complete reference of the Instagram dimensions in Master Metrics"
+---
+
+<Info>**Last updated:** 2026-11-12</Info>
+
+This reference covers the 25 dimensions available for Instagram in Master Metrics. Use it to understand how you can segment your data and how each field is named.
+
+**Available in:** Dashboards · Reports · AI assistant · MCP
+
+## Dimensions
+
+Dimensions are the attributes you can use to segment and group your Instagram data.
+
+### Account
+
+| | |
+|---|---|
+| Account ID | Unique identifier of the Facebook Page linked to the Instagram account.<br/><br/>**Field name:** `ACCOUND_ID`<br/>**Type:** dimension |
+| Profile name | Display name of the Instagram profile.<br/><br/>**Field name:** `PROFILE_NAME`<br/>**Type:** dimension |
+| Profile ID | Unique identifier of the Instagram business or creator account.<br/><br/>**Field name:** `PROFILE_ID`<br/>**Type:** dimension |
+| Username | Instagram handle of the account, without the @.<br/><br/>**Field name:** `USERNAME`<br/>**Type:** dimension |
+| Contact button type | Profile contact button that was tapped: call, email, text, directions or book now.<br/><br/>**Field name:** `CONTACT_BUTTON_TYPE`<br/>**Type:** dimension |
+| Hour | Hour of the day, used with hourly metrics such as online followers.<br/><br/>**Field name:** `HOUR`<br/>**Type:** dimension |
+
+### Media
+
+| | |
+|---|---|
+| Media ID | Unique identifier of the post, reel or story.<br/><br/>**Field name:** `MEDIA_ID`<br/>**Type:** dimension |
+| Media caption | Caption text published with the post, reel or story.<br/><br/>**Field name:** `MEDIA_CAPTION`<br/>**Type:** dimension |
+| Media image | Thumbnail image of the post, reel or story.<br/><br/>**Field name:** `MEDIA_IMAGE`<br/>**Type:** dimension |
+| Media image and Caption | Thumbnail image shown together with the caption of the post, reel or story.<br/><br/>**Field name:** `MEDIA_IMAGE_CAPTION`<br/>**Type:** dimension |
+| Media type | Format of the content: image, video or carousel album.<br/><br/>**Field name:** `MEDIA_TYPE`<br/>**Type:** dimension |
+| Media product type | Instagram surface where the content was published: feed, reels, story or ad.<br/><br/>**Field name:** `MEDIA_PRODUCT_TYPE`<br/>**Type:** dimension |
+| Follow Type | Splits the metric between accounts that follow the profile and accounts that do not.<br/><br/>**Field name:** `FOLLOW_TYPE`<br/>**Type:** dimension |
+| Media permalink | Public URL of the post, reel or story on Instagram.<br/><br/>**Field name:** `PERMALINK`<br/>**Type:** dimension |
+| Media Creation Date | Date on which the post, reel or story was published.<br/><br/>**Field name:** `creation_date`<br/>**Type:** dimension |
+| Media Creation Time | Date and time at which the post, reel or story was published.<br/><br/>**Field name:** `creation_time`<br/>**Type:** dimension |
+
+### Audience
+
+| | |
+|---|---|
+| Age | Age range of the audience (13-17, 18-24, 25-34, 35-44, 45-54, 55-64, 65+). Available for demographic metrics.<br/><br/>**Field name:** `AGE`<br/>**Type:** dimension |
+| Gender | Gender of the audience: female, male or undefined. Available for demographic metrics.<br/><br/>**Field name:** `GENDER`<br/>**Type:** dimension |
+| Country | Country of the audience. Available for demographic metrics.<br/><br/>**Field name:** `COUNTRY`<br/>**Type:** dimension |
+| City | City of the audience. Available for demographic metrics.<br/><br/>**Field name:** `CITY`<br/>**Type:** dimension |
+
+### Time
+
+| | |
+|---|---|
+| Year | Groups the data by calendar year.<br/><br/>**Field name:** `year`<br/>**Type:** dimension |
+| Quarter | Groups the data by calendar quarter.<br/><br/>**Field name:** `quarter`<br/>**Type:** dimension |
+| Month | Groups the data by calendar month.<br/><br/>**Field name:** `month`<br/>**Type:** dimension |
+| Week | Groups the data by week.<br/><br/>**Field name:** `week`<br/>**Type:** dimension |
+| Day | Groups the data by day.<br/><br/>**Field name:** `day`<br/>**Type:** dimension |
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Fields catalog" href="/en/">
+    Browse all sources
+  </Card>
+  <Card title="Facebook Pages" href="/en/facebook/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Shopify" href="/en/shopify/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Tiendanube" href="/en/tiendanube/metrics">
+    Metrics & Dimensions
+  </Card>
+</CardGroup>
