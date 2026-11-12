@@ -169,6 +169,13 @@
                   "gohighlevel/metrics",
                   "gohighlevel/dimensions"
                 ]
+              },
+              {
+                "group": "Marketing Nube",
+                "pages": [
+                  "marketingnube/metrics",
+                  "marketingnube/dimensions"
+                ]
               }
             ]
           }
@@ -333,6 +340,13 @@
                   "en/gohighlevel/metrics",
                   "en/gohighlevel/dimensions"
                 ]
+              },
+              {
+                "group": "Marketing Nube",
+                "pages": [
+                  "en/marketingnube/metrics",
+                  "en/marketingnube/dimensions"
+                ]
               }
             ]
           }
@@ -496,6 +510,13 @@
                 "pages": [
                   "pt/gohighlevel/metrics",
                   "pt/gohighlevel/dimensions"
+                ]
+              },
+              {
+                "group": "Marketing Nube",
+                "pages": [
+                  "pt/marketingnube/metrics",
+                  "pt/marketingnube/dimensions"
                 ]
               }
             ]
