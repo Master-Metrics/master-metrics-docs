@@ -1,0 +1,93 @@
+---
+title: "WooCommerce: Dimensions"
+description: "Complete reference of the WooCommerce dimensions in Master Metrics"
+---
+
+<Info>**Last updated:** 2026-11-12</Info>
+
+This reference covers the 42 dimensions available for WooCommerce in Master Metrics. Use it to understand how you can segment your data and how each field is named.
+
+**Available in:** Dashboards · Reports · AI assistant · MCP
+
+## Dimensions
+
+Dimensions are the attributes you can use to segment and group your WooCommerce data.
+
+### General
+
+| | |
+|---|---|
+| Day | **Field name:** `day`<br/>**Type:** dimension |
+| Week | **Field name:** `week`<br/>**Type:** dimension |
+| Month | **Field name:** `month`<br/>**Type:** dimension |
+| Quarter | **Field name:** `quarter`<br/>**Type:** dimension |
+| Year | **Field name:** `year`<br/>**Type:** dimension |
+| Store Name (Common) | **Field name:** `woocommerce_shop_name`<br/>**Type:** dimension |
+| Store ID (Common) | **Field name:** `woocommerce_shop_id`<br/>**Type:** dimension |
+
+### Orders
+
+| | |
+|---|---|
+| ID (Orders) | **Field name:** `woocommerce_orders_id`<br/>**Type:** dimension |
+| Number (Orders) | **Field name:** `woocommerce_orders_number`<br/>**Type:** dimension |
+| Status (Orders) | **Field name:** `woocommerce_orders_status`<br/>**Type:** dimension |
+| Currency (Orders) | **Field name:** `woocommerce_currency`<br/>**Type:** dimension |
+| Payment Method (Orders) | **Field name:** `woocommerce_payment_method_title`<br/>**Type:** dimension |
+| Billing Country (Orders) | **Field name:** `woocommerce_billing_country`<br/>**Type:** dimension |
+| Billing State (Orders) | **Field name:** `woocommerce_billing_state`<br/>**Type:** dimension |
+| Billing City (Orders) | **Field name:** `woocommerce_billing_city`<br/>**Type:** dimension |
+| Shipping Country (Orders) | **Field name:** `woocommerce_shipping_country`<br/>**Type:** dimension |
+| Shipping State (Orders) | **Field name:** `woocommerce_shipping_state`<br/>**Type:** dimension |
+| Shipping City (Orders) | **Field name:** `woocommerce_shipping_city`<br/>**Type:** dimension |
+| Product and variant name (Orders) | **Field name:** `woocommerce_orders_line_item_name`<br/>**Type:** dimension |
+| Product ID (Orders) | **Field name:** `woocommerce_orders_line_item_product_id`<br/>**Type:** dimension |
+| Variation ID (Orders) | **Field name:** `woocommerce_orders_line_item_variation_id`<br/>**Type:** dimension |
+| Line item image (Orders) | **Field name:** `woocommerce_orders_line_item_picture`<br/>**Type:** dimension |
+| Line item image + name (Orders) | **Field name:** `woocommerce_orders_line_item_picture_title`<br/>**Type:** dimension |
+| Line item ID (Orders) | **Field name:** `woocommerce_orders_line_item_id`<br/>**Type:** dimension |
+| Line item SKU (Orders) | **Field name:** `woocommerce_orders_line_item_sku`<br/>**Type:** dimension |
+| Product name without variant (Orders) | **Field name:** `woocommerce_orders_line_item_parent_name`<br/>**Type:** dimension |
+
+### Products
+
+| | |
+|---|---|
+| Name (Products) | **Field name:** `woocommerce_product_name`<br/>**Type:** dimension |
+| Title (Products) | **Field name:** `woocommerce_product_title`<br/>**Type:** dimension |
+| Short description (Products) | **Field name:** `woocommerce_product_short_description`<br/>**Type:** dimension |
+| Description (Products) | **Field name:** `woocommerce_product_description`<br/>**Type:** dimension |
+| On sale (Products) | **Field name:** `woocommerce_product_on_sale`<br/>**Type:** dimension |
+| Categories (Products) | **Field name:** `woocommerce_product_categories`<br/>**Type:** dimension |
+| Tags (Products) | **Field name:** `woocommerce_product_tags`<br/>**Type:** dimension |
+| Image (Products) | **Field name:** `woocommerce_product_picture`<br/>**Type:** dimension |
+| Link (Products) | **Field name:** `woocommerce_product_permalink`<br/>**Type:** dimension |
+| Image + title + description (Products) | **Field name:** `woocommerce_product_picture_title`<br/>**Type:** dimension |
+| Stock status (Products) | **Field name:** `woocommerce_product_stock_status`<br/>**Type:** dimension |
+
+### Customers
+
+| | |
+|---|---|
+| Email (Customers) | **Field name:** `woocommerce_customer_email`<br/>**Type:** dimension |
+| Shipping city (Customers) | **Field name:** `woocommerce_customer_shipping_city`<br/>**Type:** dimension |
+| Shipping state (Customers) | **Field name:** `woocommerce_customer_shipping_state`<br/>**Type:** dimension |
+| Shipping country (Customers) | **Field name:** `woocommerce_customer_shipping_country`<br/>**Type:** dimension |
+| Is paying (Customers) | **Field name:** `woocommerce_customer_is_paying_customer`<br/>**Type:** dimension |
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Fields catalog" href="/en/">
+    Browse all sources
+  </Card>
+  <Card title="Instagram" href="/en/instagram/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Facebook Pages" href="/en/facebook/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Shopify" href="/en/shopify/metrics">
+    Metrics & Dimensions
+  </Card>
+</CardGroup>
