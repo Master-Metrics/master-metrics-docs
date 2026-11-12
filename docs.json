@@ -176,6 +176,13 @@
                   "marketingnube/metrics",
                   "marketingnube/dimensions"
                 ]
+              },
+              {
+                "group": "Doppler",
+                "pages": [
+                  "doppler/metrics",
+                  "doppler/dimensions"
+                ]
               }
             ]
           }
@@ -347,6 +354,13 @@
                   "en/marketingnube/metrics",
                   "en/marketingnube/dimensions"
                 ]
+              },
+              {
+                "group": "Doppler",
+                "pages": [
+                  "en/doppler/metrics",
+                  "en/doppler/dimensions"
+                ]
               }
             ]
           }
@@ -517,6 +531,13 @@
                 "pages": [
                   "pt/marketingnube/metrics",
                   "pt/marketingnube/dimensions"
+                ]
+              },
+              {
+                "group": "Doppler",
+                "pages": [
+                  "pt/doppler/metrics",
+                  "pt/doppler/dimensions"
                 ]
               }
             ]
