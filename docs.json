@@ -162,6 +162,13 @@
                   "pipedrive/metrics",
                   "pipedrive/dimensions"
                 ]
+              },
+              {
+                "group": "GoHighLevel",
+                "pages": [
+                  "gohighlevel/metrics",
+                  "gohighlevel/dimensions"
+                ]
               }
             ]
           }
@@ -319,6 +326,13 @@
                   "en/pipedrive/metrics",
                   "en/pipedrive/dimensions"
                 ]
+              },
+              {
+                "group": "GoHighLevel",
+                "pages": [
+                  "en/gohighlevel/metrics",
+                  "en/gohighlevel/dimensions"
+                ]
               }
             ]
           }
@@ -475,6 +489,13 @@
                 "pages": [
                   "pt/pipedrive/metrics",
                   "pt/pipedrive/dimensions"
+                ]
+              },
+              {
+                "group": "GoHighLevel",
+                "pages": [
+                  "pt/gohighlevel/metrics",
+                  "pt/gohighlevel/dimensions"
                 ]
               }
             ]
