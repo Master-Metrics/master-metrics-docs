@@ -1,0 +1,88 @@
+---
+title: "Google Search Console: Dimensiones"
+description: "Referencia completa de las dimensiones de Google Search Console en Master Metrics"
+---
+
+<Info>**Última actualización:** 2026-11-12</Info>
+
+Esta referencia cubre las 27 dimensiones disponibles de Google Search Console en Master Metrics. Úsala para entender cómo puedes segmentar tus datos y cómo se llama cada campo.
+
+**Disponible en:** Dashboards · Reportes · Asistente de IA · MCP
+
+## Dimensiones
+
+Las dimensiones son los atributos que puedes usar para segmentar y agrupar tus datos de Google Search Console.
+
+### Tiempo
+
+| | |
+|---|---|
+| Día | **Nombre del campo:** `day`<br/>**Tipo:** dimensión |
+| Semana | **Nombre del campo:** `week`<br/>**Tipo:** dimensión |
+| Mes | **Nombre del campo:** `month`<br/>**Tipo:** dimensión |
+| Trimestre | **Nombre del campo:** `quarter`<br/>**Tipo:** dimensión |
+| Año | **Nombre del campo:** `year`<br/>**Tipo:** dimensión |
+
+### General
+
+| | |
+|---|---|
+| Propiedad de Dominio | **Nombre del campo:** `gsc_account_id`<br/>**Tipo:** dimensión |
+| Dispositivo | **Nombre del campo:** `gsc_device`<br/>**Tipo:** dimensión |
+
+### Rendimiento de búsqueda
+
+| | |
+|---|---|
+| Consulta de búsqueda | **Nombre del campo:** `gsc_query`<br/>**Tipo:** dimensión |
+| Consultas de marca vs. sin marca | **Nombre del campo:** `gsc_branded_vs_nonbranded`<br/>**Tipo:** dimensión |
+| Nº de palabras en la consulta | **Nombre del campo:** `gsc_words_in_query`<br/>**Tipo:** dimensión |
+| Tipo de búsqueda | **Nombre del campo:** `gsc_searchtype`<br/>**Tipo:** dimensión |
+| Apariencia en búsqueda | **Nombre del campo:** `gsc_searchappearance`<br/>**Tipo:** dimensión |
+| Posición SERP (prom. redondeado) | **Nombre del campo:** `gsc_position_dim`<br/>**Tipo:** dimensión |
+
+### Páginas de destino
+
+| | |
+|---|---|
+| URL completa | **Nombre del campo:** `gsc_page`<br/>**Tipo:** dimensión |
+| Protocolo | **Nombre del campo:** `gsc_protocol`<br/>**Tipo:** dimensión |
+| Hostname | **Nombre del campo:** `gsc_hostname`<br/>**Tipo:** dimensión |
+| Ruta | **Nombre del campo:** `gsc_pagepath`<br/>**Tipo:** dimensión |
+| Directorio nivel 1 | **Nombre del campo:** `gsc_pathlevel1`<br/>**Tipo:** dimensión |
+| Directorio nivel 2 | **Nombre del campo:** `gsc_pathlevel2`<br/>**Tipo:** dimensión |
+| Directorio nivel 3 | **Nombre del campo:** `gsc_pathlevel3`<br/>**Tipo:** dimensión |
+| Directorio nivel 4 | **Nombre del campo:** `gsc_pathlevel4`<br/>**Tipo:** dimensión |
+| Parámetros de consulta | **Nombre del campo:** `gsc_queryparams`<br/>**Tipo:** dimensión |
+| Ancla | **Nombre del campo:** `gsc_anchor`<br/>**Tipo:** dimensión |
+
+### Sitemaps
+
+| | |
+|---|---|
+| Último envío | **Nombre del campo:** `gsc_lastsubmitted`<br/>**Tipo:** dimensión |
+| Ruta | **Nombre del campo:** `gsc_path`<br/>**Tipo:** dimensión |
+| Es índice de sitemaps | **Nombre del campo:** `gsc_issitemapsindex`<br/>**Tipo:** dimensión |
+
+### Geografía
+
+| | |
+|---|---|
+| País | **Nombre del campo:** `gsc_countryname`<br/>**Tipo:** dimensión |
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Catálogo de campos" href="/">
+    Ver todas las fuentes
+  </Card>
+  <Card title="Instagram" href="/instagram/metrics">
+    Métricas & Dimensiones
+  </Card>
+  <Card title="Facebook Pages" href="/facebook/metrics">
+    Métricas & Dimensiones
+  </Card>
+  <Card title="Shopify" href="/shopify/metrics">
+    Métricas & Dimensiones
+  </Card>
+</CardGroup>

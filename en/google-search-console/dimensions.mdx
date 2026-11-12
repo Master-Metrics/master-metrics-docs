@@ -1,0 +1,88 @@
+---
+title: "Google Search Console: Dimensions"
+description: "Complete reference of the Google Search Console dimensions in Master Metrics"
+---
+
+<Info>**Last updated:** 2026-11-12</Info>
+
+This reference covers the 27 dimensions available for Google Search Console in Master Metrics. Use it to understand how you can segment your data and how each field is named.
+
+**Available in:** Dashboards · Reports · AI assistant · MCP
+
+## Dimensions
+
+Dimensions are the attributes you can use to segment and group your Google Search Console data.
+
+### Time
+
+| | |
+|---|---|
+| Day | **Field name:** `day`<br/>**Type:** dimension |
+| Week | **Field name:** `week`<br/>**Type:** dimension |
+| Month | **Field name:** `month`<br/>**Type:** dimension |
+| Quarter | **Field name:** `quarter`<br/>**Type:** dimension |
+| Year | **Field name:** `year`<br/>**Type:** dimension |
+
+### General
+
+| | |
+|---|---|
+| Domain Propery | **Field name:** `gsc_account_id`<br/>**Type:** dimension |
+| Device | **Field name:** `gsc_device`<br/>**Type:** dimension |
+
+### Search performance
+
+| | |
+|---|---|
+| Search query | The search query that resulted in a search impression<br/><br/>**Field name:** `gsc_query`<br/>**Type:** dimension |
+| Branded vs. non-branded search queries | Categorises search queries into branded or non-branded. You can set your own brand terms, or if you don't, we use your domain name as the brand term<br/><br/>**Field name:** `gsc_branded_vs_nonbranded`<br/>**Type:** dimension |
+| # of words in search query | Counts the number of words in a search query<br/><br/>**Field name:** `gsc_words_in_query`<br/>**Type:** dimension |
+| Search type | Separates web, image and mobile search<br/><br/>**Field name:** `gsc_searchtype`<br/>**Type:** dimension |
+| Search appearance | **Field name:** `gsc_searchappearance`<br/>**Type:** dimension |
+| SERP position (rounded avg.) | Organic position in Google search results. We take the average position per keyword and round it to the closest integer<br/><br/>**Field name:** `gsc_position_dim`<br/>**Type:** dimension |
+
+### Landing pages
+
+| | |
+|---|---|
+| Full URL | The landing page on your site<br/><br/>**Field name:** `gsc_page`<br/>**Type:** dimension |
+| Protocol | Transfer protocol extracted from the landing page URL. Either http or https<br/><br/>**Field name:** `gsc_protocol`<br/>**Type:** dimension |
+| Hostname | Hostname extracted from the landing page URL. If the full URL is 'https://supermetrics.com/products/googlesheets/index.html?utm_campaign=test#pricing', this dimension would return 'supermetrics.com'<br/><br/>**Field name:** `gsc_hostname`<br/>**Type:** dimension |
+| Path | Page path extracted from the landing page URL. If the full URL is 'https://supermetrics.com/products/googlesheets/index.html?utm_campaign=test#pricing', this dimension would return '/products/googlesheets/index.html'<br/><br/>**Field name:** `gsc_pagepath`<br/>**Type:** dimension |
+| Directory level 1 | Top-level directory extracted from the landing page URL. If the full URL is 'https://supermetrics.com/products/googlesheets/index.html?utm_campaign=test#pricing', this dimension would return 'products'<br/><br/>**Field name:** `gsc_pathlevel1`<br/>**Type:** dimension |
+| Directory level 2 | Directory path until the 2nd level extracted from the landing page URL. If the full URL is 'https://supermetrics.com/products/googlesheets/index.html?utm_campaign=test#pricing', this dimension would return 'products/googlesheets'<br/><br/>**Field name:** `gsc_pathlevel2`<br/>**Type:** dimension |
+| Directory level 3 | Directory path until the 3rd level extracted from the landing page URL. If the full URL is 'https://supermetrics.com/products/googlesheets/index.html?utm_campaign=test#pricing', this dimension would return 'products/googlesheets'<br/><br/>**Field name:** `gsc_pathlevel3`<br/>**Type:** dimension |
+| Directory level 4 | Directory path until the 4th level extracted from the landing page URL. If the full URL is 'https://supermetrics.com/products/googlesheets/index.html?utm_campaign=test#pricing', this dimension would return 'products/googlesheets'<br/><br/>**Field name:** `gsc_pathlevel4`<br/>**Type:** dimension |
+| Query parameters | Query parameters extracted from the landing page URL. If the full URL is 'https://supermetrics.com/products/googlesheets/index.html?utm_campaign=test#pricing', this dimension would return 'utm_campaign=test'<br/><br/>**Field name:** `gsc_queryparams`<br/>**Type:** dimension |
+| Anchor | The anchor extracted from the landing page URL. If the full URL is 'https://supermetrics.com/products/googlesheets/index.html?utm_campaign=test#pricing', this dimension would return 'pricing'<br/><br/>**Field name:** `gsc_anchor`<br/>**Type:** dimension |
+
+### Sitemaps
+
+| | |
+|---|---|
+| Last submitted | **Field name:** `gsc_lastsubmitted`<br/>**Type:** dimension |
+| Path | **Field name:** `gsc_path`<br/>**Type:** dimension |
+| Is sitemaps index | **Field name:** `gsc_issitemapsindex`<br/>**Type:** dimension |
+
+### Geography
+
+| | |
+|---|---|
+| Country | **Field name:** `gsc_countryname`<br/>**Type:** dimension |
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Fields catalog" href="/en/">
+    Browse all sources
+  </Card>
+  <Card title="Instagram" href="/en/instagram/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Facebook Pages" href="/en/facebook/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Shopify" href="/en/shopify/metrics">
+    Metrics & Dimensions
+  </Card>
+</CardGroup>
