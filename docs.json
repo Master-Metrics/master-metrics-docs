@@ -56,6 +56,13 @@
                   "mercado-ads/metrics",
                   "mercado-ads/dimensions"
                 ]
+              },
+              {
+                "group": "LinkedIn Ads",
+                "pages": [
+                  "linkedin-ads/metrics",
+                  "linkedin-ads/dimensions"
+                ]
               }
             ]
           },
@@ -234,6 +241,13 @@
                   "en/mercado-ads/metrics",
                   "en/mercado-ads/dimensions"
                 ]
+              },
+              {
+                "group": "LinkedIn Ads",
+                "pages": [
+                  "en/linkedin-ads/metrics",
+                  "en/linkedin-ads/dimensions"
+                ]
               }
             ]
           },
@@ -411,6 +425,13 @@
                 "pages": [
                   "pt/mercado-ads/metrics",
                   "pt/mercado-ads/dimensions"
+                ]
+              },
+              {
+                "group": "LinkedIn Ads",
+                "pages": [
+                  "pt/linkedin-ads/metrics",
+                  "pt/linkedin-ads/dimensions"
                 ]
               }
             ]
