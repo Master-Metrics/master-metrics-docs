@@ -58,6 +58,13 @@
                   "linkedin-pages/metrics",
                   "linkedin-pages/dimensions"
                 ]
+              },
+              {
+                "group": "Google Business Profile",
+                "pages": [
+                  "google-business/metrics",
+                  "google-business/dimensions"
+                ]
               }
             ]
           },
@@ -130,6 +137,13 @@
                   "en/linkedin-pages/metrics",
                   "en/linkedin-pages/dimensions"
                 ]
+              },
+              {
+                "group": "Google Business Profile",
+                "pages": [
+                  "en/google-business/metrics",
+                  "en/google-business/dimensions"
+                ]
               }
             ]
           },
@@ -201,6 +215,13 @@
                 "pages": [
                   "pt/linkedin-pages/metrics",
                   "pt/linkedin-pages/dimensions"
+                ]
+              },
+              {
+                "group": "Google Business Profile",
+                "pages": [
+                  "pt/google-business/metrics",
+                  "pt/google-business/dimensions"
                 ]
               }
             ]
