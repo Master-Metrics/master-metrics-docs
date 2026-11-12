@@ -28,6 +28,13 @@
                   "meta-ads/metrics",
                   "meta-ads/dimensions"
                 ]
+              },
+              {
+                "group": "TikTok Ads",
+                "pages": [
+                  "tiktok-ads/metrics",
+                  "tiktok-ads/dimensions"
+                ]
               }
             ]
           },
@@ -138,6 +145,13 @@
                   "en/meta-ads/metrics",
                   "en/meta-ads/dimensions"
                 ]
+              },
+              {
+                "group": "TikTok Ads",
+                "pages": [
+                  "en/tiktok-ads/metrics",
+                  "en/tiktok-ads/dimensions"
+                ]
               }
             ]
           },
@@ -247,6 +261,13 @@
                 "pages": [
                   "pt/meta-ads/metrics",
                   "pt/meta-ads/dimensions"
+                ]
+              },
+              {
+                "group": "TikTok Ads",
+                "pages": [
+                  "pt/tiktok-ads/metrics",
+                  "pt/tiktok-ads/dimensions"
                 ]
               }
             ]
