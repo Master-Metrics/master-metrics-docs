@@ -1,0 +1,114 @@
+---
+title: "Instagram: Métricas"
+description: "Referencia completa de las métricas de Instagram en Master Metrics"
+---
+
+<Info>**Última actualización:** 2026-11-12</Info>
+
+Esta referencia cubre las 68 métricas disponibles de Instagram en Master Metrics.
+
+**Disponible en:** Dashboards · Reportes · Asistente de IA · MCP
+
+## Métricas
+
+Las métricas son los valores numéricos que puedes medir y agregar a partir de tus datos de Instagram.
+
+### Cuenta
+
+| | |
+|---|---|
+| Demografía de seguidores del perfil | Seguidores totales de la cuenta (día a día). Usar para seguidores totales; dividido por rango de edad, género o ubicación (país/ciudad) da la demografía de los seguidores.<br/><br/>**Nombre del campo:** `instagram_follower_demographics`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Visualizaciones | Cantidad total de veces que se reprodujo o mostró el contenido de la cuenta (publicaciones, reels e historias) durante el período seleccionado (sus visualizaciones acumuladas).<br/><br/>**Nombre del campo:** `instagram_views`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Alcance del perfil | Cantidad de cuentas únicas que vieron el contenido de la cuenta al menos una vez durante el período seleccionado (su alcance acumulado), incluyendo contenido de anuncios. En rangos de más de 30 días se suman tramos de 30 días, por lo que algunas cuentas pueden contarse más de una vez.<br/><br/>**Nombre del campo:** `instagram_profile_reach`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Nuevos seguidores del perfil | Cantidad de cuentas nuevas que empezaron a seguir el perfil durante el período seleccionado.<br/><br/>**Nombre del campo:** `instagram_profile_new_follows`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Interacción sobre Alcance Contenido | Interacción calculada (me gusta más comentarios) generada por publicaciones de feed y reels.<br/><br/>**Nombre del campo:** `instagram_media_engagement`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Interacción sobre Alcance Carrusel | Interacción calculada (me gusta más comentarios) generada por publicaciones de tipo carrusel.<br/><br/>**Nombre del campo:** `instagram_media_carousel_engagement`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Seguimientos del perfil | Cantidad de cuentas que sigue el perfil ("siguiendo"), no sus seguidores. Para seguidores totales usar instagram_follower_demographics.<br/><br/>**Nombre del campo:** `instagram_profile_follows_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Cantidad de contenidos del perfil | Contenido total que publicó la cuenta desde su creación (histórico, no depende del período elegido). Usar para el contenido total o las publicaciones totales de la cuenta.<br/><br/>**Nombre del campo:** `instagram_profile_media_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+
+### Contenido
+
+| | |
+|---|---|
+| Cantidad de contenidos | Contenido (publicaciones, reels...) publicado durante el período seleccionado. Para el total histórico de la cuenta usar instagram_profile_media_count.<br/><br/>**Nombre del campo:** `instagram_media_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Impresiones pagadas del contenido | Cantidad de veces que se mostró en pantalla la publicación potenciada (promocionada).<br/><br/>**Nombre del campo:** `instagram_media_paid_impressions`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Gasto pagado del contenido | Monto total estimado invertido en potenciar (promocionar) la publicación.<br/><br/>**Nombre del campo:** `instagram_media_paid_spend`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Alcance pagado del contenido | Cantidad de cuentas únicas que vieron la publicación potenciada (promocionada) al menos una vez.<br/><br/>**Nombre del campo:** `instagram_media_paid_reach`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Clics pagados del contenido | Cantidad de clics generados por la publicación potenciada (promocionada).<br/><br/>**Nombre del campo:** `instagram_media_paid_clicks`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Interacciones pagadas de publicaciones | Cantidad de interacciones (post_engagement: me gusta, comentarios, compartidos y clics) generadas al potenciar la publicación.<br/><br/>**Nombre del campo:** `instagram_media_paid_post_interactions`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Clic pagado en el enlace | Cantidad de clics en los enlaces incluidos en la publicación potenciada (promocionada).<br/><br/>**Nombre del campo:** `instagram_media_paid_link_click`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Me gusta pagado | Cantidad de me gusta generados al potenciar (promocionar) la publicación.<br/><br/>**Nombre del campo:** `instagram_media_paid_like`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Comentario pagado | Cantidad de comentarios generados al potenciar (promocionar) la publicación.<br/><br/>**Nombre del campo:** `instagram_media_paid_comment`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Compartido pagado | Cantidad de veces que se compartió la publicación gracias a potenciarla (promocionarla).<br/><br/>**Nombre del campo:** `instagram_media_paid_share`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Reproducción pagada de video | Cantidad de reproducciones de video generadas al potenciar (promocionar) la publicación.<br/><br/>**Nombre del campo:** `instagram_media_paid_video_view`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Cantidad de me gusta | Cantidad de me gusta del objeto de media.<br/><br/>**Nombre del campo:** `instagram_media_like_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Me gusta del contenido | Cantidad de me gusta del objeto de media.<br/><br/>**Nombre del campo:** `instagram_media_likes`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Comentarios del contenido | Cantidad de comentarios del objeto de media.<br/><br/>**Nombre del campo:** `instagram_media_comments`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Cantidad de comentarios | Cantidad de comentarios del objeto de media.<br/><br/>**Nombre del campo:** `instagram_media_comments_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Alcance del contenido | Cantidad de cuentas únicas que vieron el media al menos una vez.<br/><br/>**Nombre del campo:** `instagram_media_reach`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Alcance de video del contenido | Cantidad de cuentas únicas que vieron el media de video al menos una vez.<br/><br/>**Nombre del campo:** `instagram_media_videwo_reach`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Guardados del contenido | Cantidad de veces que el media fue guardado por usuarios de Instagram.<br/><br/>**Nombre del campo:** `instagram_media_saved`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Interacciones totales del contenido | Cantidad de me gusta, guardados, comentarios y compartidos del media, menos los "no me gusta", "no guardado" y comentarios eliminados.<br/><br/>**Nombre del campo:** `instagram_media_total_interactions`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Compartidos del contenido | Cantidad de veces que se compartió el media.<br/><br/>**Nombre del campo:** `instagram_media_shares`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+
+### Historias
+
+| | |
+|---|---|
+| Cantidad de historias | Cantidad de historias publicadas durante el período seleccionado.<br/><br/>**Nombre del campo:** `instagram_media_story_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Salidas de la historia | Cantidad de veces que se salió de la historia tocando para abandonarla.<br/><br/>**Nombre del campo:** `instagram_media_story_tap_exit`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Toques hacia adelante en la historia | Cantidad de toques para avanzar/saltar a la siguiente historia.<br/><br/>**Nombre del campo:** `instagram_media_story_taps_forward`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Toques hacia atrás en la historia | Cantidad de toques para volver a la historia anterior.<br/><br/>**Nombre del campo:** `instagram_media_story_taps_back`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Deslizamientos hacia adelante en la historia | Cantidad de veces que se deslizó hacia adelante pasando la historia, avanzando a la historia de otra cuenta.<br/><br/>**Nombre del campo:** `instagram_media_story_swipe_forward`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Impresiones de la historia | Cantidad total de veces que se vio la historia.<br/><br/>**Nombre del campo:** `instagram_media_story_impressions`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Alcance de la historia | Cantidad de cuentas únicas que vieron la historia al menos una vez.<br/><br/>**Nombre del campo:** `instagram_media_story_reach`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Respuestas a la historia | Cantidad total de respuestas a la historia.<br/><br/>**Nombre del campo:** `instagram_media_story_replies`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+
+### Reels
+
+| | |
+|---|---|
+| Cantidad de reels | Cantidad de reels publicados durante el período seleccionado.<br/><br/>**Nombre del campo:** `instagram_media_reels_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Alcance de reels | Cantidad de cuentas únicas que vieron el reel al menos una vez.<br/><br/>**Nombre del campo:** `instagram_media_reels_reach`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Tiempo promedio de visualización de reels | Tiempo promedio de reproducción del reel.<br/><br/>**Nombre del campo:** `instagram_media_reels_avg_watch_time`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Tiempo total de visualización de reels | Tiempo total de reproducción del reel, incluyendo repeticiones.<br/><br/>**Nombre del campo:** `instagram_media_reels_video_view_total_time`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Vistas de reels crossposteados | Cantidad total de veces que se reprodujo el reel, sumando Instagram y Facebook.<br/><br/>**Nombre del campo:** `instagram_media_reels_crossposted_views`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Vistas de reels desde Facebook | Cantidad total de veces que se reprodujo el reel en Facebook.<br/><br/>**Nombre del campo:** `instagram_media_reels_facebook_views`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Interacción sobre Alcance Reels | Interacción calculada (me gusta más comentarios) generada por los reels.<br/><br/>**Nombre del campo:** `instagram_media_reels_engagement`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Comentarios en reels | Cantidad de comentarios del reel.<br/><br/>**Nombre del campo:** `instagram_media_reels_comments`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Me gusta en reels | Cantidad de me gusta del reel.<br/><br/>**Nombre del campo:** `instagram_media_reels_likes`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Vistas de reels | Cantidad total de veces que se reprodujo el reel en Instagram.<br/><br/>**Nombre del campo:** `instagram_media_reels_views`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Reels guardados | Cantidad de veces que el reel fue guardado por usuarios de Instagram.<br/><br/>**Nombre del campo:** `instagram_media_reels_saved`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Reels compartidos | Cantidad de veces que se compartió el reel.<br/><br/>**Nombre del campo:** `instagram_media_reels_shares`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Interacciones totales en reels | Cantidad de me gusta, guardados, comentarios y compartidos del reel, menos los "no me gusta", "no guardado" y comentarios eliminados.<br/><br/>**Nombre del campo:** `instagram_media_reels_total_interactions`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+
+### Publicaciones
+
+| | |
+|---|---|
+| Cantidad de publicaciones | Cantidad de publicaciones de feed publicadas durante el período seleccionado.<br/><br/>**Nombre del campo:** `instagram_media_posts_count`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Comentarios en publicaciones | Cantidad de comentarios de la publicación de feed.<br/><br/>**Nombre del campo:** `instagram_media_posts_comments`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Me gusta en publicaciones | Cantidad de me gusta de la publicación de feed.<br/><br/>**Nombre del campo:** `instagram_media_posts_likes`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Alcance de publicaciones | Cantidad de cuentas únicas que vieron la publicación de feed al menos una vez.<br/><br/>**Nombre del campo:** `instagram_media_posts_reach`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Publicaciones guardadas | Cantidad de veces que la publicación de feed fue guardada por usuarios de Instagram.<br/><br/>**Nombre del campo:** `instagram_media_posts_saved`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Publicaciones compartidas | Cantidad de veces que se compartió la publicación de feed.<br/><br/>**Nombre del campo:** `instagram_media_posts_shares`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Interacciones totales en publicaciones | Cantidad de me gusta, guardados, comentarios y compartidos de la publicación de feed, menos los "no me gusta", "no guardado" y comentarios eliminados.<br/><br/>**Nombre del campo:** `instagram_media_posts_total_interactions`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+| Interacción sobre Alcance Publicaciones | Interacción calculada (me gusta más comentarios) generada por las publicaciones de feed.<br/><br/>**Nombre del campo:** `instagram_media_posts_engagement`<br/>**Tipo:** métrica<br/>**MCP:** Disponible |
+
+## Métricas deprecadas
+
+Fueron retiradas por la plataforma. Se mantienen como referencia histórica y no están disponibles en el MCP.
+
+| | |
+|---|---|
+| Impresiones del perfil | Cantidad total de veces que las publicaciones, historias, reels y videos de la cuenta se mostraron en pantalla, incluyendo impresiones de anuncios. Meta lo dejó obsoleto en favor de "views".<br/><br/>**Nombre del campo:** `instagram_impressions`<br/>**Tipo:** métrica<br/>**MCP:** No disponible |
+| Contactos por email del perfil | Cantidad de toques en el botón de email del perfil de la cuenta. Meta lo dejó obsoleto.<br/><br/>**Nombre del campo:** `instagram_email_contacts`<br/>**Tipo:** métrica<br/>**MCP:** No disponible |
+| Clics en mensajes de texto del perfil | Cantidad de toques en el botón de mensaje de texto del perfil de la cuenta. Meta lo dejó obsoleto.<br/><br/>**Nombre del campo:** `instagram_text_message_clicks`<br/>**Tipo:** métrica<br/>**MCP:** No disponible |
+| Clics en el sitio web del perfil | Cantidad de toques en el enlace del sitio web en la biografía del perfil de la cuenta. Meta lo dejó obsoleto.<br/><br/>**Nombre del campo:** `instagram_website_clicks`<br/>**Tipo:** métrica<br/>**MCP:** No disponible |
+| Clics en obtener direcciones del perfil | Cantidad de toques en el botón de cómo llegar del perfil de la cuenta. Meta lo dejó obsoleto.<br/><br/>**Nombre del campo:** `instagram_get_directions_clicks`<br/>**Tipo:** métrica<br/>**MCP:** No disponible |
+| Visualizaciones de video del contenido | Cantidad de veces que se visualizó un objeto de media de video. Meta lo dejó obsoleto en favor de "views".<br/><br/>**Nombre del campo:** `instagram_media_video_views`<br/>**Tipo:** métrica<br/>**MCP:** No disponible |
+| Impresiones del contenido | Cantidad total de veces que se vio el objeto de media. Meta lo dejó obsoleto para media creado después del 2 de julio de 2024.<br/><br/>**Nombre del campo:** `instagram_media_insight_impressions`<br/>**Tipo:** métrica<br/>**MCP:** No disponible |
+| Cantidad de replays de reels | Cantidad de veces que se repitió (replay) el reel. Meta lo dejó obsoleto.<br/><br/>**Nombre del campo:** `instagram_media_reels_replays_count`<br/>**Tipo:** métrica<br/>**MCP:** No disponible |
+| Reproducciones de reels | Cantidad de veces que se reprodujo el reel. Meta lo dejó obsoleto en favor de "views".<br/><br/>**Nombre del campo:** `instagram_media_reels_plays`<br/>**Tipo:** métrica<br/>**MCP:** No disponible |
+| Reproducciones en publicaciones | Cantidad de veces que se reprodujo el video de la publicación de feed.<br/><br/>**Nombre del campo:** `instagram_media_posts_plays`<br/>**Tipo:** métrica<br/>**MCP:** No disponible |
+| Impresiones de publicaciones | Cantidad total de veces que se vio la publicación de feed. Meta lo dejó obsoleto.<br/><br/>**Nombre del campo:** `instagram_media_posts_insight_impressions`<br/>**Tipo:** métrica<br/>**MCP:** No disponible |
