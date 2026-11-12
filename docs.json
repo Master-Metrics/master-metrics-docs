@@ -37,6 +37,13 @@
                   "facebook/dimensions",
                   "facebook/troubleshooting"
                 ]
+              },
+              {
+                "group": "YouTube",
+                "pages": [
+                  "youtube/metrics",
+                  "youtube/dimensions"
+                ]
               }
             ]
           },
@@ -88,6 +95,13 @@
                   "en/facebook/dimensions",
                   "en/facebook/troubleshooting"
                 ]
+              },
+              {
+                "group": "YouTube",
+                "pages": [
+                  "en/youtube/metrics",
+                  "en/youtube/dimensions"
+                ]
               }
             ]
           },
@@ -138,6 +152,13 @@
                   "pt/facebook/metrics",
                   "pt/facebook/dimensions",
                   "pt/facebook/troubleshooting"
+                ]
+              },
+              {
+                "group": "YouTube",
+                "pages": [
+                  "pt/youtube/metrics",
+                  "pt/youtube/dimensions"
                 ]
               }
             ]
