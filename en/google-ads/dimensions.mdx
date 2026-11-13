@@ -1,0 +1,183 @@
+---
+title: "Google Ads: Dimensions"
+description: "Complete reference of the Google Ads dimensions in Master Metrics"
+---
+
+<Info>**Last updated:** 2026-11-13</Info>
+
+This reference covers the 92 dimensions available for Google Ads in Master Metrics. Use it to understand how you can segment your data and how each field is named.
+
+**Available in:** Dashboards · Reports · AI assistant · MCP
+
+## Dimensions
+
+Dimensions are the attributes you can use to segment and group your Google Ads data.
+
+### Time
+
+| | |
+|---|---|
+| Date | **Field name:** `segments.date`<br/>**Type:** dimension |
+| Day of week | **Field name:** `segments.day_of_week`<br/>**Type:** dimension |
+| Hour | **Field name:** `segments.hour`<br/>**Type:** dimension |
+| Month | **Field name:** `segments.month`<br/>**Type:** dimension |
+| Month of year | **Field name:** `segments.month_of_year`<br/>**Type:** dimension |
+| Quarter | **Field name:** `segments.quarter`<br/>**Type:** dimension |
+| Week | **Field name:** `segments.week`<br/>**Type:** dimension |
+| Year | **Field name:** `segments.year`<br/>**Type:** dimension |
+
+### Account
+
+| | |
+|---|---|
+| Account Currency Code | **Field name:** `customer.currency_code`<br/>**Type:** dimension |
+| Account Name | **Field name:** `customer.descriptive_name`<br/>**Type:** dimension |
+| Account ID | **Field name:** `customer.id`<br/>**Type:** dimension |
+| Account Optimization Score | **Field name:** `customer.optimization_score`<br/>**Type:** dimension |
+| Account Status | **Field name:** `customer.status`<br/>**Type:** dimension |
+| Account Time Zone | **Field name:** `customer.time_zone`<br/>**Type:** dimension |
+
+### Campaigns
+
+| | |
+|---|---|
+| Campaign Advertising Channel Type | **Field name:** `campaign.advertising_channel_type`<br/>**Type:** dimension |
+| Campaign Bidding Strategy | **Field name:** `campaign.bidding_strategy`<br/>**Type:** dimension |
+| Campaign Bidding Strategy Type | **Field name:** `campaign.bidding_strategy_type`<br/>**Type:** dimension |
+| Campaign End Date | **Field name:** `campaign.end_date`<br/>**Type:** dimension |
+| Campaign ID | **Field name:** `campaign.id`<br/>**Type:** dimension |
+| Campaign Labels | **Field name:** `campaign.labels`<br/>**Type:** dimension |
+| Campaign Name | **Field name:** `campaign.name`<br/>**Type:** dimension |
+| Campaign Optimization Score | **Field name:** `campaign.optimization_score`<br/>**Type:** dimension |
+| Campaign Primary Status | **Field name:** `campaign.primary_status`<br/>**Type:** dimension |
+| Campaign Primary Status Reasons | **Field name:** `campaign.primary_status_reasons`<br/>**Type:** dimension |
+| Campaign Serving Status | **Field name:** `campaign.serving_status`<br/>**Type:** dimension |
+| Campaign Start Date | **Field name:** `campaign.start_date`<br/>**Type:** dimension |
+| Campaign Status | **Field name:** `campaign.status`<br/>**Type:** dimension |
+
+### Budget
+
+| | |
+|---|---|
+| Budget Amount | **Field name:** `campaign_budget.amount_micros`<br/>**Type:** dimension |
+| Budget Delivery Method | **Field name:** `campaign_budget.delivery_method`<br/>**Type:** dimension |
+| Is Shared Budget | **Field name:** `campaign_budget.explicitly_shared`<br/>**Type:** dimension |
+| Budget ID | **Field name:** `campaign_budget.id`<br/>**Type:** dimension |
+| Budget Name | **Field name:** `campaign_budget.name`<br/>**Type:** dimension |
+| Budget Period | **Field name:** `campaign_budget.period`<br/>**Type:** dimension |
+| Budget Status | **Field name:** `campaign_budget.status`<br/>**Type:** dimension |
+| Budget Type | **Field name:** `campaign_budget.type`<br/>**Type:** dimension |
+
+### Bidding strategy
+
+| | |
+|---|---|
+| Bidding Strategy Name | **Field name:** `bidding_strategy.name`<br/>**Type:** dimension |
+| Bidding Strategy Status | **Field name:** `bidding_strategy.status`<br/>**Type:** dimension |
+| Bidding Strategy Type | **Field name:** `bidding_strategy.type`<br/>**Type:** dimension |
+
+### Ad groups
+
+| | |
+|---|---|
+| Ad Group ID | **Field name:** `ad_group.id`<br/>**Type:** dimension |
+| Ad Group Labels | **Field name:** `ad_group.labels`<br/>**Type:** dimension |
+| Ad Group Name | **Field name:** `ad_group.name`<br/>**Type:** dimension |
+| Ad Group Status | **Field name:** `ad_group.status`<br/>**Type:** dimension |
+| Ad Group Type | **Field name:** `ad_group.type`<br/>**Type:** dimension |
+
+### Ads
+
+| | |
+|---|---|
+| Ad Group Ad Display Url | **Field name:** `ad_group_ad.ad.display_url`<br/>**Type:** dimension |
+| Ad Group Ad Expanded Dynamic Search Description | **Field name:** `ad_group_ad.ad.expanded_dynamic_search_ad.description`<br/>**Type:** dimension |
+| Ad Group Ad Expanded Dynamic Search Description 2 | **Field name:** `ad_group_ad.ad.expanded_dynamic_search_ad.description2`<br/>**Type:** dimension |
+| Ad Group Ad Expanded Text Description | **Field name:** `ad_group_ad.ad.expanded_text_ad.description`<br/>**Type:** dimension |
+| Ad Group Ad Expanded Text Description 2 | **Field name:** `ad_group_ad.ad.expanded_text_ad.description2`<br/>**Type:** dimension |
+| Ad Group Ad Expanded Text Headline Part 1 | **Field name:** `ad_group_ad.ad.expanded_text_ad.headline_part1`<br/>**Type:** dimension |
+| Ad Group Ad Expanded Text Headline Part 2 | **Field name:** `ad_group_ad.ad.expanded_text_ad.headline_part2`<br/>**Type:** dimension |
+| Ad Group Ad Expanded Text Headline Part 3 | **Field name:** `ad_group_ad.ad.expanded_text_ad.headline_part3`<br/>**Type:** dimension |
+| Ad Group Ad Expanded Text Path 1 | **Field name:** `ad_group_ad.ad.expanded_text_ad.path1`<br/>**Type:** dimension |
+| Ad Group Ad Expanded Text Path 2 | **Field name:** `ad_group_ad.ad.expanded_text_ad.path2`<br/>**Type:** dimension |
+| Ad ID | **Field name:** `ad_group_ad.ad.id`<br/>**Type:** dimension |
+| Ad Name | **Field name:** `ad_group_ad.ad.name`<br/>**Type:** dimension |
+| Ad Group Ad Responsive Display Description | **Field name:** `ad_group_ad.ad.responsive_display_ad.descriptions`<br/>**Type:** dimension |
+| Ad Group Ad Responsive Display Headlines | **Field name:** `ad_group_ad.ad.responsive_display_ad.headlines`<br/>**Type:** dimension |
+| Ad Group Ad Responsive Display Logo Images | **Field name:** `ad_group_ad.ad.responsive_display_ad.logo_images`<br/>**Type:** dimension |
+| Ad Group Ad Responsive Display Ad Long Headlines (Not Working) | **Field name:** `ad_group_ad.ad.responsive_display_ad.long_headline`<br/>**Type:** dimension |
+| Ad Group Ad Responsive Search Descriptions | **Field name:** `ad_group_ad.ad.responsive_search_ad.descriptions`<br/>**Type:** dimension |
+| Ad Group Ad Responsive Search Headlines | **Field name:** `ad_group_ad.ad.responsive_search_ad.headlines`<br/>**Type:** dimension |
+| Ad Group Ad Responsive Search Path 1 | **Field name:** `ad_group_ad.ad.responsive_search_ad.path1`<br/>**Type:** dimension |
+| Ad Group Ad Responsive Search Path 2 | **Field name:** `ad_group_ad.ad.responsive_search_ad.path2`<br/>**Type:** dimension |
+| Ad Group Ad Strength | **Field name:** `ad_group_ad.ad_strength`<br/>**Type:** dimension |
+| Ad Labels | **Field name:** `ad_group_ad.labels`<br/>**Type:** dimension |
+| Ad Group Ad Status | **Field name:** `ad_group_ad.status`<br/>**Type:** dimension |
+| Ad Group Ad Responsive Search Title and description | **Field name:** `ad_group_ad.ad-title-description`<br/>**Type:** dimension |
+
+### Keywords and targeting
+
+| | |
+|---|---|
+| Is Negative | **Field name:** `ad_group_criterion.negative`<br/>**Type:** dimension |
+
+### Asset groups
+
+| | |
+|---|---|
+| Asset Group Ad Strength | **Field name:** `asset_group.ad_strength`<br/>**Type:** dimension |
+| Asset Group ID | **Field name:** `asset_group.id`<br/>**Type:** dimension |
+| Asset Group Name | **Field name:** `asset_group.name`<br/>**Type:** dimension |
+| Asset Group Status | **Field name:** `asset_group.status`<br/>**Type:** dimension |
+| Asset Group Asset Field Type | **Field name:** `asset_group_asset.field_type`<br/>**Type:** dimension |
+| Asset Group Asset Source | **Field name:** `asset_group_asset.source`<br/>**Type:** dimension |
+| Asset Group Asset Status | **Field name:** `asset_group_asset.status`<br/>**Type:** dimension |
+
+### Search terms
+
+| | |
+|---|---|
+| Search Term | **Field name:** `search_term_view.search_term`<br/>**Type:** dimension |
+
+### Geography
+
+| | |
+|---|---|
+| Country | **Field name:** `user_location_view.country_criterion_id`<br/>**Type:** dimension |
+
+### Segments
+
+| | |
+|---|---|
+| Ad Network Type | **Field name:** `segments.ad_network_type`<br/>**Type:** dimension |
+| Click Type | **Field name:** `segments.click_type`<br/>**Type:** dimension |
+| Conversion Action Category | **Field name:** `segments.conversion_action_category`<br/>**Type:** dimension |
+| Conversion Action Name | **Field name:** `segments.conversion_action_name`<br/>**Type:** dimension |
+| Conversions Lag Bucket | **Field name:** `segments.conversion_lag_bucket`<br/>**Type:** dimension |
+| Device | **Field name:** `segments.device`<br/>**Type:** dimension |
+| External Conversion Source | **Field name:** `segments.external_conversion_source`<br/>**Type:** dimension |
+| Ad Slot | **Field name:** `segments.slot`<br/>**Type:** dimension |
+| Keyword Match Type | **Field name:** `ad_group_criterion.keyword.match_type`<br/>**Type:** dimension |
+| City | **Field name:** `segments.geo_target_city`<br/>**Type:** dimension |
+| Metropolitan Area | **Field name:** `segments.geo_target_metro`<br/>**Type:** dimension |
+| Postal Code | **Field name:** `segments.geo_target_postal_code`<br/>**Type:** dimension |
+| Province | **Field name:** `segments.geo_target_province`<br/>**Type:** dimension |
+| Region | **Field name:** `segments.geo_target_region`<br/>**Type:** dimension |
+| State | **Field name:** `segments.geo_target_state`<br/>**Type:** dimension |
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Fields catalog" href="/en/">
+    Browse all sources
+  </Card>
+  <Card title="Meta Ads" href="/en/meta-ads/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="TikTok Ads" href="/en/tiktok-ads/metrics">
+    Metrics & Dimensions
+  </Card>
+  <Card title="Microsoft Ads (Bing)" href="/en/bing-ads/metrics">
+    Metrics & Dimensions
+  </Card>
+</CardGroup>

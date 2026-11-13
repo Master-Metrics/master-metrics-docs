@@ -1,0 +1,183 @@
+---
+title: "Google Ads: Dimensiones"
+description: "Referencia completa de las dimensiones de Google Ads en Master Metrics"
+---
+
+<Info>**Última actualización:** 2026-11-13</Info>
+
+Esta referencia cubre las 92 dimensiones disponibles de Google Ads en Master Metrics. Úsala para entender cómo puedes segmentar tus datos y cómo se llama cada campo.
+
+**Disponible en:** Dashboards · Reportes · Asistente de IA · MCP
+
+## Dimensiones
+
+Las dimensiones son los atributos que puedes usar para segmentar y agrupar tus datos de Google Ads.
+
+### Tiempo
+
+| | |
+|---|---|
+| Fecha | **Nombre del campo:** `segments.date`<br/>**Tipo:** dimensión |
+| Día de la Semana | **Nombre del campo:** `segments.day_of_week`<br/>**Tipo:** dimensión |
+| Hora | **Nombre del campo:** `segments.hour`<br/>**Tipo:** dimensión |
+| Mes | **Nombre del campo:** `segments.month`<br/>**Tipo:** dimensión |
+| Mes del Año | **Nombre del campo:** `segments.month_of_year`<br/>**Tipo:** dimensión |
+| Trimestre | **Nombre del campo:** `segments.quarter`<br/>**Tipo:** dimensión |
+| Semana | **Nombre del campo:** `segments.week`<br/>**Tipo:** dimensión |
+| Año | **Nombre del campo:** `segments.year`<br/>**Tipo:** dimensión |
+
+### Cuenta
+
+| | |
+|---|---|
+| Código de Moneda de la Cuenta | **Nombre del campo:** `customer.currency_code`<br/>**Tipo:** dimensión |
+| Nombre de la Cuenta | **Nombre del campo:** `customer.descriptive_name`<br/>**Tipo:** dimensión |
+| ID de la Cuenta | **Nombre del campo:** `customer.id`<br/>**Tipo:** dimensión |
+| Puntuación de Optimización de la Cuenta | **Nombre del campo:** `customer.optimization_score`<br/>**Tipo:** dimensión |
+| Estado de la Cuenta | **Nombre del campo:** `customer.status`<br/>**Tipo:** dimensión |
+| Zona Horaria de la Cuenta | **Nombre del campo:** `customer.time_zone`<br/>**Tipo:** dimensión |
+
+### Campañas
+
+| | |
+|---|---|
+| Tipo de Canal Publicitario de la Campaña | **Nombre del campo:** `campaign.advertising_channel_type`<br/>**Tipo:** dimensión |
+| Estrategia de Puja de la Campaña | **Nombre del campo:** `campaign.bidding_strategy`<br/>**Tipo:** dimensión |
+| Tipo de Estrategia de Puja de la Campaña | **Nombre del campo:** `campaign.bidding_strategy_type`<br/>**Tipo:** dimensión |
+| Fecha de Fin de la Campaña | **Nombre del campo:** `campaign.end_date`<br/>**Tipo:** dimensión |
+| ID de la Campaña | **Nombre del campo:** `campaign.id`<br/>**Tipo:** dimensión |
+| Etiquetas de la Campaña | **Nombre del campo:** `campaign.labels`<br/>**Tipo:** dimensión |
+| Nombre de la Campaña | **Nombre del campo:** `campaign.name`<br/>**Tipo:** dimensión |
+| Puntuación de Optimización de la Campaña | **Nombre del campo:** `campaign.optimization_score`<br/>**Tipo:** dimensión |
+| Estado Primario de la Campaña | **Nombre del campo:** `campaign.primary_status`<br/>**Tipo:** dimensión |
+| Razones del Estado Primario de la Campaña | **Nombre del campo:** `campaign.primary_status_reasons`<br/>**Tipo:** dimensión |
+| Estado de Publicación de la Campaña | **Nombre del campo:** `campaign.serving_status`<br/>**Tipo:** dimensión |
+| Fecha de Inicio de la Campaña | **Nombre del campo:** `campaign.start_date`<br/>**Tipo:** dimensión |
+| Estado de la Campaña | **Nombre del campo:** `campaign.status`<br/>**Tipo:** dimensión |
+
+### Presupuesto
+
+| | |
+|---|---|
+| Presupuesto | **Nombre del campo:** `campaign_budget.amount_micros`<br/>**Tipo:** dimensión |
+| Método de Entrega del Presupuesto | **Nombre del campo:** `campaign_budget.delivery_method`<br/>**Tipo:** dimensión |
+| Presupuesto Compartido | **Nombre del campo:** `campaign_budget.explicitly_shared`<br/>**Tipo:** dimensión |
+| ID del Presupuesto | **Nombre del campo:** `campaign_budget.id`<br/>**Tipo:** dimensión |
+| Nombre del Presupuesto | **Nombre del campo:** `campaign_budget.name`<br/>**Tipo:** dimensión |
+| Periodo del Presupuesto | **Nombre del campo:** `campaign_budget.period`<br/>**Tipo:** dimensión |
+| Estado del Presupuesto | **Nombre del campo:** `campaign_budget.status`<br/>**Tipo:** dimensión |
+| Tipo de Presupuesto | **Nombre del campo:** `campaign_budget.type`<br/>**Tipo:** dimensión |
+
+### Estrategia de puja
+
+| | |
+|---|---|
+| Nombre de Estrategia de Puja | **Nombre del campo:** `bidding_strategy.name`<br/>**Tipo:** dimensión |
+| Estado de Estrategia de Puja | **Nombre del campo:** `bidding_strategy.status`<br/>**Tipo:** dimensión |
+| Tipo de Estrategia de Puja | **Nombre del campo:** `bidding_strategy.type`<br/>**Tipo:** dimensión |
+
+### Grupos de anuncios
+
+| | |
+|---|---|
+| ID de Grupo de Anuncios | **Nombre del campo:** `ad_group.id`<br/>**Tipo:** dimensión |
+| Etiquetas de Grupo de Anuncios | **Nombre del campo:** `ad_group.labels`<br/>**Tipo:** dimensión |
+| Nombre de Grupo de Anuncios | **Nombre del campo:** `ad_group.name`<br/>**Tipo:** dimensión |
+| Estado de Grupo de Anuncios | **Nombre del campo:** `ad_group.status`<br/>**Tipo:** dimensión |
+| Tipo de Grupo de Anuncios | **Nombre del campo:** `ad_group.type`<br/>**Tipo:** dimensión |
+
+### Anuncios
+
+| | |
+|---|---|
+| URL Visible del Anuncio | **Nombre del campo:** `ad_group_ad.ad.display_url`<br/>**Tipo:** dimensión |
+| Descripción de Búsqueda Dinámica Expandida | **Nombre del campo:** `ad_group_ad.ad.expanded_dynamic_search_ad.description`<br/>**Tipo:** dimensión |
+| Descripción 2 de Búsqueda Dinámica Expandida | **Nombre del campo:** `ad_group_ad.ad.expanded_dynamic_search_ad.description2`<br/>**Tipo:** dimensión |
+| Descripción del Anuncio de Texto Expandido | **Nombre del campo:** `ad_group_ad.ad.expanded_text_ad.description`<br/>**Tipo:** dimensión |
+| Descripción 2 del Anuncio de Texto Expandido | **Nombre del campo:** `ad_group_ad.ad.expanded_text_ad.description2`<br/>**Tipo:** dimensión |
+| Encabezado Parte 1 del Anuncio de Texto Expandido | **Nombre del campo:** `ad_group_ad.ad.expanded_text_ad.headline_part1`<br/>**Tipo:** dimensión |
+| Encabezado Parte 2 del Anuncio de Texto Expandido | **Nombre del campo:** `ad_group_ad.ad.expanded_text_ad.headline_part2`<br/>**Tipo:** dimensión |
+| Encabezado Parte 3 del Anuncio de Texto Expandido | **Nombre del campo:** `ad_group_ad.ad.expanded_text_ad.headline_part3`<br/>**Tipo:** dimensión |
+| Ruta 1 del Anuncio de Texto Expandido | **Nombre del campo:** `ad_group_ad.ad.expanded_text_ad.path1`<br/>**Tipo:** dimensión |
+| Ruta 2 del Anuncio de Texto Expandido | **Nombre del campo:** `ad_group_ad.ad.expanded_text_ad.path2`<br/>**Tipo:** dimensión |
+| ID del Anuncio | **Nombre del campo:** `ad_group_ad.ad.id`<br/>**Tipo:** dimensión |
+| Nombre del Anuncio | **Nombre del campo:** `ad_group_ad.ad.name`<br/>**Tipo:** dimensión |
+| Descripciones del Anuncio Display Adaptable | **Nombre del campo:** `ad_group_ad.ad.responsive_display_ad.descriptions`<br/>**Tipo:** dimensión |
+| Encabezados del Anuncio Display Adaptable | **Nombre del campo:** `ad_group_ad.ad.responsive_display_ad.headlines`<br/>**Tipo:** dimensión |
+| Logos del Anuncio Display Adaptable | **Nombre del campo:** `ad_group_ad.ad.responsive_display_ad.logo_images`<br/>**Tipo:** dimensión |
+| Encabezado Largo del Anuncio Display Adaptable (No Funciona) | **Nombre del campo:** `ad_group_ad.ad.responsive_display_ad.long_headline`<br/>**Tipo:** dimensión |
+| Descripciones del Anuncio de Búsqueda Adaptable | **Nombre del campo:** `ad_group_ad.ad.responsive_search_ad.descriptions`<br/>**Tipo:** dimensión |
+| Encabezados del Anuncio de Búsqueda Adaptable | **Nombre del campo:** `ad_group_ad.ad.responsive_search_ad.headlines`<br/>**Tipo:** dimensión |
+| Ruta 1 del Anuncio de Búsqueda Adaptable | **Nombre del campo:** `ad_group_ad.ad.responsive_search_ad.path1`<br/>**Tipo:** dimensión |
+| Ruta 2 del Anuncio de Búsqueda Adaptable | **Nombre del campo:** `ad_group_ad.ad.responsive_search_ad.path2`<br/>**Tipo:** dimensión |
+| Fortaleza del Anuncio | **Nombre del campo:** `ad_group_ad.ad_strength`<br/>**Tipo:** dimensión |
+| Etiquetas del Anuncio | **Nombre del campo:** `ad_group_ad.labels`<br/>**Tipo:** dimensión |
+| Estado del Anuncio en el Grupo | **Nombre del campo:** `ad_group_ad.status`<br/>**Tipo:** dimensión |
+| Título y Descripción del Anuncio de Búsqueda Adaptable | **Nombre del campo:** `ad_group_ad.ad-title-description`<br/>**Tipo:** dimensión |
+
+### Palabras clave y segmentación
+
+| | |
+|---|---|
+| Es negativa | **Nombre del campo:** `ad_group_criterion.negative`<br/>**Tipo:** dimensión |
+
+### Grupos de recursos
+
+| | |
+|---|---|
+| Calidad del Anuncio del Grupo de Recursos | **Nombre del campo:** `asset_group.ad_strength`<br/>**Tipo:** dimensión |
+| ID de Grupo de Recursos | **Nombre del campo:** `asset_group.id`<br/>**Tipo:** dimensión |
+| Nombre del Grupo de Recursos | **Nombre del campo:** `asset_group.name`<br/>**Tipo:** dimensión |
+| Estado del Grupo de Recursos | **Nombre del campo:** `asset_group.status`<br/>**Tipo:** dimensión |
+| Tipo de campo del Recurso del Grupo de Recursos | **Nombre del campo:** `asset_group_asset.field_type`<br/>**Tipo:** dimensión |
+| Fuente del Recurso del Grupo de Recursos | **Nombre del campo:** `asset_group_asset.source`<br/>**Tipo:** dimensión |
+| Estado del Recurso del Grupo de Recursos | **Nombre del campo:** `asset_group_asset.status`<br/>**Tipo:** dimensión |
+
+### Términos de búsqueda
+
+| | |
+|---|---|
+| Término de Búsqueda | **Nombre del campo:** `search_term_view.search_term`<br/>**Tipo:** dimensión |
+
+### Geografía
+
+| | |
+|---|---|
+| País | **Nombre del campo:** `user_location_view.country_criterion_id`<br/>**Tipo:** dimensión |
+
+### Segmentos
+
+| | |
+|---|---|
+| Tipo de Red de Anuncios | **Nombre del campo:** `segments.ad_network_type`<br/>**Tipo:** dimensión |
+| Tipo de Clic | **Nombre del campo:** `segments.click_type`<br/>**Tipo:** dimensión |
+| Categoría de Acción de Conversión | **Nombre del campo:** `segments.conversion_action_category`<br/>**Tipo:** dimensión |
+| Nombre de Acción de Conversión | **Nombre del campo:** `segments.conversion_action_name`<br/>**Tipo:** dimensión |
+| Intervalo de Tiempo de Conversión | **Nombre del campo:** `segments.conversion_lag_bucket`<br/>**Tipo:** dimensión |
+| Dispositivo | **Nombre del campo:** `segments.device`<br/>**Tipo:** dimensión |
+| Fuente de Conversión Externa | **Nombre del campo:** `segments.external_conversion_source`<br/>**Tipo:** dimensión |
+| Ubicación del Anuncio | **Nombre del campo:** `segments.slot`<br/>**Tipo:** dimensión |
+| Tipo de Concordancia de Palabra Clave | **Nombre del campo:** `ad_group_criterion.keyword.match_type`<br/>**Tipo:** dimensión |
+| Ciudad | **Nombre del campo:** `segments.geo_target_city`<br/>**Tipo:** dimensión |
+| Área Metropolitana | **Nombre del campo:** `segments.geo_target_metro`<br/>**Tipo:** dimensión |
+| Código Postal | **Nombre del campo:** `segments.geo_target_postal_code`<br/>**Tipo:** dimensión |
+| Provincia | **Nombre del campo:** `segments.geo_target_province`<br/>**Tipo:** dimensión |
+| Región | **Nombre del campo:** `segments.geo_target_region`<br/>**Tipo:** dimensión |
+| Estado | **Nombre del campo:** `segments.geo_target_state`<br/>**Tipo:** dimensión |
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Catálogo de campos" href="/">
+    Ver todas las fuentes
+  </Card>
+  <Card title="Meta Ads" href="/meta-ads/metrics">
+    Métricas & Dimensiones
+  </Card>
+  <Card title="TikTok Ads" href="/tiktok-ads/metrics">
+    Métricas & Dimensiones
+  </Card>
+  <Card title="Microsoft Ads (Bing)" href="/bing-ads/metrics">
+    Métricas & Dimensiones
+  </Card>
+</CardGroup>
