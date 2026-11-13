@@ -1,0 +1,183 @@
+---
+title: "Google Ads: Dimensões"
+description: "Referência completa das dimensões de Google Ads no Master Metrics"
+---
+
+<Info>**Última atualização:** 2026-11-13</Info>
+
+Esta referência cobre as 92 dimensões disponíveis de Google Ads no Master Metrics. Use-a para entender como você pode segmentar seus dados e como cada campo se chama.
+
+**Disponível em:** Dashboards · Relatórios · Assistente de IA · MCP
+
+## Dimensões
+
+As dimensões são os atributos que você pode usar para segmentar e agrupar seus dados de Google Ads.
+
+### Tempo
+
+| | |
+|---|---|
+| Data | **Nome do campo:** `segments.date`<br/>**Tipo:** dimensão |
+| Dia da Semana | **Nome do campo:** `segments.day_of_week`<br/>**Tipo:** dimensão |
+| Hora | **Nome do campo:** `segments.hour`<br/>**Tipo:** dimensão |
+| Mês | **Nome do campo:** `segments.month`<br/>**Tipo:** dimensão |
+| Mês do Ano | **Nome do campo:** `segments.month_of_year`<br/>**Tipo:** dimensão |
+| Trimestre | **Nome do campo:** `segments.quarter`<br/>**Tipo:** dimensão |
+| Semana | **Nome do campo:** `segments.week`<br/>**Tipo:** dimensão |
+| Ano | **Nome do campo:** `segments.year`<br/>**Tipo:** dimensão |
+
+### Conta
+
+| | |
+|---|---|
+| Código da Moeda da Conta | **Nome do campo:** `customer.currency_code`<br/>**Tipo:** dimensão |
+| Nome da Conta | **Nome do campo:** `customer.descriptive_name`<br/>**Tipo:** dimensão |
+| ID da Conta | **Nome do campo:** `customer.id`<br/>**Tipo:** dimensão |
+| Pontuação de Otimização da Conta | **Nome do campo:** `customer.optimization_score`<br/>**Tipo:** dimensão |
+| Status da Conta | **Nome do campo:** `customer.status`<br/>**Tipo:** dimensão |
+| Fuso Horário da Conta | **Nome do campo:** `customer.time_zone`<br/>**Tipo:** dimensão |
+
+### Campanhas
+
+| | |
+|---|---|
+| Tipo de Canal Publicitário da Campanha | **Nome do campo:** `campaign.advertising_channel_type`<br/>**Tipo:** dimensão |
+| Estratégia de Lance da Campanha | **Nome do campo:** `campaign.bidding_strategy`<br/>**Tipo:** dimensão |
+| Tipo de Estratégia de Lance da Campanha | **Nome do campo:** `campaign.bidding_strategy_type`<br/>**Tipo:** dimensão |
+| Data de Término da Campanha | **Nome do campo:** `campaign.end_date`<br/>**Tipo:** dimensão |
+| ID da Campanha | **Nome do campo:** `campaign.id`<br/>**Tipo:** dimensão |
+| Rótulos da Campanha | **Nome do campo:** `campaign.labels`<br/>**Tipo:** dimensão |
+| Nome da Campanha | **Nome do campo:** `campaign.name`<br/>**Tipo:** dimensão |
+| Pontuação de Otimização da Campanha | **Nome do campo:** `campaign.optimization_score`<br/>**Tipo:** dimensão |
+| Status Primário da Campanha | **Nome do campo:** `campaign.primary_status`<br/>**Tipo:** dimensão |
+| Razões do Status Primário da Campanha | **Nome do campo:** `campaign.primary_status_reasons`<br/>**Tipo:** dimensão |
+| Status de Veiculação da Campanha | **Nome do campo:** `campaign.serving_status`<br/>**Tipo:** dimensão |
+| Data de Início da Campanha | **Nome do campo:** `campaign.start_date`<br/>**Tipo:** dimensão |
+| Status da Campanha | **Nome do campo:** `campaign.status`<br/>**Tipo:** dimensão |
+
+### Orçamento
+
+| | |
+|---|---|
+| Orçamento | **Nome do campo:** `campaign_budget.amount_micros`<br/>**Tipo:** dimensão |
+| Método de Entrega do Orçamento | **Nome do campo:** `campaign_budget.delivery_method`<br/>**Tipo:** dimensão |
+| Orçamento Compartilhado | **Nome do campo:** `campaign_budget.explicitly_shared`<br/>**Tipo:** dimensão |
+| ID do Orçamento | **Nome do campo:** `campaign_budget.id`<br/>**Tipo:** dimensão |
+| Nome do Orçamento | **Nome do campo:** `campaign_budget.name`<br/>**Tipo:** dimensão |
+| Período do Orçamento | **Nome do campo:** `campaign_budget.period`<br/>**Tipo:** dimensão |
+| Status do Orçamento | **Nome do campo:** `campaign_budget.status`<br/>**Tipo:** dimensão |
+| Tipo de Orçamento | **Nome do campo:** `campaign_budget.type`<br/>**Tipo:** dimensão |
+
+### Estratégia de lances
+
+| | |
+|---|---|
+| Nome da Estratégia de Lance | **Nome do campo:** `bidding_strategy.name`<br/>**Tipo:** dimensão |
+| Status da Estratégia de Lance | **Nome do campo:** `bidding_strategy.status`<br/>**Tipo:** dimensão |
+| Tipo de Estratégia de Lance | **Nome do campo:** `bidding_strategy.type`<br/>**Tipo:** dimensão |
+
+### Grupos de anúncios
+
+| | |
+|---|---|
+| ID do Grupo de Anúncios | **Nome do campo:** `ad_group.id`<br/>**Tipo:** dimensão |
+| Rótulos do Grupo de Anúncios | **Nome do campo:** `ad_group.labels`<br/>**Tipo:** dimensão |
+| Nome do Grupo de Anúncios | **Nome do campo:** `ad_group.name`<br/>**Tipo:** dimensão |
+| Status do Grupo de Anúncios | **Nome do campo:** `ad_group.status`<br/>**Tipo:** dimensão |
+| Tipo de Grupo de Anúncios | **Nome do campo:** `ad_group.type`<br/>**Tipo:** dimensão |
+
+### Anúncios
+
+| | |
+|---|---|
+| URL de Exibição do Anúncio do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.display_url`<br/>**Tipo:** dimensão |
+| Descrição do Anúncio de Pesquisa Dinâmica Expandida do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.expanded_dynamic_search_ad.description`<br/>**Tipo:** dimensão |
+| Descrição 2 do Anúncio de Pesquisa Dinâmica Expandida do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.expanded_dynamic_search_ad.description2`<br/>**Tipo:** dimensão |
+| Descrição do Anúncio de Texto Expandido do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.expanded_text_ad.description`<br/>**Tipo:** dimensão |
+| Descrição 2 do Anúncio de Texto Expandido do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.expanded_text_ad.description2`<br/>**Tipo:** dimensão |
+| Título Parte 1 do Anúncio de Texto Expandido do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.expanded_text_ad.headline_part1`<br/>**Tipo:** dimensão |
+| Título Parte 2 do Anúncio de Texto Expandido do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.expanded_text_ad.headline_part2`<br/>**Tipo:** dimensão |
+| Título Parte 3 do Anúncio de Texto Expandido do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.expanded_text_ad.headline_part3`<br/>**Tipo:** dimensão |
+| Caminho 1 do Anúncio de Texto Expandido do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.expanded_text_ad.path1`<br/>**Tipo:** dimensão |
+| Caminho 2 do Anúncio de Texto Expandido do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.expanded_text_ad.path2`<br/>**Tipo:** dimensão |
+| ID do Anúncio | **Nome do campo:** `ad_group_ad.ad.id`<br/>**Tipo:** dimensão |
+| Nome do Anúncio | **Nome do campo:** `ad_group_ad.ad.name`<br/>**Tipo:** dimensão |
+| Descrições do Anúncio Responsivo de Display do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.responsive_display_ad.descriptions`<br/>**Tipo:** dimensão |
+| Títulos do Anúncio Responsivo de Display do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.responsive_display_ad.headlines`<br/>**Tipo:** dimensão |
+| Imagens do Logo do Anúncio Responsivo de Display do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.responsive_display_ad.logo_images`<br/>**Tipo:** dimensão |
+| Título Longo do Anúncio Responsivo de Display do Grupo de Anúncios (Não Funciona) | **Nome do campo:** `ad_group_ad.ad.responsive_display_ad.long_headline`<br/>**Tipo:** dimensão |
+| Descrições do Anúncio Responsivo de Pesquisa do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.responsive_search_ad.descriptions`<br/>**Tipo:** dimensão |
+| Títulos do Anúncio Responsivo de Pesquisa do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.responsive_search_ad.headlines`<br/>**Tipo:** dimensão |
+| Caminho 1 do Anúncio Responsivo de Pesquisa do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.responsive_search_ad.path1`<br/>**Tipo:** dimensão |
+| Caminho 2 do Anúncio Responsivo de Pesquisa do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad.responsive_search_ad.path2`<br/>**Tipo:** dimensão |
+| Força do Anúncio | **Nome do campo:** `ad_group_ad.ad_strength`<br/>**Tipo:** dimensão |
+| Etiquetas do Anúncio | **Nome do campo:** `ad_group_ad.labels`<br/>**Tipo:** dimensão |
+| Status do Anúncio do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.status`<br/>**Tipo:** dimensão |
+| Título e Descrição do Anúncio Responsivo de Pesquisa do Grupo de Anúncios | **Nome do campo:** `ad_group_ad.ad-title-description`<br/>**Tipo:** dimensão |
+
+### Palavras-chave e segmentação
+
+| | |
+|---|---|
+| É Negativo | **Nome do campo:** `ad_group_criterion.negative`<br/>**Tipo:** dimensão |
+
+### Grupos de recursos
+
+| | |
+|---|---|
+| Fortaleza do Anúncio do Grupo de Recursos | **Nome do campo:** `asset_group.ad_strength`<br/>**Tipo:** dimensão |
+| ID do Grupo de Recursos | **Nome do campo:** `asset_group.id`<br/>**Tipo:** dimensão |
+| Nome do Grupo de Recursos | **Nome do campo:** `asset_group.name`<br/>**Tipo:** dimensão |
+| Status do Grupo de Recursos | **Nome do campo:** `asset_group.status`<br/>**Tipo:** dimensão |
+| Tipo de Campo do Recurso do Grupo de Recursos | **Nome do campo:** `asset_group_asset.field_type`<br/>**Tipo:** dimensão |
+| Fonte do Recurso do Grupo de Recursos | **Nome do campo:** `asset_group_asset.source`<br/>**Tipo:** dimensão |
+| Status do Recurso do Grupo de Recursos | **Nome do campo:** `asset_group_asset.status`<br/>**Tipo:** dimensão |
+
+### Termos de pesquisa
+
+| | |
+|---|---|
+| Termo de Pesquisa | **Nome do campo:** `search_term_view.search_term`<br/>**Tipo:** dimensão |
+
+### Geografia
+
+| | |
+|---|---|
+| País | **Nome do campo:** `user_location_view.country_criterion_id`<br/>**Tipo:** dimensão |
+
+### Segmentos
+
+| | |
+|---|---|
+| Tipo de Rede de Anúncios | **Nome do campo:** `segments.ad_network_type`<br/>**Tipo:** dimensão |
+| Tipo de Clique | **Nome do campo:** `segments.click_type`<br/>**Tipo:** dimensão |
+| Categoria da Ação de Conversão | **Nome do campo:** `segments.conversion_action_category`<br/>**Tipo:** dimensão |
+| Nome da Ação de Conversão | **Nome do campo:** `segments.conversion_action_name`<br/>**Tipo:** dimensão |
+| Período de Atraso da Conversão | **Nome do campo:** `segments.conversion_lag_bucket`<br/>**Tipo:** dimensão |
+| Dispositivo | **Nome do campo:** `segments.device`<br/>**Tipo:** dimensão |
+| Fonte Externa de Conversão | **Nome do campo:** `segments.external_conversion_source`<br/>**Tipo:** dimensão |
+| Posição do Anúncio | **Nome do campo:** `segments.slot`<br/>**Tipo:** dimensão |
+| Tipo de Correspondência da Palavra-chave | **Nome do campo:** `ad_group_criterion.keyword.match_type`<br/>**Tipo:** dimensão |
+| Cidade | **Nome do campo:** `segments.geo_target_city`<br/>**Tipo:** dimensão |
+| Área Metropolitana | **Nome do campo:** `segments.geo_target_metro`<br/>**Tipo:** dimensão |
+| Código Postal | **Nome do campo:** `segments.geo_target_postal_code`<br/>**Tipo:** dimensão |
+| Província | **Nome do campo:** `segments.geo_target_province`<br/>**Tipo:** dimensão |
+| Região | **Nome do campo:** `segments.geo_target_region`<br/>**Tipo:** dimensão |
+| Estado | **Nome do campo:** `segments.geo_target_state`<br/>**Tipo:** dimensão |
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Catálogo de campos" href="/pt/">
+    Ver todas as fontes
+  </Card>
+  <Card title="Meta Ads" href="/pt/meta-ads/metrics">
+    Métricas & Dimensões
+  </Card>
+  <Card title="TikTok Ads" href="/pt/tiktok-ads/metrics">
+    Métricas & Dimensões
+  </Card>
+  <Card title="Microsoft Ads (Bing)" href="/pt/bing-ads/metrics">
+    Métricas & Dimensões
+  </Card>
+</CardGroup>

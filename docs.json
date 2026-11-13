@@ -23,6 +23,13 @@
             "group": "Publicidad",
             "pages": [
               {
+                "group": "Google Ads",
+                "pages": [
+                  "google-ads/metrics",
+                  "google-ads/dimensions"
+                ]
+              },
+              {
                 "group": "Meta Ads",
                 "pages": [
                   "meta-ads/metrics",
@@ -215,6 +222,13 @@
             "group": "Advertising",
             "pages": [
               {
+                "group": "Google Ads",
+                "pages": [
+                  "en/google-ads/metrics",
+                  "en/google-ads/dimensions"
+                ]
+              },
+              {
                 "group": "Meta Ads",
                 "pages": [
                   "en/meta-ads/metrics",
@@ -406,6 +420,13 @@
           {
             "group": "Publicidade",
             "pages": [
+              {
+                "group": "Google Ads",
+                "pages": [
+                  "pt/google-ads/metrics",
+                  "pt/google-ads/dimensions"
+                ]
+              },
               {
                 "group": "Meta Ads",
                 "pages": [
