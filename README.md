@@ -1,55 +1,48 @@
-# Mintlify Starter Kit
+# Master Metrics Docs
 
-Use the starter kit to get your docs deployed and ready to customize.
+Documentación pública: https://docs.mastermetrics.com
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+Las páginas se generan con un script que lee el catálogo del API. No se editan a mano. Cada push a `main` publica solo.
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+## Regenerar
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+Requiere Python 3 y el `SERVER_AUTHORIZATION_SECRET_KEY` del API.
 
-## AI-assisted writing
-
-Set up your AI coding tool to work with Mintlify:
-
-```bash
-npx skills add https://mintlify.com/docs
+```sh
+git pull
+DOCS_API_URL=https://<host-del-api>/api/v2/docs DOCS_API_SECRET=<secret> python3 scripts/generate.py .
 ```
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+Correrlo siempre desde la raíz del repo. Sin `DOCS_API_URL` usa el API local (`http://localhost:3001/api/v2/docs`).
 
-See the guides for [Claude Code](https://www.mintlify.com/docs/guides/claude-code), [Codex](https://www.mintlify.com/docs/guides/codex), [Cursor](https://www.mintlify.com/docs/guides/cursor), and [Devin Desktop](https://www.mintlify.com/docs/guides/devin-desktop) for tool-specific setup.
+## Publicar
 
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
-```
-npm i -g mint
-```
-
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
-mint dev
+```sh
+git diff --stat
+git add -A
+git commit -m "docs: regenerar catalogo"
+git push
 ```
 
-View your local preview at `http://localhost:3000`.
+## Agregar descripciones
 
-## Publishing changes
+Para campos sin descripción en el API, crear `scripts/descriptions/<slug>.json` y regenerar:
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+```json
+{ "<nombre_del_campo>": { "es": "...", "en": "...", "pt": "..." } }
+```
 
-## Need help?
+## No editar a mano
 
-### Troubleshooting
+Los `.mdx` y el bloque `navigation` de `docs.json`: el script los pisa.
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+## Errores
 
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+| Error | Causa |
+|---|---|
+| `DOCS_API_SECRET is required` | Falta la variable |
+| `HTTP Error 400` | Secret incorrecto |
+| `HTTP Error 404` | El API no tiene el endpoint de docs |
+| `Connection refused` | No hay API en esa URL |
+
+Más detalle en `apps/api/src/services/DocsService/README.md` del repo `smart-reporting-api`.

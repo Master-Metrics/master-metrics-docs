@@ -1,14 +1,14 @@
-import json, sys, urllib.request, urllib.parse, pathlib
+import json, os, sys, urllib.request, pathlib
 
 out = pathlib.Path(sys.argv[1])
-api = 'http://localhost:3001/api/v2/docs'
+api = os.environ.get('DOCS_API_URL', 'http://localhost:3001/api/v2/docs')
+secret = os.environ.get('DOCS_API_SECRET')
+if not secret:
+    sys.exit('DOCS_API_SECRET is required: the value of SERVER_AUTHORIZATION_SECRET_KEY in the target API')
 DEFAULT = 'es'
 CATEGORY_ORDER = ['ads', 'social', 'analytics', 'ecommerce', 'crm']
 DESCRIPTIONS_DIR = pathlib.Path(__file__).parent / 'descriptions'
-DATA_DIR = pathlib.Path(__file__).parent / 'data'
-LOCAL_ONLY = sys.argv[3] if len(sys.argv) > 3 and sys.argv[2] == '--local' else None
-ONLY = set(sys.argv[2].split(',')) if len(sys.argv) > 2 and not LOCAL_ONLY else None
-LOCAL = {path.stem: json.loads(path.read_text()) for path in sorted(DATA_DIR.glob('*.json'))}
+ONLY = set(sys.argv[2].split(',')) if len(sys.argv) > 2 else None
 T = {
  'es': dict(overview='Resumen', catalog='Catálogo de campos',
    catalog_desc='Explora todas las métricas y dimensiones disponibles para cada fuente de datos',
@@ -64,71 +64,11 @@ T = {
 }
 
 def get(path, locale):
-    return json.load(urllib.request.urlopen(f'{api}{path}?locale={locale}'))
-
-def local_summary(slug, locale):
-    data = LOCAL[slug]
-    content = data['locales'][locale]
-    return {'slug': slug, 'name': data['name'], 'category': data['category'], 'mcpEnabled': data['mcpEnabled'],
-            'metricsCount': len(content['metrics']), 'dimensionsCount': len(content['dimensions']),
-            'hasTroubleshooting': bool(content['notes'] or content['videos'])}
-
-def local_source(slug, locale):
-    data = LOCAL[slug]
-    return {'slug': slug, 'name': data['name'], 'category': data['category'], 'updatedAt': data['updatedAt'],
-            'mcpEnabled': data['mcpEnabled'], **json.loads(json.dumps(data['locales'][locale]))}
-
-def card(summary, prefix, t):
-    return [f'  <Card title="{q(summary["name"])}" href="{prefix}/{summary["slug"]}/metrics">',
-            f'    {summary["metricsCount"]} {t["metrics"].lower()} · {summary["dimensionsCount"]} {t["dimensions"].lower()}' + (' · MCP' if summary['mcpEnabled'] else ''),
-            '  </Card>']
-
-def write_source(summary, sources, base, prefix, page, locale, t):
-    slug = summary['slug']
-    (base / slug).mkdir(parents=True, exist_ok=True)
-    src = get_source(slug, locale)
-    fields_page(src, sources, 'metrics', base, prefix, t)
-    fields_page(src, sources, 'dimensions', base, prefix, t)
-    pages = [page(f'{slug}/metrics'), page(f'{slug}/dimensions')]
-    if summary['hasTroubleshooting']:
-        trouble_page(src, sources, base, prefix, t)
-        pages.append(page(f'{slug}/troubleshooting'))
-    return {'group': summary['name'], 'pages': pages}
-
-def publish_local(slug):
-    cfg_path = out / 'docs.json'
-    cfg = json.loads(cfg_path.read_text())
-    for language in cfg['navigation']['languages']:
-        locale = language['language']
-        t = T[locale]
-        prefix = '' if locale == DEFAULT else f'/{locale}'
-        base = out if locale == DEFAULT else out / locale
-        page = lambda path: path if locale == DEFAULT else f'{locale}/{path}'
-        summary = local_summary(slug, locale)
-        others = [{'slug': item['pages'][0].split('/')[-2], 'name': item['group']}
-                  for group in language['groups'] for item in group['pages'] if isinstance(item, dict)]
-        entry = write_source(summary, [summary] + [o for o in others if o['slug'] != slug], base, prefix, page, locale, t)
-        title = t.get(summary['category'], summary['category'])
-        group = next((g for g in language['groups'] if g['group'] == title), None)
-        if group is None:
-            group = {'group': title, 'pages': []}
-            language['groups'].insert(1, group)
-        group['pages'] = [entry] + [item for item in group['pages'] if not (isinstance(item, dict) and item['group'] == summary['name'])]
-        index_path = base / 'index.mdx'
-        lines = index_path.read_text().split('\n')
-        href = f'href="{prefix}/{slug}/metrics"'
-        if not any(href in line for line in lines):
-            if f'## {title}' not in lines:
-                at = next(i for i, line in enumerate(lines) if line.startswith('## '))
-                lines[at:at] = [f'## {title}', '', '<CardGroup cols={2}>', '</CardGroup>', '']
-            start = lines.index('<CardGroup cols={2}>', lines.index(f'## {title}'))
-            lines[start + 1:start + 1] = card(summary, prefix, t)
-            index_path.write_text('\n'.join(lines))
-    cfg_path.write_text(json.dumps(cfg, indent=2, ensure_ascii=False) + '\n')
-    print('ok local', slug)
+    request = urllib.request.Request(f'{api}{path}?locale={locale}', headers={'x-server-secret-key': secret})
+    return json.load(urllib.request.urlopen(request))
 
 def get_source(slug, locale):
-    src = local_source(slug, locale) if slug in LOCAL else get(f'/{slug}', locale)
+    src = get(f'/{slug}', locale)
     path = DESCRIPTIONS_DIR / f'{slug}.json'
     extra = json.loads(path.read_text()) if path.exists() else {}
     for field in src['metrics'] + src['dimensions']:
@@ -193,17 +133,12 @@ def trouble_page(src, sources, base, prefix, t):
     parts += related(src, sources, prefix, t)
     (base / src['slug'] / 'troubleshooting.mdx').write_text('\n'.join(parts))
 
-if LOCAL_ONLY:
-    publish_local(LOCAL_ONLY)
-    sys.exit(0)
-
 languages = []
 for locale, t in T.items():
     prefix = '' if locale == DEFAULT else f'/{locale}'
     base = out if locale == DEFAULT else out / locale
     page = lambda path: path if locale == DEFAULT else f'{locale}/{path}'
-    sources = [local_summary(slug, locale) for slug in LOCAL] + get('', locale)['sources']
-    sources = [s for s in sources if ONLY is None or s['slug'] in ONLY]
+    sources = [s for s in get('', locale)['sources'] if ONLY is None or s['slug'] in ONLY]
     found = list(dict.fromkeys(s['category'] for s in sources))
     categories = [c for c in CATEGORY_ORDER if c in found] + [c for c in found if c not in CATEGORY_ORDER]
     index = ['---', f'title: "{t["catalog"]}"', f'description: "{t["catalog_desc"]}"', '---', '', t['intro'], '',
@@ -213,8 +148,19 @@ for locale, t in T.items():
         index += [f'## {t.get(category, category)}', '', '<CardGroup cols={2}>']
         nav = []
         for summary in [s for s in sources if s['category'] == category]:
-            nav.append(write_source(summary, sources, base, prefix, page, locale, t))
-            index += card(summary, prefix, t)
+            slug = summary['slug']
+            (base / slug).mkdir(parents=True, exist_ok=True)
+            src = get_source(slug, locale)
+            fields_page(src, sources, 'metrics', base, prefix, t)
+            fields_page(src, sources, 'dimensions', base, prefix, t)
+            pages = [page(f'{slug}/metrics'), page(f'{slug}/dimensions')]
+            if summary['hasTroubleshooting']:
+                trouble_page(src, sources, base, prefix, t)
+                pages.append(page(f'{slug}/troubleshooting'))
+            nav.append({'group': summary['name'], 'pages': pages})
+            index += [f'  <Card title="{q(summary["name"])}" href="{prefix}/{slug}/metrics">',
+                      f'    {summary["metricsCount"]} {t["metrics"].lower()} · {summary["dimensionsCount"]} {t["dimensions"].lower()}' + (' · MCP' if summary['mcpEnabled'] else ''),
+                      '  </Card>']
         index += ['</CardGroup>', '']
         groups.append({'group': t.get(category, category), 'pages': nav})
     (base / 'index.mdx').write_text('\n'.join(index))
